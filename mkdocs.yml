@@ -19,25 +19,27 @@ theme:
     # - navigation.prune
     - navigation.sections
     - navigation.footer
-    - navigation.indexes
+    # - navigation.indexes
     - navigation.top
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to dark mode
 
 # Extensions
 markdown_extensions:
@@ -86,13 +88,12 @@ nav:
   - Home: index.md
   - Книга:
     - book/index.md
-    - Основи Python: book/Part_I.md
-    - Повторне використання коду: book/Part_II.md
-    - Регулярні вирази: book/Part_III.md
+    - book/Part_I.md
+    - book/Part_II.md
+    - book/Part_III.md
   - Курс:
-    - course/index.md
-    - Розклад: course/schedule.md
-    - Підготовка: course/setup.md
+    - course/schedule.md
+    - course/setup.md
   - Завдання:
     - tasks/index.md
-    - Утиліта pyneng: tasks/pyneng.md
+    - tasks/pyneng.md
