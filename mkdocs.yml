@@ -149,9 +149,17 @@ nav:
       - 4. Типи даних у Python:
         - book/04_data_structures/index.md
         - book/04_data_structures/numbers.md
-        - book/04_data_structures/strings.md
-        - book/04_data_structures/lists.md
-        - book/04_data_structures/dicts.md
+        - Рядки (Strings):
+          - book/04_data_structures/string/index.md
+          - book/04_data_structures/string/methods.md
+          - book/04_data_structures/string/literal_concatenation.md
+        - Список (List):
+          - book/04_data_structures/list/index.md
+          - book/04_data_structures/list/methods.md
+        - Словник (Dictionary):
+          - book/04_data_structures/dict/index.md
+          - book/04_data_structures/dict/methods.md
+          - book/04_data_structures/dict/create.md
         - book/04_data_structures/tuple.md
         - book/04_data_structures/set.md
         - book/04_data_structures/boolean.md
