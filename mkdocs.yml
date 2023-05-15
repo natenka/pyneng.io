@@ -28,6 +28,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.top
+    - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
@@ -123,13 +124,21 @@ nav:
     - book/Part_II.md
     - book/Part_III.md
   - Курс:
+    - course/index.md
     - Лекції:
       - course/schedule.md
-      - course/schedule_tasks.md
       - course/theory.md
       - course/theory-details.md
+      - course/schedule-tasks.md
+      - course/calendar.md
     - Підготовка:
       - course/setup.md
+    - Теми:
+      - course/topics/00-preparation.md
+      - course/topics/01-course-env.md
+      - course/topics/02-git-github-tasks.md
   - Завдання:
-    - tasks/topic_task.md
+    - tasks/index.md
     - tasks/pyneng.md
+    # - tasks/pyneng-output.md
+    - tasks/task-topic-table.md
