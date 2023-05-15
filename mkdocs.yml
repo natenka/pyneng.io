@@ -122,7 +122,7 @@ nav:
     - book/index.md
     - book/links.md
     - Основи Python:
-      - Підготовка до роботи:
+      - 1. Підготовка до роботи:
         - book/01_intro/index.md
         - book/01_intro/work_env.md
         - book/01_intro/os_and_editor.md
@@ -130,7 +130,7 @@ nav:
         - book/01_intro/venv.md
         - book/01_intro/check_python.md
         - book/01_intro/further_reading.md
-      - Використання Git та GitHub:
+      - 2. Використання Git та GitHub:
         - book/02_git_github/index.md
         - book/02_git_github/git_basics.md
         - book/02_git_github/git_basics_bash_status.md
@@ -140,13 +140,13 @@ nav:
         - book/02_git_github/git_github_changes.md
         - book/02_git_github/pyneng_github.md
         - book/02_git_github/further_reading.md
-      - Початок роботи з Python:
+      - 3. Початок роботи з Python:
         - book/03_start/index.md
         - book/03_start/syntax.md
         - book/03_start/ipython.md
         - book/03_start/ipython_magic.md
         - book/03_start/variables.md
-      - Типи даних у Python:
+      - 4. Типи даних у Python:
         - book/04_data_structures/index.md
         - book/04_data_structures/numbers.md
         - book/04_data_structures/strings.md
