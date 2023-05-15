@@ -1,4 +1,9 @@
 site_name: Python для мережевих інженерів
+
+# Repository
+repo_name: natenka/pyneng.io
+repo_url: https://github.com/natenka/pyneng.io
+
 theme:
   name: material
   language: uk
@@ -40,6 +45,25 @@ theme:
     toggle:
       icon: material/lightbulb-outline
       name: Switch to dark mode
+
+
+# Plugins
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://join.slack.com/t/pynenguk/shared_invite/zt-1ulyc49it-gM1aZ87gkOL183SOOeIhDg
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCKTDqzgELjWO7wseP-OHNew
+    - icon: fontawesome/brands/github
+      link: https://github.com/natenka
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/pynenguk
+
 
 # Extensions
 markdown_extensions:
