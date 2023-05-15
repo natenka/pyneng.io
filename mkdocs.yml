@@ -28,7 +28,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.top
-    - navigation.expand
+    # - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
@@ -120,9 +120,47 @@ nav:
   - " ": index.md
   - Книга:
     - book/index.md
-    - book/Part_I.md
-    - book/Part_II.md
-    - book/Part_III.md
+    - book/links.md
+    - Основи Python:
+      - Підготовка до роботи:
+        - book/01_intro/index.md
+        - book/01_intro/work_env.md
+        - book/01_intro/os_and_editor.md
+        - book/01_intro/pip.md
+        - book/01_intro/venv.md
+        - book/01_intro/check_python.md
+        - book/01_intro/further_reading.md
+      - Використання Git та GitHub:
+        - book/02_git_github/index.md
+        - book/02_git_github/git_basics.md
+        - book/02_git_github/git_basics_bash_status.md
+        - book/02_git_github/git_basics_commands.md
+        - book/02_git_github/git_basics_additional.md
+        - book/02_git_github/git_github_auth.md
+        - book/02_git_github/git_github_changes.md
+        - book/02_git_github/pyneng_github.md
+        - book/02_git_github/further_reading.md
+      - Початок роботи з Python:
+        - book/03_start/index.md
+        - book/03_start/syntax.md
+        - book/03_start/ipython.md
+        - book/03_start/ipython_magic.md
+        - book/03_start/variables.md
+      - Типи даних у Python:
+        - book/04_data_structures/index.md
+        - book/04_data_structures/numbers.md
+        - book/04_data_structures/strings.md
+        - book/04_data_structures/lists.md
+        - book/04_data_structures/dicts.md
+        - book/04_data_structures/tuple.md
+        - book/04_data_structures/set.md
+        - book/04_data_structures/boolean.md
+        - book/04_data_structures/string_format.md
+        - book/04_data_structures/convert_type.md
+        - book/04_data_structures/check_type.md
+        - book/04_data_structures/method_chaining.md
+        - book/04_data_structures/sorting.md
+        - book/04_data_structures/further_reading.md
   - Курс:
     - course/index.md
     - Лекції:
