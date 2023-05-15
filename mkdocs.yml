@@ -145,3 +145,8 @@ nav:
     - tasks/pyneng.md
     # - tasks/pyneng-output.md
     - tasks/task-topic-table.md
+    - Редактори:
+      - tasks/editors/index.md
+      - tasks/editors/prepare.md
+      - tasks/editors/thonny.md
+      - tasks/editors/vim.md
