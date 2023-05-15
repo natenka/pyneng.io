@@ -48,9 +48,9 @@ theme:
 
 
 # Plugins
-plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true
+#plugins:
+#  - git-revision-date-localized:
+#      enable_creation_date: true
 
 # Customization
 extra:
