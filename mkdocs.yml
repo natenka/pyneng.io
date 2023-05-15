@@ -51,6 +51,10 @@ theme:
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
+#pip install mkdocs-pdf-export-plugin
+# pdf export
+#  - pdf-export:
+#      combined: true
 
 # Customization
 extra:
