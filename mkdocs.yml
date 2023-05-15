@@ -129,14 +129,17 @@ nav:
       - course/schedule.md
       - course/theory.md
       - course/theory-details.md
-      - course/schedule-tasks.md
-      - course/calendar.md
     - Підготовка:
       - course/setup.md
     - Теми:
       - course/topics/00-preparation.md
       - course/topics/01-course-env.md
       - course/topics/02-git-github-tasks.md
+    - Корисні посилання:
+      - course/schedule-tasks.md
+      - course/calendar.md
+      - course/slack.md
+      - course/links.md
   - Завдання:
     - tasks/index.md
     - tasks/pyneng.md
