@@ -7,6 +7,8 @@ site_name: Python для мережевих інженерів
 theme:
   name: material
   language: uk
+  icon:
+    logo: material/book-open-outline
   features:
     - announce.dismiss
     - content.action.edit
