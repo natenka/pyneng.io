@@ -129,8 +129,6 @@ nav:
       - course/schedule.md
       - course/theory.md
       - course/theory-details.md
-    - Підготовка:
-      - course/setup.md
     - Теми:
       - course/topics/00-preparation.md
       - course/topics/01-course-env.md
