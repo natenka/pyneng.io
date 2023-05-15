@@ -7,7 +7,7 @@ icon: material/bookshelf
 ## Додаткові матеріали до курсу
 
 * [Книга Python для мережевих інженерів](https://pyneng.readthedocs.io/uk/latest/)
-* [Завдання](https://github.com/natenka/pynenguk-tasks)
+* [Завдання](/tasks/)
 
 
 ## Документація та підручники

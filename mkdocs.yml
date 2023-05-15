@@ -64,7 +64,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/slack
-      link: https://join.slack.com/t/pynenguk/shared_invite/zt-1ulyc49it-gM1aZ87gkOL183SOOeIhDg
+      link: https://pyneng.io/course/slack/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCKTDqzgELjWO7wseP-OHNew
     - icon: fontawesome/brands/github
