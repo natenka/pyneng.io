@@ -145,6 +145,10 @@ nav:
     - tasks/pyneng.md
     # - tasks/pyneng-output.md
     - tasks/task-topic-table.md
+    - Підготовка вм/хоста:
+      - Linux: tasks/linux.md
+      - Windows: tasks/windows.md
+      - tasks/windows-gotchas.md
     - Редактори:
       - tasks/editors/index.md
       - tasks/editors/prepare.md
