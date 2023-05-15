@@ -123,8 +123,13 @@ nav:
     - book/Part_II.md
     - book/Part_III.md
   - Курс:
-    - course/schedule.md
-    - course/setup.md
+    - Лекції:
+      - course/schedule.md
+      - course/schedule_tasks.md
+      - course/theory.md
+      - course/theory-details.md
+    - Підготовка:
+      - course/setup.md
   - Завдання:
-    - tasks/index.md
+    - tasks/topic_task.md
     - tasks/pyneng.md
