@@ -1,8 +1,8 @@
 site_name: Python для мережевих інженерів
 
 # Repository
-repo_name: natenka/pyneng.io
-repo_url: https://github.com/natenka/pyneng.io
+#repo_name: natenka/pyneng.io
+#repo_url: https://github.com/natenka/pyneng.io
 
 theme:
   name: material
