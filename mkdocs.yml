@@ -49,6 +49,7 @@ theme:
 
 # Plugins
 plugins:
+  - search
   - git-revision-date-localized:
       enable_creation_date: true
 #pip install mkdocs-pdf-export-plugin
