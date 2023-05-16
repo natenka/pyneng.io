@@ -15,21 +15,21 @@ icon: material/calendar
  <tr>
     <td align="center">1</td>
     <td align="center">06.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/pyneng-intro/">Підготовка до курсу</a></td>
+    <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу</a></td>
     <td align="center">11 (00_intro)</td>
     <td>0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9</td>
  </tr>
  <tr>
     <td align="center">2</td>
     <td align="center">13.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/course-env/">Підготовка робочого середовища</a></td>
+    <td><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>
  <tr>
     <td align="center">3</td>
     <td align="center">20.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/tasks/">Робота з завданнями. Git/GitHub</a></td>
+    <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>

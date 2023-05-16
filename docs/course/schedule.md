@@ -19,17 +19,17 @@ icon: material/calendar-text
  <tr>
     <td align="center">1</td>
     <td align="center">06.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/pyneng-intro/">Підготовка до курсу</a></td>
+    <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу</a></td>
  </tr>
  <tr>
     <td align="center">2</td>
     <td align="center">13.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/course-env/">Підготовка робочого середовища</a></td>
+    <td><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
  </tr>
  <tr>
     <td align="center">3</td>
     <td align="center">20.05.23</td>
-    <td><a href="https://pynenguk.natenka.io/course/tasks/">Робота з завданнями. Git/GitHub</a></td>
+    <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
  </tr>
  <tr>
     <td align="center">4</td>

@@ -8,3 +8,9 @@
 
 * [Розклад](schedule)
 * [Календар](calendar)
+
+Стежити за анонсами:
+
+* [slack](https://pyneng.io/course/slack/)
+* [telegram](https://t.me/pynenguk)
+* [youtube](https://www.youtube.com/@pynenguk/community)

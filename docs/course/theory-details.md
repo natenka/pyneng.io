@@ -45,7 +45,7 @@ icon: material/video
 * [05. Оновлення завдань та тестів за допомогою pyneng](https://youtu.be/qwhlUPLtE60)
 * [06. Міні-завдання в pyneng-quiz (pquiz)](https://youtu.be/LBI2I5fMrAQ)
 
-## Окремі playlist на теми, які розглядаються в різних розділах
+## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
 
