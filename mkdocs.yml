@@ -1,4 +1,5 @@
 site_name: Python для мережевих інженерів
+site_url: https://pyneng.io/
 
 # Repository
 #repo_name: natenka/pyneng.io
@@ -34,20 +35,27 @@ theme:
     - search.suggest
     - toc.follow
   palette:
-  - media: '(prefers-color-scheme: light)'
-    scheme: default
-    primary: teal
-    accent: amber
-    toggle:
-      icon: material/lightbulb
-      name: Switch to dark mode
-  - media: '(prefers-color-scheme: dark)'
-    scheme: slate
-    primary: teal
-    accent: amber
-    toggle:
-      icon: material/lightbulb-outline
-      name: Switch to light mode
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 
 # Plugins
@@ -57,7 +65,7 @@ plugins:
       enable_creation_date: true
 # https://github.com/orzih/mkdocs-with-pdf
 #pip install mkdocs-with-pdf
-#- with-pdf
+#  - with-pdf
 
 # Customization
 extra:
