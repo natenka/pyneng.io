@@ -45,6 +45,6 @@ $
 
 При переході до репозиторію Git:
 
-![git_prompt](assets/images/setup_prompt.png)
+![git_prompt](/assets/images/setup_prompt.png)
 
 
