@@ -55,10 +55,9 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
-#pip install mkdocs-pdf-export-plugin
-# pdf export
-#  - pdf-export:
-#      combined: true
+# https://github.com/orzih/mkdocs-with-pdf
+#pip install mkdocs-with-pdf
+#- with-pdf
 
 # Customization
 extra:
