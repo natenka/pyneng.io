@@ -46,7 +46,7 @@ $ pquiz
 
 Це означає, що вам треба пройти такі питання в утиліті:
 
-![pquiz_04_select](https://raw.githubusercontent.com/natenka/pyneng.io/main/docs/assets/images/pquiz_main_select.png?token=GHSAT0AAAAAACCU35LBY4FFNRGGYBF7BF64ZDER5EA)
+![pquiz_04_select](/assets/images/pquiz_main_select.png)
 
 ## Встановити модуль
 
