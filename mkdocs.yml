@@ -189,6 +189,7 @@ nav:
     - tasks/pyneng.md
     # - tasks/pyneng-output.md
     - tasks/task-topic-table.md
+    - Запитання: tasks/quiz.md
     - Підготовка вм/хоста:
       - Linux: tasks/linux.md
       - Windows: tasks/windows.md
@@ -198,5 +199,3 @@ nav:
       - tasks/editors/prepare.md
       - tasks/editors/thonny.md
       - tasks/editors/vim.md
-  - Запитання:
-    - quiz/index.md
