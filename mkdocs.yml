@@ -198,3 +198,5 @@ nav:
       - tasks/editors/prepare.md
       - tasks/editors/thonny.md
       - tasks/editors/vim.md
+  - Запитання:
+    - quiz/index.md
