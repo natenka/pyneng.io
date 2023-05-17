@@ -45,6 +45,6 @@ $
 
 При переході до репозиторію Git:
 
-.. figure:: https://raw.githubusercontent.com/natenka/PyNEng/master/images/git/setup_prompt.png
+![git_prompt](assets/images/setup_prompt.png)
 
 

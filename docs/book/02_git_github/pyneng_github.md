@@ -1,6 +1,7 @@
 # Робота з репозиторієм прикладів
 
-Усі приклади з лекцій [курсу](https://pynenguk.natenka.io/course/) викладено в окремому `репозиторії](https://github.com/natenka/pynenguk-examples).
+Усі приклади з лекцій [курсу](https://pynenguk.natenka.io/course/) викладено в
+окремому [репозиторії](https://github.com/natenka/pynenguk-examples).
 
 ## Копіювання репозиторію з GitHub
 

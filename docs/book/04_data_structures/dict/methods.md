@@ -5,7 +5,7 @@
 Метод clear дозволяє очистити словник - видалити всі елементи:
 
 ```python
-In [1]: london = {'name': 'London1', 'location': 'London Str'}
+In [1]: london = {'name': 'London1', 'location': 'Globe Str'}
 
 In [2]: london.clear()
 
@@ -18,7 +18,7 @@ Out[3]: {}
 Метод ``copy`` створює копію словника:
 
 ```python
-In [10]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [10]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [11]: london2 = london.copy()
 
@@ -40,7 +40,7 @@ Out[15]: 'Cisco'
 помилка:
 
 ```python
-In [16]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [16]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [17]: london['ios']
 ---------------------------------------------------------------------------
@@ -54,7 +54,7 @@ KeyError: 'ios'
 Метод ``get`` замість помилки повертає ``None``.
 
 ```python
-In [18]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [18]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [19]: print(london.get('ios'))
 None
@@ -73,16 +73,16 @@ Ooops
 Методи ``keys``, ``values``, ``items``:
 
 ```python
-In [24]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [24]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [25]: london.keys()
 Out[25]: dict_keys(['name', 'location', 'vendor'])
 
 In [26]: london.values()
-Out[26]: dict_values(['London1', 'London Str', 'Cisco'])
+Out[26]: dict_values(['London1', 'Globe Str', 'Cisco'])
 
 In [27]: london.items()
-Out[27]: dict_items([('name', 'London1'), ('location', 'London Str'), ('vendor', 'Cisco')])
+Out[27]: dict_items([('name', 'London1'), ('location', 'Globe Str'), ('vendor', 'Cisco')])
 ```
 
 Всі три методи повертають спеціальні об'єкти view, які відображають ключі,
@@ -95,7 +95,7 @@ Out[27]: dict_items([('name', 'London1'), ('location', 'London Str'), ('vendor',
 На прикладі методу keys:
 
 ```python
-In [28]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [28]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [29]: keys = london.keys()
 
@@ -129,12 +129,12 @@ Out[34]: ['name', 'location', 'vendor', 'ip']
 Видалити ключ і значення:
 
 ```python
-In [35]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [35]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [36]: del london['name']
 
 In [37]: london
-Out[37]: {'location': 'London Str', 'vendor': 'Cisco'}
+Out[37]: {'location': 'Globe Str', 'vendor': 'Cisco'}
 ```
 
 ## ``update``
@@ -142,12 +142,12 @@ Out[37]: {'location': 'London Str', 'vendor': 'Cisco'}
 Метод update дозволяє додавати до словника вміст іншого словника:
 
 ```python
-In [38]: r1 = {'name': 'London1', 'location': 'London Str'}
+In [38]: r1 = {'name': 'London1', 'location': 'Globe Str'}
 
 In [39]: r1.update({'vendor': 'Cisco', 'ios':'15.2'})
 
 In [40]: r1
-Out[40]: {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco', 'ios': '15.2'}
+Out[40]: {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco', 'ios': '15.2'}
 ```
 
 Аналогічним чином можна оновити значення:
@@ -158,7 +158,7 @@ In [41]: r1.update({'name': 'london-r1', 'ios': '15.4'})
 In [42]: r1
 Out[42]:
 {'name': 'london-r1',
- 'location': 'London Str',
+ 'location': 'Globe Str',
  'vendor': 'Cisco',
  'ios': '15.4'}
 ```
@@ -169,7 +169,7 @@ Out[42]:
 ключ зі значенням ``None``.
 
 ```python
-In [21]: london = {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco'}
+In [21]: london = {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco'}
 
 In [22]: ios = london.setdefault('ios')
 
@@ -177,7 +177,7 @@ In [23]: print(ios)
 None
 
 In [24]: london
-Out[24]: {'name': 'London1', 'location': 'London Str', 'vendor': 'Cisco', 'ios': None}
+Out[24]: {'name': 'London1', 'location': 'Globe Str', 'vendor': 'Cisco', 'ios': None}
 ```
 
 Якщо ключ є, setdefault повертає відповідне значення:
@@ -198,7 +198,7 @@ Cisco3580
 In [28]: london
 Out[28]:
 {'name': 'London1',
- 'location': 'London Str',
+ 'location': 'Globe Str',
  'vendor': 'Cisco',
  'ios': None,
  'model': 'Cisco3580'}

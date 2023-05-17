@@ -21,7 +21,7 @@
 
 > Так як для повноцінного пояснення f-рядків, треба показувати приклади з
 > циклами та роботою з об'єктами, які ще не розглядалися, ця тема
-> розглядається у розділі :ref:`f_string`.
+> розглядається у розділі FIX REF
 
 
 ## Форматування рядків із методом format
@@ -75,11 +75,11 @@ In [5]: print("{:15} {:15} {:15}".format(vlan, mac, intf))
 
 Приклади вирівнювання
 
-.. figure:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/04_str_format_align_all_left.png
+![git](/assets/images/04_str_format_align_all_left.png)
 
-.. figure:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/04_str_format_align_all_right.png
+![git](/assets/images/04_str_format_align_all_right.png)
 
-.. figure:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/04_str_format_align_l_r_r.png
+![git](/assets/images/04_str_format_align_l_r_r.png)
 
 Шаблон може бути багаторядковим:
 

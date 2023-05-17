@@ -45,7 +45,7 @@ $ source new/pyneng/bin/activate
 $ deactivate
 ```
 
-Докладніше про модуль venv у `документації <https://docs.python.org/3/library/venv.html#module-venv>`__.
+Докладніше про модуль venv у [документації](https://docs.python.org/3/library/venv.html#module-venv).
 
 ### Встановлення пакетів у віртуальному оточенні
 
@@ -76,7 +76,7 @@ Cleaning up...
 $ python
 >>> import simplejson
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in](module>
 ModuleNotFoundError: No module named 'simplejson'
 >>> 
 ```
