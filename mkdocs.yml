@@ -128,7 +128,7 @@ nav:
   - Книга:
     - book/index.md
     - book/links.md
-    - Основи Python:
+    - Підготовка:
       - 1. Підготовка до роботи:
         - book/01_intro/index.md
         - book/01_intro/work_env.md
@@ -147,6 +147,7 @@ nav:
         - book/02_git_github/git_github_changes.md
         - book/02_git_github/pyneng_github.md
         - book/02_git_github/further_reading.md
+    - Основи Python:
       - 3. Початок роботи з Python:
         - book/03_start/index.md
         - book/03_start/syntax.md
