@@ -8,6 +8,11 @@ Git – це розподілена система контролю версій
 * скасовувати внесені зміни
 * реєструвати, хто та коли зробив зміни
 
+
+![git_basics](https://pyneng.io/assets/images/git_light.png#only-light)
+![git_basics](https://pyneng.io/assets/images/git_dark.png#only-dark)
+
+
 Установка Git:
 
 ```
