@@ -50,7 +50,7 @@ apt-get install graphviz
 Топологія може бути довільною. Приклад топології:
 
 
-![gns3_network](/assets/images/gns3_network.png)
+![gns3_network](https://pyneng.io/assets/images/gns3_network.png)
 
 
 Базова конфігурація:

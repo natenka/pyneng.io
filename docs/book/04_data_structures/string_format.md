@@ -75,11 +75,11 @@ In [5]: print("{:15} {:15} {:15}".format(vlan, mac, intf))
 
 Приклади вирівнювання
 
-![git](/assets/images/04_str_format_align_all_left.png)
+![git](https://pyneng.io/assets/images/04_str_format_align_all_left.png)
 
-![git](/assets/images/04_str_format_align_all_right.png)
+![git](https://pyneng.io/assets/images/04_str_format_align_all_right.png)
 
-![git](/assets/images/04_str_format_align_l_r_r.png)
+![git](https://pyneng.io/assets/images/04_str_format_align_l_r_r.png)
 
 Шаблон може бути багаторядковим:
 
