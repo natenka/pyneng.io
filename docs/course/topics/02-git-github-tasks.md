@@ -17,6 +17,7 @@ Git/GitHub:
 * [01. Що таке Git/Github](https://youtu.be/OP-vE5wrrzc)
 * [02. Базові налаштування Git](https://youtu.be/-sj55zVhoRU)
 * [03. Основи роботи з Git (локальна робота)](https://youtu.be/QE03X5nC4vM)
+* [04. Робота з Git та Github](https://youtu.be/2rcoYs3UZDA)
 
 
 ## Варіанти роботи з завданнями

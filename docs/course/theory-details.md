@@ -45,6 +45,14 @@ icon: material/video
 * [05. Оновлення завдань та тестів за допомогою pyneng](https://youtu.be/qwhlUPLtE60)
 * [06. Міні-завдання в pyneng-quiz (pquiz)](https://youtu.be/LBI2I5fMrAQ)
 
+
+Git/GitHub:
+
+* [01. Що таке Git/Github](https://youtu.be/OP-vE5wrrzc)
+* [02. Базові налаштування Git](https://youtu.be/-sj55zVhoRU)
+* [03. Основи роботи з Git (локальна робота)](https://youtu.be/QE03X5nC4vM)
+* [04. Робота з Git та Github](https://youtu.be/2rcoYs3UZDA)
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
