@@ -4,7 +4,7 @@ icon: material/video
 
 # Посилання на кожне відео
 
-### [Підготовка](https://youtube.com/playlist?list=PLlwMBlO5_y3SExAkPnBREf7FT4nLyT9NY)
+### [00: Підготовка до курсу](https://youtube.com/playlist?list=PLlwMBlO5_y3SExAkPnBREf7FT4nLyT9NY)
 
 * [01. Теми](https://youtu.be/gm9qBfFrxII)
 * [02. Сайт replit.com](https://youtu.be/5iLqTdQhLbc)
@@ -36,7 +36,7 @@ icon: material/video
 * [05. Редактор Thonny. Основи](https://youtu.be/AM9cw6a7mzE)
 
 
-### [02 Робота з завданнями](https://youtube.com/playlist?list=PLlwMBlO5_y3QAUs4YSkFwBH-8D_HsBVX_)
+### [02: Робота з завданнями](https://youtube.com/playlist?list=PLlwMBlO5_y3QAUs4YSkFwBH-8D_HsBVX_)
 
 * [01. Варіанти роботи із завданнями](https://youtu.be/zcsWejckY-c)
 * [02. Коротко про утиліту pyneng](https://youtu.be/KtRXkAEKez8)
