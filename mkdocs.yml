@@ -168,53 +168,53 @@ nav:
     - book/links.md
     - Підготовка:
       - 1. Підготовка до роботи:
-        - book/01_intro/index.md
-        - book/01_intro/work_env.md
-        - book/01_intro/os_and_editor.md
-        - book/01_intro/pip.md
-        - book/01_intro/venv.md
-        - book/01_intro/check_python.md
-        - book/01_intro/further_reading.md
+        - book/01-intro/index.md
+        - book/01-intro/work_env.md
+        - book/01-intro/os_and_editor.md
+        - book/01-intro/pip.md
+        - book/01-intro/venv.md
+        - book/01-intro/check_python.md
+        - book/01-intro/further_reading.md
       - 2. Використання Git та GitHub:
-        - book/02_git_github/index.md
-        - book/02_git_github/git_basics.md
-        - book/02_git_github/git_basics_bash_status.md
-        - book/02_git_github/git_basics_commands.md
-        - book/02_git_github/git_basics_additional.md
-        - book/02_git_github/git_github_auth.md
-        - book/02_git_github/git_github_changes.md
-        - book/02_git_github/pyneng_github.md
-        - book/02_git_github/further_reading.md
+        - book/02-git-github/index.md
+        - book/02-git-github/git_basics.md
+        - book/02-git-github/git_basics_bash_status.md
+        - book/02-git-github/git_basics_commands.md
+        - book/02-git-github/git_basics_additional.md
+        - book/02-git-github/git_github_auth.md
+        - book/02-git-github/git_github_changes.md
+        - book/02-git-github/pyneng_github.md
+        - book/02-git-github/further_reading.md
     - Основи Python:
       - 3. Початок роботи з Python:
-        - book/03_start/index.md
-        - book/03_start/syntax.md
-        - book/03_start/ipython.md
-        - book/03_start/ipython_magic.md
-        - book/03_start/variables.md
+        - book/03-start/index.md
+        - book/03-start/syntax.md
+        - book/03-start/ipython.md
+        - book/03-start/ipython_magic.md
+        - book/03-start/variables.md
       - 4. Типи даних у Python:
-        - book/04_data_structures/index.md
-        - book/04_data_structures/numbers.md
+        - book/04-data-structures/index.md
+        - book/04-data-structures/numbers.md
         - Рядки (Strings):
-          - book/04_data_structures/string/index.md
-          - book/04_data_structures/string/methods.md
-          - book/04_data_structures/string/literal_concatenation.md
+          - book/04-data-structures/string/index.md
+          - book/04-data-structures/string/methods.md
+          - book/04-data-structures/string/literal_concatenation.md
         - Список (List):
-          - book/04_data_structures/list/index.md
-          - book/04_data_structures/list/methods.md
+          - book/04-data-structures/list/index.md
+          - book/04-data-structures/list/methods.md
         - Словник (Dictionary):
-          - book/04_data_structures/dict/index.md
-          - book/04_data_structures/dict/methods.md
-          - book/04_data_structures/dict/create.md
-        - book/04_data_structures/tuple.md
-        - book/04_data_structures/set.md
-        - book/04_data_structures/boolean.md
-        - book/04_data_structures/string_format.md
-        - book/04_data_structures/convert_type.md
-        - book/04_data_structures/check_type.md
-        - book/04_data_structures/method_chaining.md
-        - book/04_data_structures/sorting.md
-        - book/04_data_structures/further_reading.md
+          - book/04-data-structures/dict/index.md
+          - book/04-data-structures/dict/methods.md
+          - book/04-data-structures/dict/create.md
+        - book/04-data-structures/tuple.md
+        - book/04-data-structures/set.md
+        - book/04-data-structures/boolean.md
+        - book/04-data-structures/string_format.md
+        - book/04-data-structures/convert_type.md
+        - book/04-data-structures/check_type.md
+        - book/04-data-structures/method_chaining.md
+        - book/04-data-structures/sorting.md
+        - book/04-data-structures/further_reading.md
   - Курс:
     - course/index.md
     - Лекції:
