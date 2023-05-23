@@ -177,6 +177,7 @@ nav:
         - book/01-intro/further_reading.md
       - 2. Робота із завданнями:
         - book/02-git-github-tasks/index.md
+        - Завдання: tasks/index.md
         - Використання Git та GitHub:
           - book/02-git-github-tasks/git/index.md
           - book/02-git-github-tasks/git/basics.md
