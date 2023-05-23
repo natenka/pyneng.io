@@ -176,15 +176,15 @@ nav:
         - book/01-intro/check_python.md
         - book/01-intro/further_reading.md
       - 2. Використання Git та GitHub:
-        - book/02-git-github/index.md
-        - book/02-git-github/git_basics.md
-        - book/02-git-github/git_basics_bash_status.md
-        - book/02-git-github/git_basics_commands.md
-        - book/02-git-github/git_basics_additional.md
-        - book/02-git-github/git_github_auth.md
-        - book/02-git-github/git_github_changes.md
-        - book/02-git-github/pyneng_github.md
-        - book/02-git-github/further_reading.md
+        - book/02-git-github-tasks/index.md
+        - book/02-git-github-tasks/git_basics.md
+        - book/02-git-github-tasks/git_basics_bash_status.md
+        - book/02-git-github-tasks/git_basics_commands.md
+        - book/02-git-github-tasks/git_basics_additional.md
+        - book/02-git-github-tasks/git_github_auth.md
+        - book/02-git-github-tasks/git_github_changes.md
+        - book/02-git-github-tasks/pyneng_github.md
+        - book/02-git-github-tasks/further_reading.md
     - Основи Python:
       - 3. Початок роботи з Python:
         - book/03-start/index.md
