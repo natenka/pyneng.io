@@ -165,7 +165,6 @@ nav:
   - " ": index.md
   - Книга:
     - book/index.md
-    - book/links.md
     - Підготовка:
       - 1. Підготовка до роботи:
         - book/01-intro/index.md
