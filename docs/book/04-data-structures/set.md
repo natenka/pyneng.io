@@ -109,6 +109,8 @@ Out[10]: set()
 Множини корисні тим, що з ними можна робити різні операції і знаходити
 об'єднання множин, перетин.
 
+![set](https://pyneng.io/assets/images/set_operations_union_intersection.png)
+
 Об'єднання множин можна отримати за допомогою методу ``union`` або оператора ``|``:
 
 ```python
@@ -134,4 +136,7 @@ Out[7]: {100}
 In [8]: vlans1 & vlans2
 Out[8]: {100}
 ```
+
+![set](https://pyneng.io/assets/images/set_operations_differences.png)
+
 
