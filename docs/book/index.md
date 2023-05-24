@@ -4,10 +4,10 @@
 
 	Переклад книги йтиме приблизно за [розкладом курсу](/course/schedule/).
 
-Інші переклади книги:
+    Інші переклади книги:
 
-* [Python for Network Engineers](https://pyneng.readthedocs.io/en/latest/)
-* [Python для сетевых инженеров](https://pyneng.readthedocs.io/ru/latest/)
+    * [Python for Network Engineers](https://pyneng.readthedocs.io/en/latest/)
+    * [Python для сетевых инженеров](https://pyneng.readthedocs.io/ru/latest/)
 
 З одного боку, книга досить базова, щоб її міг освоїти будь-який бажаючий,
 а з іншого боку, у книзі розглядаються всі основні теми, які дозволять зростати

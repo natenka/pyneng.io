@@ -218,6 +218,22 @@ nav:
         - book/04-data-structures/method_chaining.md
         - book/04-data-structures/sorting.md
         - book/04-data-structures/further_reading.md
+      - 5. Створення базових скриптів:
+        - book/05-basic-scripts/index.md
+        - book/05-basic-scripts/executable.md
+        - book/05-basic-scripts/args.md
+        - book/05-basic-scripts/user-input.md
+      - 6. Контроль перебігу програми:
+        - book/06-control-structures/index.md
+        - book/06-control-structures/if-else.md
+        - book/06-control-structures/for.md
+        - book/06-control-structures/for-in-for.md
+        - book/06-control-structures/for-if.md
+        - book/06-control-structures/while.md
+        - book/06-control-structures/break-continue-pass.md
+        - book/06-control-structures/for-while-else.md
+        - book/06-control-structures/exceptions.md
+        - book/06-control-structures/further-reading.md
   - Курс:
     - course/index.md
     - Лекції:
