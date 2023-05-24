@@ -50,8 +50,11 @@ Git/GitHub:
 
 * [01. Що таке Git/Github](https://youtu.be/OP-vE5wrrzc)
 * [02. Базові налаштування Git](https://youtu.be/-sj55zVhoRU)
-* [03. Основи роботи з Git (локальна робота)](https://youtu.be/QE03X5nC4vM)
-* [04. Робота з Git та Github](https://youtu.be/2rcoYs3UZDA)
+* [03. Команди для роботи з Git (локальна робота)](https://youtu.be/VNz6dJ6MoN4)
+* [04. Файл .gitignore](https://youtu.be/Euf6Lj0285s)
+* [05. Відображення статусу репозиторію](https://youtu.be/gthM2msyFVQ)
+* [06. Термінологія Git, основи роботи (локальна робота)](https://youtu.be/QLJ47azp668)
+* [07. Робота з Git та Github](https://youtu.be/2rcoYs3UZDA)
 
 ## Інші плейлисти
 
