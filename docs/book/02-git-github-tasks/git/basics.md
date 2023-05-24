@@ -21,7 +21,15 @@ Git – це розподілена система контролю версій
 * індекс (staging area) - що буде збережено у наступному коміті
 * директорія Git (.git) - тут система зберігає метадані та базу даних об’єктів вашого проекту
 
-![git_basics](https://pyneng.io/assets/images/git.png)
+``` mermaid
+sequenceDiagram
+  participant WD as Робочий каталог
+  participant SA as Індекс
+  participant G as Каталог .git
+  G->>WD: git checkout
+  WD->>SA: git add
+  SA->>G: git commit
+```
 
 ## Установка Git
 
