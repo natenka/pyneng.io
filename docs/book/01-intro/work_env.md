@@ -98,7 +98,7 @@ alias exec bgp sh run | s ^router bgp
 ```
 
 
-За бажання можна налаштувати [EEM applet](http://xgu.ru/wiki/Embedded_Event_Manager)
+За бажання можна налаштувати EEM applet
 для відображення команд, які вводить користувач:
 
 ```

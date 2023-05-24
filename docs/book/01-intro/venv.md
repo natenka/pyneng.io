@@ -15,28 +15,28 @@
 створення віртуальних оточень:
 
 ```
-$ python3.7 -m venv ~/venv/pyneng
+$ python3.11 -m venv ~/.venv/pyneng
 ```
 
-Замість python3.7 можна використовувати python або python3, залежно від того,
-як встановлено Python 3.7. Ця команда створює вказаний каталог і всі необхідні
+Замість python3.11 можна використовувати python або python3, залежно від того,
+як встановлено Python 3.11. Ця команда створює вказаний каталог і всі необхідні
 каталоги всередині нього, якщо вони створені.
 
 Команда створює таку структуру каталогів:
 
 ```
-$ ls -ls ~/venv/pyneng
+$ ls -ls ~/.venv/pyneng
 total 16
-4 drwxr-xr-x 2 vagrant vagrant 4096 Aug 21 14:50 bin
-4 drwxr-xr-x 2 vagrant vagrant 4096 Aug 21 14:50 include
-4 drwxr-xr-x 3 vagrant vagrant 4096 Aug 21 14:50 lib
-4 -rw-r--r-- 1 vagrant vagrant   75 Aug 21 14:50 pyvenv.cfg
+4 drwxr-xr-x 2 nata nata 4096 Aug 21 14:50 bin
+4 drwxr-xr-x 2 nata nata 4096 Aug 21 14:50 include
+4 drwxr-xr-x 3 nata nata 4096 Aug 21 14:50 lib
+4 -rw-r--r-- 1 nata nata   75 Aug 21 14:50 pyvenv.cfg
 ```
 
 Для переходу у віртуальне оточення треба виконати команду:
 
 ```
-$ source new/pyneng/bin/activate
+$ source ~/.venv/pyneng/bin/activate
 ```
 
 Для виходу з віртуального оточення використовується команда deactivate:
@@ -64,7 +64,7 @@ Cleaning up...
 (pyneng)$ python
 >>> import simplejson
 >>> simplejson
-<module 'simplejson' from '/home/vagrant/venv/pyneng-py3-7/lib/python3.7/site-packages/simplejson/__init__.py'>
+<module 'simplejson' from '/home/nata/.venv/pyneng/lib/python3.11/site-packages/simplejson/__init__.py'>
 >>>
 ```
 

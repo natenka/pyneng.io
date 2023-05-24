@@ -28,9 +28,9 @@ pip install ipython
 
 ```
 $ ipython
-Python 3.7.3 (default, May 13 2019, 15:44:23)
+Python 3.11.1 (main, Dec 30 2022, 10:30:23) [GCC 10.2.1 20210110]
 Type 'copyright', 'credits' or 'license' for more information
-IPython 7.5.0 -- An enhanced Interactive Python. Type '?' for help.
+IPython 8.13.2 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]:
 ```

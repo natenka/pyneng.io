@@ -8,7 +8,7 @@
 
 ```
 $ pip --version
-pip 19.1.1 from /home/vagrant/venv/pyneng-py3-7/lib/python3.7/site-packages/pip (python 3.7)
+pip 23.1.2 from /home/nata/.venv/pyneng/lib/python3.11/site-packages/pip (python 3.11)
 ```
 
 Якщо команда видала помилку, то pip не встановлений. Установка pip описана у
@@ -34,11 +34,16 @@ $ pip uninstall tabulate
 $ pip install --upgrade tabulate
 ```
 
+або так:
+```
+$ pip install -U tabulate
+```
+
 ## pip або pip3
 
 Залежно від того, як встановлений та налаштований Python у системі, може
 знадобитися використовувати pip3 замість pip. Щоб перевірити, який варіант
-використовується, виконайте команду [[pip --version[[.
+використовується, виконайте команду ``pip --version``.
 
 Варіант, коли pip відповідає Python 2.7:
 
@@ -47,11 +52,18 @@ $ pip --version
 pip 9.0.1 from /usr/local/lib/python2.7/dist-packages (python 2.7)
 ```
 
-Варіант, коли pip3 відповідає Python 3.7:
+На сучасних версіях ОС, найімовірніше, системний Python буде версії 3.x. Наприклад, для Debian bullseye:
+
+```
+$ pip --version
+pip 20.3.4 from /usr/lib/python3/dist-packages/pip (python 3.9)
+```
+
+Варіант, коли pip3 відповідає Python 3.9:
 
 ```
 $ pip3 --version
-pip 19.1.1 from /home/vagrant/venv/pyneng-py3-7/lib/python3.7/site-packages/pip (python 3.7)
+pip 20.3.4 from /usr/lib/python3/dist-packages/pip (python 3.9)
 ```
 
 Якщо в системі використовується pip3, то щоразу, коли в книзі встановлюється
@@ -60,11 +72,9 @@ pip 19.1.1 from /home/vagrant/venv/pyneng-py3-7/lib/python3.7/site-packages/pip 
 Також можна використати альтернативний варіант виклику pip:
 
 ```
-$ python3.7 -m pip install tabulate
+$ python3.11 -m pip install tabulate
 ```
 
 Таким чином, завжди зрозуміло для якої версії Python встановлюється пакет.
-
-
 
 
