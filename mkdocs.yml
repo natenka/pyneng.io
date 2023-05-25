@@ -264,3 +264,13 @@ nav:
       - tasks/editors/prepare.md
       - tasks/editors/thonny.md
       - tasks/editors/vim.md
+  - Довідник Python:
+    - reference/index.md
+    - Типи даних у Python:
+      - reference/data_types.md
+      - Рядки (Strings):
+        - reference/string/index.md
+      - Список (List):
+        - reference/list/index.md
+      - Словник (Dictionary):
+        - reference/dict/index.md
