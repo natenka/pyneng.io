@@ -32,7 +32,7 @@ Out[2]: ['r', 'o', 'u', 't', 'e', 'r']
 ```
 
 List працює тільки з [ітерованими об'єктами](/reference/protocols/iterable).
-Якщо ви передасте list неітерований об’єкт, буде згенеровано [виняток TypeError](/reference/exceptions/):
+Якщо ви передасте list не ітерований об’єкт, буде згенеровано [виняток TypeError](/reference/exceptions/):
 
 ```python
 In [3]: list(100)
