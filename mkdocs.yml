@@ -61,6 +61,7 @@ theme:
 
 # Plugins
 plugins:
+  - blog
   - search
   - git-revision-date-localized:
       enable_creation_date: true
@@ -287,3 +288,5 @@ nav:
       - reference/protocols/index.md
       - reference/protocols/iterable.md
 
+  - Блог:
+    - blog/index.md
