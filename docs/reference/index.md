@@ -5,4 +5,6 @@
 
 !!! note
 
-	Ідея і структура довідника взята у Jakub Przywóski [Python Reference (The Right Way)](https://python-reference.readthedocs.io/en/latest/index.html).
+    Ідея довідника взята у Jakub Przywóski [Python Reference (The Right
+    Way)](https://python-reference.readthedocs.io/en/latest/index.html). Це
+    довідник для старої версії Python 2.7.

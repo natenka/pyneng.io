@@ -6,31 +6,26 @@
 * змінюваний упорядкований тип даних
 
 
-```python
-vlans = [10, 20, 30, 77]
-commands = ["interface Gi0/1", "ip address 10.1.1.1 255.255.255.0"]
-list3 = [1, 20, 4.0, 'word']
-```
-
 ## Створення списку
 
-[літерал](/reference/list/literal):
+[літерал](/reference/list/literal)
 
 ```python
-In [1]: vlans = [10, 20, 30, 50]
+vlans = [10, 20, 30, 50]
 ```
 
 
 [list](/reference/list/list)
 
 ```python
-In [2]: list1 = list('router')
-
-In [3]: print(list1)
-['r', 'o', 'u', 't', 'e', 'r']
+list1 = list('router')
 ```
 
 [list comprehensions](/reference/comprehensions/list)
+
+```python
+num_as_str = [str(num) for num in range(10)]
+```
 
 ## Методи
 

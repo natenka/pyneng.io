@@ -267,10 +267,16 @@ nav:
   - Довідник Python:
     - reference/index.md
     - Типи даних у Python:
-      - reference/data_types.md
+      - reference/data_types/index.md
       - Рядки (Strings):
         - reference/string/index.md
       - Список (List):
         - reference/list/index.md
+        - Створення списку:
+          - reference/list/literal.md
+          - reference/list/list.md
       - Словник (Dictionary):
         - reference/dict/index.md
+    - Comprehensions, generator expression:
+      - reference/comprehensions/index.md
+      - reference/comprehensions/list.md
