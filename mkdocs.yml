@@ -280,3 +280,9 @@ nav:
     - Comprehensions, generator expression:
       - reference/comprehensions/index.md
       - reference/comprehensions/list.md
+    - Винятки:
+      - reference/exceptions/index.md
+    - Протоколи:
+      - reference/protocols/index.md
+      - reference/protocols/iterable.md
+

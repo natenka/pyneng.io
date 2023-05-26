@@ -15,18 +15,31 @@ The argument must be an iterable if specified.
 Type:           type
 ```
 
-## Приклад
-
-```python
-In [2]: list1 = list('router')
-
-In [3]: list1
-Out[3]: ['r', 'o', 'u', 't', 'e', 'r']
-```
+## Приклади
 
 Створення порожнього списку (в Python для цього частіше
 використовується вираз `items = []`):
 
 ```python
 items = list()
+```
+
+Створення списку символів з рядку:
+
+```python
+In [2]: list('router')
+Out[2]: ['r', 'o', 'u', 't', 'e', 'r']
+```
+
+List працює тільки з [ітерованими об'єктами](/reference/protocols/iterable).
+Якщо ви передасте list неітерований об’єкт, буде згенеровано [виняток TypeError](/reference/exceptions/):
+
+```python
+In [3]: list(100)
+--------------------------------------------------------------------------
+TypeError                                Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 list(100)
+
+TypeError: 'int' object is not iterable
 ```
