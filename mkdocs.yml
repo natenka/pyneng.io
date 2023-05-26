@@ -275,6 +275,7 @@ nav:
         - Створення списку:
           - reference/list/literal.md
           - reference/list/list.md
+        - reference/list/methods.md
       - Словник (Dictionary):
         - reference/dict/index.md
     - Comprehensions, generator expression:
