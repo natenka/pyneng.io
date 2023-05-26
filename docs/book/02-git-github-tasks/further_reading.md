@@ -14,3 +14,10 @@
 -  [Лекції "Система контролю версій Git" (Попелюха)](https://youtube.com/playlist?list=PL9mn2EBC_SSyu6I4DQ9-r1vm_CX4jaPWf)
 -  [CRLF vs. LF: Normalizing Line Endings in Git](https://www.aleksandrhovhannisyan.com/blog/crlf-vs-lf-normalizing-line-endings-in-git/)
 -  [git/github guide. a minimal tutorial](http://kbroman.org/github_tutorial/) - мінімально необхідні знання для роботи з Git та GitHub
+
+
+Створення `.gitignore`:
+
+-  [.gitignore для Python](https://github.com/github/gitignore/blob/main/Python.gitignore)
+-  [Як ігнорувати файли](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files?platform=linux)
+-  [Синтаксис .gitignore](https://git-scm.com/docs/gitignore)
