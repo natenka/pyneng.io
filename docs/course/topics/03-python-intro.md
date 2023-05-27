@@ -10,9 +10,10 @@
 * [02. Коментарі](https://youtu.be/lmOIzV88IMA)
 * [03. Змінні](https://youtu.be/srk8WAnIGbQ)
 
-Терміни:
+Python:
 
 * [01. Об'єкт, функція, методи](https://youtu.be/xdCPmP7gxs0)
+* [03. Змінні є посиланнями на дані](https://youtu.be/jEjhzLbrnjU)
 
 
 ## Корисні посилання
