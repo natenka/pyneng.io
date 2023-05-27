@@ -127,7 +127,7 @@ TabError: inconsistent use of tabs and spaces in indentation
 Генерується у випадку виникнення синтаксичних помилок, пов’язаних із
 неправильним відступом.
 
-Код і відповідна помилка при виконанні:
+Код і відповідна помилка при виконанні (другий print має бути на одному рівні з print або for):
 
 ```python
 for i in range(10):
@@ -137,7 +137,7 @@ for i in range(10):
 IndentationError: unindent does not match any outer indentation level
 ```
 
-Код і відповідна помилка при виконанні:
+Код і відповідна помилка при виконанні (перший print має бути з відступом):
 
 ```python
 for i in range(10):
@@ -150,6 +150,8 @@ IndentationError: expected an indented block after 'for' statement on line 2
 ### SyntaxError
 
 Генерується у випадку виникнення синтаксичних помилок.
+
+В цьому випадку після range(10) не вистачає `:`
 
 ```python
     for i in range(10)
