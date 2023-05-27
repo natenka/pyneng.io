@@ -36,7 +36,7 @@ icon: material/calendar
  <tr>
     <td align="center">4</td>
     <td align="center">27.05.23</td>
-    <td>Типи даних в Python.</td>
+    <td><a href="https://pyneng.io/course/topics/03-python-intro/">Початок роботи з Python</a><br>Типи даних в Python.</td>
     <td align="center">11 (04_data_structures)</td>
     <td>4.0, 4.1, 4.2, 4.3, 4.6, 4.9</td>
  </tr>
