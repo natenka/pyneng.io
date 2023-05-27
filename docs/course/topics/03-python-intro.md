@@ -13,7 +13,7 @@
 Python:
 
 * [01. Об'єкт, функція, методи](https://youtu.be/xdCPmP7gxs0)
-* [03. Змінні є посиланнями на дані](https://youtu.be/jEjhzLbrnjU)
+* [03. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
 
 
 ## Корисні посилання
