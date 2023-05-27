@@ -1,19 +1,17 @@
 # Винятки
 
-## Вбудовані винятки
-
-Тут розглядаються кілька винятків які будуть часто генеруватися, в тому числі
-через помилки в коді.  Опис винятків спрощений, за повною інформацією та описом
+Тут розглядаються кілька вбудованих винятків які будуть часто генеруватися, в тому числі
+через помилки в коді.  Опис винятків спрощено, за повною інформацією та описом
 звертайтесь до [документації](https://docs.python.org/3/library/exceptions.html).
 
-### IndexError
-### KeyError
-### NameError
-### UnboundLocalError
+## IndexError
+## KeyError
+## NameError
+## UnboundLocalError
 
-### FileNotFoundError
+## FileNotFoundError
 
-### TypeError
+## TypeError
 
 Цей виняток генерується, коли операція або функція застосована до об'єкта невідповідного типу.
 
@@ -53,7 +51,7 @@ Cell In[1], line 1
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
-### ValueError
+## ValueError
 
 Генерується, коли операція або функція отримує аргумент, який має правильний
 тип, але невідповідне значення.
@@ -84,7 +82,7 @@ In [5]: int("ff", 16)
 Out[5]: 255
 ```
 
-### AttributeError
+## AttributeError
 
 Генерується, коли код звертається до атрибута, якого немає в об'єкті.
 
@@ -117,7 +115,7 @@ None
 ```
 
 
-### TabError
+## TabError
 
 Генерується, коли в коді для відступу використовуються і табуляція, і пробіл
 (мова саме про символи).
@@ -129,7 +127,7 @@ TabError: inconsistent use of tabs and spaces in indentation
 Виправити ситуацію можна заміною символу табуляції 4 пробілами.
 
 
-### IndentationError
+## IndentationError
 
 Генерується у випадку виникнення синтаксичних помилок, пов’язаних із
 неправильним відступом.
@@ -154,7 +152,7 @@ print(i)
 IndentationError: expected an indented block after 'for' statement on line 2
 ```
 
-### SyntaxError
+## SyntaxError
 
 Генерується у випадку виникнення синтаксичних помилок.
 
