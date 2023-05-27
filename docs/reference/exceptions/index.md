@@ -110,6 +110,53 @@ None
 ```
 
 
+### TabError
+
+Генерується, коли в коді для відступу використовуються і табуляція, і пробіл
+(мова саме про символи).
+
+```python
+TabError: inconsistent use of tabs and spaces in indentation
+```
+
+Виправити ситуацію можна заміною символу табуляції 4 пробілами.
+
+
+### IndentationError
+
+Генерується у випадку виникнення синтаксичних помилок, пов’язаних із
+неправильним відступом.
+
+Код і відповідна помилка при виконанні:
+
+```python
+for i in range(10):
+    print(i)
+  print(i)
+
+IndentationError: unindent does not match any outer indentation level
+```
+
+Код і відповідна помилка при виконанні:
+
+```python
+for i in range(10):
+print(i)
+    print(i)
+
+IndentationError: expected an indented block after 'for' statement on line 2
+```
+
+### SyntaxError
+
+Генерується у випадку виникнення синтаксичних помилок.
+
+```python
+    for i in range(10)
+                      ^
+SyntaxError: expected ':'
+```
+
 ## Ієрархія винятків
 
 ```
