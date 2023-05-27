@@ -191,11 +191,11 @@ nav:
         - book/02-git-github-tasks/further_reading.md
     - Основи Python:
       - 3. Початок роботи з Python:
-        - book/03-start/index.md
-        - book/03-start/syntax.md
-        - book/03-start/ipython.md
-        - book/03-start/ipython_magic.md
-        - book/03-start/variables.md
+        - book/03-python-intro/index.md
+        - book/03-python-intro/syntax.md
+        - book/03-python-intro/ipython.md
+        - book/03-python-intro/ipython_magic.md
+        - book/03-python-intro/variables.md
       - 4. Типи даних у Python:
         - book/04-data-structures/index.md
         - book/04-data-structures/numbers.md
@@ -245,6 +245,7 @@ nav:
       - course/topics/00-preparation.md
       - course/topics/01-course-env.md
       - course/topics/02-git-github-tasks.md
+      - course/topics/03-python-intro.md
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/calendar.md

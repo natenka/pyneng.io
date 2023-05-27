@@ -4,6 +4,25 @@
 
 ### TypeError
 
+```python
+In [1]: len(100)
+--------------------------------------------------------------------------
+TypeError                                Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 len(100)
+
+TypeError: object of type 'int' has no len()
+```
+
+```python
+In [2]: len("hello", "test")
+--------------------------------------------------------------------------
+TypeError                                Traceback (most recent call last)
+Cell In[2], line 1
+----> 1 len("hello", "test")
+
+TypeError: len() takes exactly one argument (2 given)
+```
 
 ## Ієрархія винятків
 
