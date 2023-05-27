@@ -8,7 +8,7 @@
 
 * [01. Відступи](https://youtu.be/fJOyedQ82Jo)
 * [02. Коментарі](https://youtu.be/lmOIzV88IMA)
-
+* [03. Змінні](https://youtu.be/srk8WAnIGbQ)
 
 Терміни:
 
