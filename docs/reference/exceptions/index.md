@@ -6,6 +6,13 @@
 через помилки в коді.  Опис винятків спрощений, за повною інформацією та описом
 звертайтесь до [документації](https://docs.python.org/3/library/exceptions.html).
 
+### IndexError
+### KeyError
+### NameError
+### UnboundLocalError
+
+### FileNotFoundError
+
 ### TypeError
 
 Цей виняток генерується, коли операція або функція застосована до об'єкта невідповідного типу.
