@@ -19,4 +19,4 @@ Python:
 ## Корисні посилання
 
 * Цей розділ в книзі [Початок роботи з Python](/book/03-python-intro)
-
+* [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
