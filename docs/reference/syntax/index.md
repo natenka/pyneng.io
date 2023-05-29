@@ -67,8 +67,22 @@ Python розпізнає наступні оператори
 <       >       <=      >=      ==      !=
 ```
 
-[Модуль operator – набір функцій, що відповідають операторам
-Python](https://docs.python.org/3/library/operator.html)
+Корисне:
+
+* [Модуль operator – набір функцій, що відповідають операторам Python](https://docs.python.org/3/library/operator.html)
+* Пріоритет операторів [Python operator precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence)
+
+### Логічні оператори and, or, not
+
+Логічні операції, упорядковані за зростанням пріоритету
+
+| Операція | Результат | Примітка |
+|----------|-----------|----------|
+| `x or y` | якщо x істинне, то x, інакше y | y обчислюється тільки якщо x хибне[^1] |
+| `x and y`| якщо x хибне, то x, інакше y | y обчислюється тільки якщо x істинне[^1] |
+| `not a`  | якщо x хибне, то True, інакше False |  |
+
+[^1]: [Обчислення за короткою схемою](https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B7%D0%B0_%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE%D1%8E_%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%8E)
 
 ## Літерали (literals)
 
@@ -128,3 +142,4 @@ data = {10, 20, 30, 50}        # множина
     ```python
     vlans = set()
     ```
+
