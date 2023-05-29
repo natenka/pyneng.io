@@ -270,6 +270,8 @@ nav:
       - tasks/editors/vim.md
   - Довідник Python:
     - reference/index.md
+    - Синтаксис Python:
+      - reference/syntax/index.md
     - Типи даних у Python:
       - reference/data_types/index.md
       - Рядки (Strings):
