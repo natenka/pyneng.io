@@ -39,13 +39,18 @@ In [1]: місто = "Київ"
 слова Python і не можуть використовуватися як звичайні ідентифікатори:
 
 ```
-False      await      else       import     pass
-None       break      except     in         raise
-True       class      finally    is         return
-and        continue   for        lambda     try
-as         def        from       nonlocal   while
-assert     del        global     not        with
-async      elif       if         or         yield
+False      del        lambda     
+None       elif       nonlocal   
+True       else       not        
+and        except     or         
+as         finally    pass       
+assert     for        raise      
+async      from       return     
+await      global     try        
+break      if         while      
+class      import     with       
+continue   in         yield      
+def        is                    
 ```
 
 !!! note
@@ -62,9 +67,13 @@ async      elif       if         or         yield
 Python розпізнає наступні оператори
 
 ```
-+       -       *       **      /       //      %      @
-<<      >>      &       |       ^       ~       :=
-<       >       <=      >=      ==      !=
++          @          :=         
+-          <<         <          
+*          >>         >          
+**         &          <=         
+/          |          >=         
+//         ^          ==         
+%          ~          !=         
 ```
 
 Корисне:
@@ -120,21 +129,18 @@ msg = f"He said his name is {name}."
 
 Літерали інших типів даних:
 
-```python
-data = []                      # порожній список
-data = [10, 20, 30, 50]        # список
-
-data = ()                      # порожній кортеж
-data = (10,)                   # кортеж з одним елементом
-data = (10, 20, 30, 50)        # кортеж
-data = 10,                     # кортеж з одним елементом
-data = 10, 20, 30, 50          # кортеж
-
-data = {}                      # порожній словник
-data = {"sw1": 11, "sw2": 12}  # словник
-
-data = {10, 20, 30, 50}        # множина
-```
+| Літерал    | Значення |
+|------------|----------------|
+| `#!python data = []`| порожній список |
+| `#!python data = [10, 20, 30, 50]`| список |
+| `#!python data = ()`| порожній кортеж |
+| `#!python data = (10,)`| кортеж з одним елементом |
+| `#!python data = (10, 20, 30, 50)`| кортеж |
+| `#!python data = 10,`| кортеж з одним елементом |
+| `#!python data = 10, 20, 30, 50`| кортеж |
+| `#!python data = {}`| порожній словник |
+| `#!python data = {"sw1": 11, "sw2": 12}`| словник |
+| `#!python data = {10, 20, 30, 50}`| множина |
 
 !!! note
 
