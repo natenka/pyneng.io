@@ -4,7 +4,6 @@ site_url: https://pyneng.io/
 # Repository
 #repo_name: natenka/pyneng.io
 #repo_url: https://github.com/natenka/pyneng.io
-
 theme:
   name: material
   language: uk
@@ -118,6 +117,10 @@ extra:
       link: https://github.com/natenka
     - icon: fontawesome/brands/telegram
       link: https://t.me/pynenguk
+  analytics:
+    provider: google
+    property: G-3WX9XBK91Y
+
 
 
 # Extensions
