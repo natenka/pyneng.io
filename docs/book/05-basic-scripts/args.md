@@ -43,6 +43,9 @@ spanning-tree bpduguard enable
 
 Аргументи, які були передані скрипту, підставляються як значення до шаблону.
 
+
+![argv](https://pyneng.io/assets/images/05_sys_argv.png)
+
 Тут треба пояснити кілька моментів:
 
 * argv – це список
