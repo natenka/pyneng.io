@@ -51,6 +51,18 @@ Cell In[1], line 1
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
+Приклад виконання операції яка не підтримується (file.close це True або False, а їх не можна викликати)
+
+```python
+In [3]: file.closed()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 file.closed()
+
+TypeError: 'bool' object is not callable
+```
+
 ## ValueError
 
 Генерується, коли операція або функція отримує аргумент, який має правильний
