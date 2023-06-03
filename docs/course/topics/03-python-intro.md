@@ -13,7 +13,9 @@
 Python:
 
 * [01. Об'єкт, функція, методи](https://youtu.be/xdCPmP7gxs0)
-* [03. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
+* [02. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
+* [03. Що таке модуль](https://youtu.be/RYkxhcqkVR8)
+* [04. Що таке клас](https://youtu.be/XOravctSW0U)
 
 
 ## Корисні посилання
