@@ -16,9 +16,10 @@ Python:
 * [02. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
 * [03. Що таке модуль](https://youtu.be/RYkxhcqkVR8)
 * [04. Що таке клас](https://youtu.be/XOravctSW0U)
-
+* [05. Доповнення до базовим типам даних (літерали та класи)](https://youtu.be/rZykk_-0aCo)
 
 ## Корисні посилання
 
 * Цей розділ в книзі [Початок роботи з Python](/book/03-python-intro)
+* [Літерал](/reference/syntax/#literals)
 * [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)

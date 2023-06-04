@@ -67,7 +67,10 @@ Git/GitHub:
 Python:
 
 * [01. Об'єкт, функція, методи](https://youtu.be/xdCPmP7gxs0)
-* [03. Змінні є посиланнями на дані](https://youtu.be/jEjhzLbrnjU)
+* [02. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
+* [03. Що таке модуль](https://youtu.be/RYkxhcqkVR8)
+* [04. Що таке клас](https://youtu.be/XOravctSW0U)
+* [05. Доповнення до базовим типам даних (літерали та класи)](https://youtu.be/rZykk_-0aCo)
 
 ## Інші плейлисти
 
