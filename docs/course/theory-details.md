@@ -70,7 +70,7 @@ Python:
 * [02. Змінні – це посилання на дані](https://youtu.be/jEjhzLbrnjU)
 * [03. Що таке модуль](https://youtu.be/RYkxhcqkVR8)
 * [04. Що таке клас](https://youtu.be/XOravctSW0U)
-* [05. Додаток про класи базових типів даних (літерали та класи)](https://youtu.be/rZykk_-0aCo)
+* [05. Доповнення про класи базових типів даних (літерали та класи)](https://youtu.be/rZykk_-0aCo)
 
 ## Інші плейлисти
 
