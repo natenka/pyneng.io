@@ -2,6 +2,8 @@
 
 ## Теорія
 
+[04 Типи даних у Python](https://youtube.com/playlist?list=PLlwMBlO5_y3RYZC8RkjDmDlxt_b37EoYc)
+
 ### До виконання завдань
 
 
@@ -13,6 +15,9 @@
 * [02. Використання лапок](https://youtu.be/56mwoB0KOK4)
 * [03. Операції з рядками (+, *, in, ==, порівняння)](https://youtu.be/yJKCrbshckc)
 * [04. Варіанти створення рядків, використання об'єднання літералів рядків](https://youtu.be/pmkeDO07ZhA)
+
+## ToDo
+
 * Рядки. len, sorted, print
 * Рядки. Методи рядків
 * Форматування рядків

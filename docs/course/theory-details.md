@@ -72,6 +72,18 @@ Python:
 * [04. Що таке клас](https://youtu.be/XOravctSW0U)
 * [05. Доповнення про класи базових типів даних (літерали та класи)](https://youtu.be/rZykk_-0aCo)
 
+
+### [04 Типи даних у Python](https://youtube.com/playlist?list=PLlwMBlO5_y3RYZC8RkjDmDlxt_b37EoYc)
+
+* [Про що розділ, хто може його пропускати, що робити новачкам, рекомендації щодо завдань](https://youtu.be/T61oW3H1uu8)
+
+Рядки
+
+* [01. Рядки (індекс, зрізи)](https://youtu.be/M83i4jFMY9E)
+* [02. Використання лапок](https://youtu.be/56mwoB0KOK4)
+* [03. Операції з рядками (+, *, in, ==, порівняння)](https://youtu.be/yJKCrbshckc)
+* [04. Варіанти створення рядків, використання об'єднання літералів рядків](https://youtu.be/pmkeDO07ZhA)
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
