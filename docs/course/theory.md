@@ -14,6 +14,7 @@ icon: material/youtube-tv
 * [01: Підготовка робочого середовища](https://youtube.com/playlist?list=PLlwMBlO5_y3T7i8DcUXVp_zuSO4KZvbQi)
 * [02: Робота з завданнями](https://youtube.com/playlist?list=PLlwMBlO5_y3QAUs4YSkFwBH-8D_HsBVX_)
 * [03: Початок роботи з Python](https://youtube.com/playlist?list=PLlwMBlO5_y3QUdzzD9s2dZzS40JIlrnmP)
+* [04 Типи даних у Python](https://youtube.com/playlist?list=PLlwMBlO5_y3RYZC8RkjDmDlxt_b37EoYc)
 
 
 Окремі playlist на теми, які розглядаються в різних розділах
