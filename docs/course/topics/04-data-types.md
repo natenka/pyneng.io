@@ -15,6 +15,8 @@
 * [02. Використання лапок](https://youtu.be/56mwoB0KOK4)
 * [03. Операції з рядками (+, *, in, ==, порівняння)](https://youtu.be/yJKCrbshckc)
 * [04. Варіанти створення рядків, використання об'єднання літералів рядків](https://youtu.be/pmkeDO07ZhA)
+* [05. Огляд методів рядка](https://youtu.be/n-DaT7wbyB4)
+* [06. Методи рядків (replace, lower, split, join, strip, startswith, endswith, isdigit, count, find, index)](https://youtu.be/xsXcpJHNjVw)
 
 ## ToDo
 

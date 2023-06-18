@@ -2,14 +2,11 @@
 
 ## Поділ рядка на частини
 
-|             |  Поділ рядка на частини |
-|:------------|:-----------------------------------------------------------------------------|
-| join        | Concatenate any number of strings.                                           |
-| split       | Return a list of the words in the string, using sep as the delimiter string. |
-| splitlines  | Return a list of the lines in the string, breaking at line boundaries.       |
+| split       | Розділяє рядок на частини за вказаним роздільником. Повертає список рядків. |
+| rsplit      | Розділяє рядок на частини за вказаним роздільником. Повертає список рядків. |
+| splitlines  | Розділяє рядок на частини за символом нового рядку. Повертає список рядків. |
 | partition   | Partition the string into three parts using the given separator.             |
 | rpartition  | Partition the string into three parts using the given separator.             |
-| rsplit      | Return a list of the words in the string, using sep as the delimiter string. |
 
 
 ## Видалення символів whitespace
@@ -66,7 +63,6 @@
 | center | Return a centered string of length width.                                        |
 | ljust  | Return a left-justified string of length width.                                  |
 | rjust  | Return a right-justified string of length width.                                 |
-| zfill                | Pad a numeric string with zeros on the left, to fill a field of the given width. |
 
 
 ## Пошук, підрахунок елементів
@@ -76,7 +72,6 @@
 | count   | S.count(sub[, start[, end]]) -> int  |
 | find    | S.find(sub[, start[, end]]) -> int   |
 | index   | S.index(sub[, start[, end]]) -> int  |
-| replace | S.replace(old, new)                  |
 | rfind   | S.rfind(sub[, start[, end]]) -> int  |
 | rindex  | S.rindex(sub[, start[, end]]) -> int |
 
@@ -84,7 +79,10 @@
 
 | | Інші методи |
 |:----------------------------------------|:------------------------------------|
+| replace | S.replace(old, new)                  |
+| join        | Concatenate any number of strings.                                           |
 | expandtabs | Return a copy where all tab characters are expanded using spaces.       |
+| zfill                | Pad a numeric string with zeros on the left, to fill a field of the given width. |
 | format     | S.format(*args, **kwargs) -> str  |
 | format_map | S.format_map(mapping) -> str  |
 | maketrans  | Return a translation table usable for str.translate(). |
