@@ -2,11 +2,29 @@
 
 ## Поділ рядка на частини
 
-| split       | Розділяє рядок на частини за вказаним роздільником. Повертає список рядків. |
-| rsplit      | Розділяє рядок на частини за вказаним роздільником. Повертає список рядків. |
-| splitlines  | Розділяє рядок на частини за символом нового рядку. Повертає список рядків. |
-| partition   | Partition the string into three parts using the given separator.             |
-| rpartition  | Partition the string into three parts using the given separator.             |
+#### [split](/reference/string/methods/split/)
+
+Розділяє рядок на частини за вказаним роздільником. Повертає список рядків.
+
+```python
+
+```
+
+#### [rsplit](/reference/string/methods/rsplit/)
+
+Розділяє рядок на частини за вказаним роздільником. Повертає список рядків.
+
+#### splitlines
+
+Розділяє рядок на частини за символом нового рядку. Повертає список рядків.
+
+#### partition
+
+Partition the string into three parts using the given separator.
+
+#### rpartition
+
+Partition the string into three parts using the given separator.
 
 
 ## Видалення символів whitespace

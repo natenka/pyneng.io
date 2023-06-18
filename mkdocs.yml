@@ -280,7 +280,10 @@ nav:
       - reference/data_types/index.md
       - Рядки (Strings):
         - reference/string/index.md
-        - reference/string/methods.md
+        - Методи:
+          - reference/string/methods/index.md
+          - reference/string/methods/split.md
+          - reference/string/methods/rsplit.md
       - Список (List):
         - reference/list/index.md
         - Створення списку:
