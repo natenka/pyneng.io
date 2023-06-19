@@ -300,8 +300,10 @@ nav:
       - reference/exceptions/index.md
     - Вбудовані функції:
       - reference/functions/index.md
-      - reference/functions/sorted.md
+      - reference/functions/isinstance.md
       - reference/functions/iter.md
+      - reference/functions/sorted.md
+      - reference/functions/type.md
     - Протоколи:
       - reference/protocols/index.md
       - reference/protocols/iterable.md
