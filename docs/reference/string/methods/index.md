@@ -34,80 +34,182 @@ Partition the string into three parts using the given separator.
 
 ## Видалення символів whitespace
 
-| | Видалення символів whitespace |
-|:-------|:--------------------------------------------------------------------------|
-| strip  | Return a copy of the string with leading and trailing whitespace removed. |
-| rstrip | Return a copy of the string with trailing whitespace removed.             |
-| lstrip | Return a copy of the string with leading whitespace removed.              |
+#### strip
+
+Return a copy of the string with leading and trailing whitespace removed.
+#### rstrip
+
+Return a copy of the string with trailing whitespace removed.
+#### lstrip
+
+Return a copy of the string with leading whitespace removed.
 
 ## Перевірка початку/кінця рядка
 
-| |  Перевірка початку/кінця рядка |
-|----------------|:-------------------------------------------------------------------------|
-| startswith     | Return True if S starts with the specified prefix, False otherwise.      |
-| endswith       | Return True if S ends with the specified prefix, False otherwise.      |
+#### startswith
+
+Return True if S starts with the specified prefix, False otherwise.
+
+#### endswith
+
+Return True if S ends with the specified prefix, False otherwise.
 
 
 ## Перевірка того, що знаходиться у рядку
 
-|  | Перевірка того, що знаходиться у рядку |
-|:------------------|:-------------------------------------------------------------------------|
-| isalnum()      | Return True if the string is an alpha-numeric string, False otherwise.   |
-| isalpha()      | Return True if the string is an alphabetic string, False otherwise.      |
-| isascii()      | Return True if all characters in the string are ASCII, False otherwise.  |
-| isdecimal()    | Return True if the string is a decimal string, False otherwise.          |
-| isdigit()      | Return True if the string is a digit string, False otherwise.            |
-| isidentifier() | Return True if the string is a valid Python identifier, False otherwise. |
-| islower()      | Return True if the string is a lowercase string, False otherwise.        |
-| isnumeric()    | Return True if the string is a numeric string, False otherwise.          |
-| isprintable()  | Return True if the string is printable, False otherwise.                 |
-| isspace()      | Return True if the string is a whitespace string, False otherwise.       |
-| istitle()      | Return True if the string is a title-cased string, False otherwise.      |
-| isupper()      | Return True if the string is an uppercase string, False otherwise.       |
+#### isalnum
+
+Return True if the string is an alpha-numeric string, False otherwise.
+
+#### isalpha
+
+Return True if the string is an alphabetic string, False otherwise.
+
+#### isascii
+
+Return True if all characters in the string are ASCII, False otherwise.
+
+#### isdecimal
+
+Return True if the string is a decimal string, False otherwise.
+
+#### isdigit
+
+Return True if the string is a digit string, False otherwise.
+
+#### isidentifier
+
+Return True if the string is a valid Python identifier, False otherwise.
+
+#### islower
+
+Return True if the string is a lowercase string, False otherwise.
+
+#### isnumeric
+
+Return True if the string is a numeric string, False otherwise.
+
+#### isprintable
+
+Return True if the string is printable, False otherwise.
+
+#### isspace
+
+Return True if the string is a whitespace string, False otherwise.
+
+#### istitle
+
+Return True if the string is a title-cased string, False otherwise.
+
+#### isupper
+
+Return True if the string is an uppercase string, False otherwise.
 
 
 ## Перетворення регістрів
 
-|            | Перетворення регістрів |
-|:-----------|:---------------------------------------------------------------------------------|
-| lower      | Return a copy of the string converted to lowercase.                              |
-| capitalize | Return a capitalized version of the string.                                      |
-| swapcase   | Convert uppercase characters to lowercase and lowercase characters to uppercase. |
-| title      | Return a version of the string where each word is titlecased.                    |
-| upper      | Return a copy of the string converted to uppercase.                              |
-| casefold   | Return a version of the string suitable for caseless comparisons.                |
+#### lower
 
+Return a copy of the string converted to lowercase.
+
+#### capitalize
+
+Return a capitalized version of the string.
+
+#### swapcase
+
+Convert uppercase characters to lowercase and lowercase characters to uppercase.
+
+#### title
+
+Return a version of the string where each word is titlecased.
+
+#### upper
+
+Return a copy of the string converted to uppercase.
+
+#### casefold
+
+Return a version of the string suitable for caseless comparisons.
 
 
 ## Вирівнювання тексту
 
-|  | Вирівнювання тексту |
-|:-------------------------------------|:---------------------------------------------------------------------------------|
-| center | Return a centered string of length width.                                        |
-| ljust  | Return a left-justified string of length width.                                  |
-| rjust  | Return a right-justified string of length width.                                 |
+### center
+
+Return a centered string of length width.
+
+#### ljust
+
+Return a left-justified string of length width.
+
+#### rjust
+
+Return a right-justified string of length width.
 
 
 ## Пошук, підрахунок елементів
 
-| | Пошук, підрахунок елементів |
-|:--------|:-------------------------------------|
-| count   | S.count(sub[, start[, end]]) -> int  |
-| find    | S.find(sub[, start[, end]]) -> int   |
-| index   | S.index(sub[, start[, end]]) -> int  |
-| rfind   | S.rfind(sub[, start[, end]]) -> int  |
-| rindex  | S.rindex(sub[, start[, end]]) -> int |
+#### count
+
+S.count(sub[, start[, end]]) -> int
+
+#### find
+
+S.find(sub[, start[, end]]) -> int
+
+#### index
+
+S.index(sub[, start[, end]]) -> int
+
+#### rfind
+
+S.rfind(sub[, start[, end]]) -> int
+
+#### rindex
+
+S.rindex(sub[, start[, end]]) -> int
+
+## Заміна
+
+#### replace
+
+S.replace(old, new)
+
+#### translate
+
+Replace each character in the string using the given translation table.
+
+#### removeprefix
+
+Return a str with the given prefix string removed if present.
+
+#### removesuffix
+
+Return a str with the given suffix string removed if present.
 
 ## Інші методи
 
-| | Інші методи |
-|:----------------------------------------|:------------------------------------|
-| replace | S.replace(old, new)                  |
-| expandtabs | Return a copy where all tab characters are expanded using spaces.       |
-| zfill                | Pad a numeric string with zeros on the left, to fill a field of the given width. |
-| format     | S.format(*args, **kwargs) -> str  |
-| format_map | S.format_map(mapping) -> str  |
-| maketrans  | Return a translation table usable for str.translate(). |
-| translate  | Replace each character in the string using the given translation table. |
-| encode   | Encode the string using the codec registered for encoding.              |
+#### expandtabs
 
+Return a copy where all tab characters are expanded using spaces.
+
+#### zfill
+
+Pad a numeric string with zeros on the left, to fill a field of the given width.
+
+#### format
+
+`S.format(*args, **kwargs) -> str`
+
+#### format_map
+
+S.format_map(mapping) -> str
+
+#### maketrans
+
+Return a translation table usable for str.translate().
+
+#### encode
+
+Encode the string using the codec registered for encoding.
