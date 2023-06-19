@@ -1,5 +1,12 @@
 # Методи рядків
 
+## Об'єднання рядків в один
+
+#### [join](/reference/string/methods/join/)
+
+Метод join повертає рядок, який є об'єднанням рядків у послідовності рядків,
+переданої як аргумент. Між елементами в об'єднанні рядків проставляється роздільник.
+
 ## Поділ рядка на частини
 
 #### [split](/reference/string/methods/split/)
@@ -9,6 +16,8 @@
 #### [rsplit](/reference/string/methods/rsplit/)
 
 Розділяє рядок на частини за вказаним роздільником. Повертає список рядків.
+Працює як split за замовчуванням, єдина відмінність у поведінці полягає в тому,
+що розділ починається праворуч під час використання maxsplit.
 
 #### splitlines
 
@@ -94,7 +103,6 @@ Partition the string into three parts using the given separator.
 | | Інші методи |
 |:----------------------------------------|:------------------------------------|
 | replace | S.replace(old, new)                  |
-| join        | Concatenate any number of strings.                                           |
 | expandtabs | Return a copy where all tab characters are expanded using spaces.       |
 | zfill                | Pad a numeric string with zeros on the left, to fill a field of the given width. |
 | format     | S.format(*args, **kwargs) -> str  |

@@ -282,8 +282,9 @@ nav:
         - reference/string/index.md
         - Методи:
           - reference/string/methods/index.md
-          - reference/string/methods/split.md
+          - reference/string/methods/join.md
           - reference/string/methods/rsplit.md
+          - reference/string/methods/split.md
       - Список (List):
         - reference/list/index.md
         - Створення списку:

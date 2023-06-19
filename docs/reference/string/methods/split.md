@@ -97,3 +97,4 @@ Out[13]: ['10', '1', '1', '1']
 ## Дивись також
 
 #### [rsplit](/reference/string/methods/rsplit/)
+#### [join](/reference/string/methods/join/)
