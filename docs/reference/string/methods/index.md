@@ -37,9 +37,11 @@ Partition the string into three parts using the given separator.
 #### strip
 
 Return a copy of the string with leading and trailing whitespace removed.
+
 #### rstrip
 
 Return a copy of the string with trailing whitespace removed.
+
 #### lstrip
 
 Return a copy of the string with leading whitespace removed.
@@ -53,58 +55,6 @@ Return True if S starts with the specified prefix, False otherwise.
 #### endswith
 
 Return True if S ends with the specified prefix, False otherwise.
-
-
-## Перевірка того, що знаходиться у рядку
-
-#### isalnum
-
-Return True if the string is an alpha-numeric string, False otherwise.
-
-#### isalpha
-
-Return True if the string is an alphabetic string, False otherwise.
-
-#### isascii
-
-Return True if all characters in the string are ASCII, False otherwise.
-
-#### isdecimal
-
-Return True if the string is a decimal string, False otherwise.
-
-#### isdigit
-
-Return True if the string is a digit string, False otherwise.
-
-#### isidentifier
-
-Return True if the string is a valid Python identifier, False otherwise.
-
-#### islower
-
-Return True if the string is a lowercase string, False otherwise.
-
-#### isnumeric
-
-Return True if the string is a numeric string, False otherwise.
-
-#### isprintable
-
-Return True if the string is printable, False otherwise.
-
-#### isspace
-
-Return True if the string is a whitespace string, False otherwise.
-
-#### istitle
-
-Return True if the string is a title-cased string, False otherwise.
-
-#### isupper
-
-Return True if the string is an uppercase string, False otherwise.
-
 
 ## Перетворення регістрів
 
@@ -213,3 +163,56 @@ Return a translation table usable for str.translate().
 #### encode
 
 Encode the string using the codec registered for encoding.
+
+
+## Перевірка того, що знаходиться у рядку
+
+#### isalnum
+
+Return True if the string is an alpha-numeric string, False otherwise.
+
+#### isalpha
+
+Return True if the string is an alphabetic string, False otherwise.
+
+#### isascii
+
+Return True if all characters in the string are ASCII, False otherwise.
+
+#### isdecimal
+
+Return True if the string is a decimal string, False otherwise.
+
+#### isdigit
+
+Return True if the string is a digit string, False otherwise.
+
+#### isidentifier
+
+Return True if the string is a valid Python identifier, False otherwise.
+
+#### islower
+
+Return True if the string is a lowercase string, False otherwise.
+
+#### isnumeric
+
+Return True if the string is a numeric string, False otherwise.
+
+#### isprintable
+
+Return True if the string is printable, False otherwise.
+
+#### isspace
+
+Return True if the string is a whitespace string, False otherwise.
+
+#### istitle
+
+Return True if the string is a title-cased string, False otherwise.
+
+#### isupper
+
+Return True if the string is an uppercase string, False otherwise.
+
+
