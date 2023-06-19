@@ -298,9 +298,15 @@ nav:
       - reference/comprehensions/list.md
     - Винятки:
       - reference/exceptions/index.md
+    - Вбудовані функції:
+      - reference/functions/index.md
+      - reference/functions/iter.md
+      - reference/functions/sorted.md
     - Протоколи:
       - reference/protocols/index.md
       - reference/protocols/iterable.md
-
+      - reference/protocols/iterable_custom.md
+    - Глосарій:
+      - reference/glossary/index.md
   - Блог:
     - blog/index.md
