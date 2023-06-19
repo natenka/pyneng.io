@@ -5,3 +5,7 @@
 #### [sorted](/reference/functions/sorted/)
 
 #### [iter](/reference/functions/iter/)
+
+#### [type](/reference/functions/type/)
+
+#### [isinstance](/reference/functions/isinstance/)
