@@ -1,5 +1,7 @@
 # 4. Типи даних у Python
 
+!!! tip "[Цей розділ в форматі відео](https://pyneng.io/course/topics/04-data-types/)"
+
 У Python є кілька базових типів даних:
 
 * Numbers (числа)

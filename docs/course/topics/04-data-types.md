@@ -18,16 +18,14 @@
 * [05. Огляд методів рядка](https://youtu.be/n-DaT7wbyB4)
 * [06. Методи рядків (replace, lower, split, join, strip, startswith, endswith, isdigit, count, find, index)](https://youtu.be/xsXcpJHNjVw)
 * [07. Форматування рядків](https://youtu.be/x6ALaf18550)
-
-## ToDo
-
-* Рядки. len, sorted, print
+* [08. Огляд інших варіантів форматування рядків](https://youtu.be/nYOH3wTg-ZY)
 
 Списки:
 
-* Списки
-* Списки. Дії зі списками
-* Списки. Методи списків
+* [01. Список (індекс, зрізи). Операції зі списками (`+`, `*`, `in`, `==`)](https://youtu.be/d64T4zZ5eeo)
+* [02. Методи списків (append, extend, index, count, pop, remove, insert, clear, sort, reverse)](https://youtu.be/ASDms02Mrm0)
+
+## ToDo
 
 Множини
 
@@ -39,6 +37,8 @@
 
 * Перетворення типів
 * Виклик методів ланцюжком
+* len, sorted
+
 
 ### Після виконання завдань можна продовжити (словники будуть потрібні в завданнях 5.x)
 
