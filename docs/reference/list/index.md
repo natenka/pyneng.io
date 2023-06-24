@@ -36,7 +36,7 @@ num_as_str = [str(num) for num in range(10)]
 
 ## Функції
 
-### len
+#### len
 
-### sorted
+#### sorted
 

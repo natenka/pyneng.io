@@ -285,6 +285,10 @@ nav:
           - reference/string/methods/join.md
           - reference/string/methods/rsplit.md
           - reference/string/methods/split.md
+        - Форматування рядків:
+          - reference/string/format/index.md
+          - reference/string/format/format.md
+          - reference/string/format/f-string.md
       - Список (List):
         - reference/list/index.md
         - Створення списку:
@@ -293,6 +297,12 @@ nav:
         - reference/list/methods.md
       - Словник (Dictionary):
         - reference/dict/index.md
+      - Множини (Sets):
+        - reference/set/index.md
+        - Методи:
+          - reference/set/methods/index.md
+          - reference/set/methods/add.md
+          - reference/set/methods/intersection.md
     - Comprehensions, generator expression:
       - reference/comprehensions/index.md
       - reference/comprehensions/list.md
