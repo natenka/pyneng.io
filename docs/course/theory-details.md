@@ -93,6 +93,10 @@ Python:
 * [01. Список (індекс, зрізи). Операції зі списками (`+`, `*`, `in`, `==`)](https://youtu.be/d64T4zZ5eeo)
 * [02. Методи списків (append, extend, index, count, pop, remove, insert, clear, sort, reverse)](https://youtu.be/ASDms02Mrm0)
 
+Множини:
+
+* [01. Множина. Варіанти створення множин. Операції `in`, `==`](https://youtu.be/8GC4-OrIL0s)
+
 
 ## Інші плейлисти
 
