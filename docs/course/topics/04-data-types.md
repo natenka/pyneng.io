@@ -28,14 +28,10 @@
 Множини:
 
 * [01. Множина. Варіанти створення множин. Операції `in`, `==`](https://youtu.be/8GC4-OrIL0s)
+* [02. Методи множин (add, update, remove, discard, pop, clear)](https://youtu.be/XDfZh3I7M_I)
+* [03. Методи множин (intersection, union, difference, intersection_update, difference_update, symmetric_difference_update, isdisjoint, issubset, issuperset)](https://youtu.be/7Y56L_fOFnQ)
 
 ## ToDo
-
-
-* Множини. Операції та методи
-* Множини. Методи
-
-Різне
 
 * Перетворення типів
 * Виклик методів ланцюжком
