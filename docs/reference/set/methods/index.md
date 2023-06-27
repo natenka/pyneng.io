@@ -15,9 +15,9 @@
 ## Перетин, об'єднання, різниця
 
 #### [intersection](/reference/set/methods/intersection/)
-#### union
-#### difference
-#### symmetric_difference
+#### [union](/reference/set/methods/union/)
+#### [difference](/reference/set/methods/difference/)
+#### [symmetric_difference](/reference/set/methods/symmetric_difference/)
 
 ## Перевірка
 

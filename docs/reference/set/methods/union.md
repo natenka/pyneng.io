@@ -1,15 +1,15 @@
-# intersection
+# union
 
-Повертає нову множину із елементами, спільними для множини.
+Повертає нову множину із елементами з кожної з множин.
 
-![set](https://pyneng.io/assets/images/set_operations_intersection.png)
+![set](https://pyneng.io/assets/images/set_operations_union.png)
 
 ## Синтаксис
 
 Повертає нову множину із елементами, спільними для множини та всіх наборів даних others.
 
 ```python
-set.intersection(*others)
+set.union(*others)
 ```
 
 ### Параметри
@@ -31,57 +31,58 @@ In [23]: sw1 = {1, 2, 3, 10, 20}
 
 In [24]: sw3 = [10, 100, [1, 2, 3]]
 
-In [25]: sw1.intersection(sw3)
+In [25]: sw1.union(sw3)
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 Cell In[25], line 1
-----> 1 sw1.intersection(sw3)
+----> 1 sw1.union(sw3)
 
 TypeError: unhashable type: 'list'
 ```
 
-Оператор `&`:
+Оператор `|`:
 
 ```python
-In [20]: sw1 = {1, 2, 3, 10, 20}
+sw1 = {1, 2, 3, 10, 20}
+sw3 = [10, 100, 200, 300]
 
-In [21]: sw3 = [10, 100, 200, 300]
-
-In [22]: sw1 & sw3
+In [18]: sw1 | sw3
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
-Cell In[22], line 1
-----> 1 sw1 & sw3
+Cell In[18], line 1
+----> 1 sw1 | sw3
 
-TypeError: unsupported operand type(s) for &: 'set' and 'list'
+TypeError: unsupported operand type(s) for |: 'set' and 'list'
 ```
 
 ## Приклади використання
 
-Метод intersection
+Метод union
 
 ```python
 sw1 = {1, 2, 3, 10, 20}
 sw2 = {30, 40, 100, 10, 20}
 sw3 = [10, 30]
 
-In [6]: sw1.intersection(sw2)
-Out[6]: {10, 20}
+In [6]: sw1.union(sw2)
+Out[6]: {1, 2, 3, 10, 20, 30, 40, 100}
 
-In [8]: sw1.intersection(sw2, sw3)
-Out[8]: {10}
+In [7]: sw1.union(sw2, sw3)
+Out[7]: {1, 2, 3, 10, 20, 30, 40, 100}
 ```
 
-### Оператор `&`
+
+### Оператор `|`
 
 ```python
 sw1 = {1, 2, 3, 10, 20}
 sw2 = {30, 40, 100, 10, 20}
 sw3 = [10, 30]
 
-In [7]: sw1 & sw2
-Out[7]: {10, 20}
+In [9]: sw1 | sw2
+Out[9]: {1, 2, 3, 10, 20, 30, 40, 100}
 
-In [9]: sw1 & sw2 & set(sw3)
-Out[9]: {10}
+In [10]: sw1 | sw2 | set(sw3)
+Out[10]: {1, 2, 3, 10, 20, 30, 40, 100}
 ```
+

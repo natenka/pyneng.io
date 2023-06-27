@@ -303,6 +303,9 @@ nav:
           - reference/set/methods/index.md
           - reference/set/methods/add.md
           - reference/set/methods/intersection.md
+          - reference/set/methods/difference.md
+          - reference/set/methods/symmetric_difference.md
+          - reference/set/methods/union.md
     - Comprehensions, generator expression:
       - reference/comprehensions/index.md
       - reference/comprehensions/list.md
