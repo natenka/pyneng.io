@@ -16,7 +16,7 @@ set.union(*others)
 
 #### others
 
-Набори даних.
+[Ітеровані об'єкти](/reference/protocols/iterable/).
 
 ### Значення, що повертається
 

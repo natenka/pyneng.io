@@ -16,7 +16,7 @@ set.intersection(*others)
 
 #### others
 
-Набори даних.
+[Ітеровані об'єкти](/reference/protocols/iterable/).
 
 ### Значення, що повертається
 

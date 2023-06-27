@@ -17,7 +17,7 @@ set.symmetric_difference(other)
 
 #### other
 
-Набор даних.
+[Ітерований об'єкт](/reference/protocols/iterable/).
 
 ### Значення, що повертається
 
