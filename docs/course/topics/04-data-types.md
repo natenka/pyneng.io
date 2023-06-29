@@ -31,15 +31,7 @@
 * [02. Методи множин (add, update, remove, discard, pop, clear)](https://youtu.be/XDfZh3I7M_I)
 * [03. Методи множин (intersection, union, difference, intersection_update, difference_update, symmetric_difference_update, isdisjoint, issubset, issuperset)](https://youtu.be/7Y56L_fOFnQ)
 
-## ToDo
-
-* Перетворення типів
-* Виклик методів ланцюжком
-* len, sorted
-
-
 ### Після виконання завдань можна продовжити (словники будуть потрібні в завданнях 5.x)
-
 
 Кортежі
 
@@ -47,11 +39,17 @@
 
 Словники
 
-* Словники
-* Словники. Дії зі словниками: in, len, sorted
-* Словники. Варіанти створення
-* Словники. Методи clear copy get update keys values items
-* Словники. Методи pop popitem setdefault
+* [01. Словник. Операції `dict[key]`, `in`, `|`. Варіанти створення.](https://youtu.be/pCdetkSQtBU)
+* [02. Методи словників (get, update, pop, popitem, clear, keys, values, items, setdefault)](https://youtu.be/QA6zh9lUnFA)
+
+Різне:
+
+* Перетворення типів
+* Виклик методів ланцюжком
+* len, sorted
+* огляд типів даних, використання
+* deep/shallow copy
+
 
 
 ## Завдання

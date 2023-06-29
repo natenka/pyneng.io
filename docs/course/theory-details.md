@@ -99,6 +99,10 @@ Python:
 * [02. Методи множин (add, update, remove, discard, pop, clear)](https://youtu.be/XDfZh3I7M_I)
 * [03. Методи множин (intersection, union, difference, intersection_update, difference_update, symmetric_difference_update, isdisjoint, issubset, issuperset)](https://youtu.be/7Y56L_fOFnQ)
 
+Словники
+
+* [01. Словник. Операції `dict[key]`, `in`, `|`. Варіанти створення.](https://youtu.be/pCdetkSQtBU)
+* [02. Методи словників (get, update, pop, popitem, clear, keys, values, items, setdefault)](https://youtu.be/QA6zh9lUnFA)
 
 ## Інші плейлисти
 
