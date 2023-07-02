@@ -99,10 +99,23 @@ Python:
 * [02. Методи множин (add, update, remove, discard, pop, clear)](https://youtu.be/XDfZh3I7M_I)
 * [03. Методи множин (intersection, union, difference, intersection_update, difference_update, symmetric_difference_update, isdisjoint, issubset, issuperset)](https://youtu.be/7Y56L_fOFnQ)
 
+Кортежі
+
+* [Кортеж. Варіанти створення. Операції. Методи](https://youtu.be/CpiWO2-8-G4)
+
 Словники
 
 * [01. Словник. Операції `dict[key]`, `in`, `|`. Варіанти створення.](https://youtu.be/pCdetkSQtBU)
 * [02. Методи словників (get, update, pop, popitem, clear, keys, values, items, setdefault)](https://youtu.be/QA6zh9lUnFA)
+
+Різне:
+
+* [Перетворення типів](https://youtu.be/rWzXvZokPII)
+* [Перевірка типу](https://youtu.be/HKyC46FQM8M)
+* [Виклик методів ланцюжком](https://youtu.be/E221DkBBNYg)
+* [Основи сортування даних за допомогою функції sorted](https://youtu.be/Klmg5pKt9Ic)
+* [Метод copy, функція copy.deepcopy. Поверхнева та повна копія об'єктів](https://youtu.be/h3nohFxpF7c)
+
 
 ## Інші плейлисти
 
