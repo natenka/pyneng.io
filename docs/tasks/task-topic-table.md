@@ -54,7 +54,7 @@
 |  6.6*   | print, input, if, рядки, списки |
 |  6.6a   | print, input, if, for, try/except, рядки, списки |
 |  6.6b   | print, input, while, if, for, try/except, рядки, списки |
-|  6.7    | print, if, for, рядки, списки, форматування рядків |
+|  6.7    | print, if, for, словники, рядки, списки, форматування рядків |
 
 ## 07_files
 
