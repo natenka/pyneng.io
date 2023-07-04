@@ -43,7 +43,7 @@ icon: material/calendar
  <tr>
     <td align="center">5</td>
     <td align="center">24.06.23</td>
-    <td>Створення базових скриптів.</td>
+    <td><a href="https://pyneng.io/course/topics/05-basic-scripts/">Створення базових скриптів.</a></td>
     <td align="center">12 (05_basic_scripts)</td>
     <td>5.0, 5.1, 5.2, 5.3, 5.3a, 5.3b, 5.4</td>
  </tr>
