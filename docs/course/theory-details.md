@@ -119,6 +119,11 @@ Python:
 * [Використання словника замість простих умов](https://youtu.be/3139d6jIpIY)
 * [Огляд типів даних, коротко для чого вони використовуються](https://youtu.be/5q9sQqGKvsY)
 
+### [05 Створення базових скриптів](https://youtube.com/playlist?list=PLlwMBlO5_y3TGo9Q0csp8UHsGHFGrC171)
+
+* [Про що розділ. Імена файлів. Відмінності між написанням коду у файлах і в ipython](https://youtu.be/kTmn9hVXzoc)
+* [Функція input. Введення інформації користувачем](https://youtu.be/x5b3EMGNMes)
+
 
 ## Інші плейлисти
 
