@@ -123,6 +123,8 @@ Python:
 
 * [Про що розділ. Імена файлів. Відмінності між написанням коду у файлах і в ipython](https://youtu.be/kTmn9hVXzoc)
 * [Функція input. Введення інформації користувачем](https://youtu.be/x5b3EMGNMes)
+* [Передача аргументів скрипту (sys.argv)](https://youtu.be/96nhJE-1ixo)
+* [Запуск коду в Thonny і робота з input і sys.argv](https://youtu.be/XwQMvJApVBI)
 
 
 ## Інші плейлисти
@@ -130,4 +132,5 @@ Python:
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
 
 * [Редактор Thonny. Основи](https://youtu.be/AM9cw6a7mzE)
+* [Запуск коду в Thonny і робота з input і sys.argv](https://youtu.be/XwQMvJApVBI)
 
