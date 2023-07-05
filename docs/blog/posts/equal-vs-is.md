@@ -29,6 +29,33 @@ len(data) != 4
 
 <!-- more -->
 
+Приклад використання `is` (sw2 посилається на той самий список, що і sw1):
+
+```python
+In [1]: sw1 = [10, 20, 30]
+
+In [2]: sw2 = sw1
+
+In [3]: sw1 is sw2
+Out[3]: True
+
+In [4]: sw1 == sw2
+Out[4]: True
+```
+
+Змінні sw1 та sw2 посилаються на різні об'єкти з однаковими елементами:
+```python
+In [6]: sw1 = [10, 20, 30]
+
+In [7]: sw2 = [10, 20, 30]
+
+In [8]: sw1 is sw2
+Out[8]: False
+
+In [9]: sw1 == sw2
+Out[9]: True
+```
+
 ## True/False
 
 !!! quote "PEP8"
