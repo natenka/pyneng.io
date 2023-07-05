@@ -106,7 +106,10 @@ if not value: # для False
 
 ```python
 async def cancel_all_tasks():
-    tasks = [task for task in asyncio.all_tasks() if task is not asyncio.current_task()]
+    tasks = [
+        task for task in asyncio.all_tasks()
+        if task is not asyncio.current_task()
+    ]
     [task.cancel() for task in tasks]
     await asyncio.gather(*tasks, return_exceptions=True)
 ```
