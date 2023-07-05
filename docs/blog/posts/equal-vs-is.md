@@ -27,6 +27,8 @@ len(data) == 4
 len(data) != 4
 ```
 
+<!-- more -->
+
 ## True/False
 
 !!! quote "PEP8"
