@@ -1,18 +1,21 @@
-# Вложенные for
+# Вкладені for
 
-Циклы for можно вкладывать друг в друга.
-
-В этом примере в списке commands хранятся команды, которые надо
-выполнить для каждого из интерфейсов в списке fast_int:
+Цикли for можуть бути вкладені один в одного.
+У цьому прикладі список команд містить команди, які потрібно виконати для
+кожного з інтерфейсів у списку interfaces:
 
 ```python
-In [7]: commands = ['switchport mode access', 'spanning-tree portfast', 'spanning-tree bpduguard enable']
-In [8]: fast_int = ['0/1','0/3','0/4','0/7','0/9','0/10','0/11']
+commands = [
+    'switchport mode access',
+    'spanning-tree portfast',
+    'spanning-tree bpduguard enable',
+]
+interfaces = ['0/1', '0/3', '0/4', '0/7', '0/9', '0/10', '0/11']
 
-In [9]: for intf in fast_int:
-   ...:     print('interface FastEthernet {}'.format(intf))
+In [9]: for intf in interfaces:
+   ...:     print(f'interface FastEthernet {intf}')
    ...:     for command in commands:
-   ...:         print(' {}'.format(command))
+   ...:         print(f' {command}')
    ...:
 interface FastEthernet 0/1
  switchport mode access
@@ -28,6 +31,3 @@ interface FastEthernet 0/4
  spanning-tree bpduguard enable
 ...
 ```
-
-Первый цикл for проходится по интерфейсам в списке fast_int, а второй
-по командам в списке commands.

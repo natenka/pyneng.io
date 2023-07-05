@@ -1,8 +1,6 @@
-# Совмещение for и if
+# Комбінування for і if
 
-Рассмотрим пример совмещения for и if.
-
-Файл generate_access_port_config.py:
+Приклад поєднання for і if.
 
 ```python
 access_template = ['switchport mode access',
@@ -13,7 +11,7 @@ access_template = ['switchport mode access',
 access = {'0/12': 10, '0/14': 11, '0/16': 17, '0/17': 150}
 
 for intf, vlan in access.items():
-    print('interface FastEthernet' + intf)
+    print('interface FastEthernet {}'.format(intf))
     for command in access_template:
         if command.endswith('access vlan'):
             print(' {} {}'.format(command, vlan))
@@ -21,24 +19,20 @@ for intf, vlan in access.items():
             print(' {}'.format(command))
 ```
 
-Комментарии к коду:
+Коментарі до коду:
 
-* В первом цикле for перебираются ключи и значения во вложенном словаре access
-* Текущий ключ, на данный момент цикла, хранится в переменной intf
-* Текущее значение, на данный момент цикла, хранится в переменной vlan
-* Выводится строка interface FastEthernet с добавлением к ней номера интерфейса
-* Во втором цикле for перебираются команды из списка access_template
-* Так как к команде switchport access vlan надо добавить номер VLAN:
+* Перший цикл for виконує ітерацію по ключам і значенням у словнику access
+* Поточний ключ у цій точці циклу зберігається у змінній intf
+* Поточне значення на цьому етапі циклу зберігається у змінній vlan
+* Відображається print рядок `interface FastEthernet` з доданим до нього номером інтерфейсу
+* Другий цикл for повторює команди зі списку access_template
+* Оскільки потрібно додати номер VLAN до команди switchport access vlan:
 
-  * внутри второго цикла for проверяются команды
-  * если команда заканчивается на access vlan
+  * всередині другого циклу for перевіряються команди
+  * якщо команда закінчується на access vlan, виводиться команда, і до неї додається номер VLAN
+  * у всіх інших випадках команда просто відображається print
 
-    * выводится команда, и к ней добавляется номер VLAN
-
-  * во всех остальных случаях просто выводится команда
-
-
-Результат выполнения скрипта:
+Результат виконання скрипта:
 
 ```
 $ python generate_access_port_config.py
