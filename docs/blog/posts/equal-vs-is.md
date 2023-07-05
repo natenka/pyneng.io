@@ -102,7 +102,7 @@ if not value: # для False
 
 ## Приклади використання `is` поза темами курсу
 
-Навчальний приклад [функції для скасування задач, яка має скасувати всі задачі, окрім себе](https://github.com/pyneng/advpyneng-course-examples/blob/main/examples/19_inside_asyncio/example_19_0x_task_cancel.py#L31)
+Приклад функції для скасування задач asyncio, яка має скасувати всі задачі, окрім себе:
 
 ```python
 async def cancel_all_tasks():
