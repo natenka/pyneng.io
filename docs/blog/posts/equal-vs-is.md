@@ -1,6 +1,6 @@
 ---
 # draft: true 
-date: 2023-07-05
+date: 2023-07-04
 categories:
   - python
 tags:
@@ -29,6 +29,32 @@ len(data) != 4
 
 ## True/False
 
-```python
+!!! quote "PEP8"
 
+	Don't compare boolean values to True or False using `==`:
+
+	```python
+	# Correct:
+    if greeting:
+	```
+
+	```python
+	# Wrong:
+	if greeting == True:
+	```
+
+	Worse:
+	```python
+	# Wrong:
+	if greeting is True:
+	```
+
+Відповідно до рекомендацій PEP8, щоб перевірити, що якийсь об'єкт дорівнює True
+або False, краще використовувати такі вирази:
+```python
+if value: # для True
+    print("істинне значення")
+
+if not value: # для False
+    print("хибне значення")
 ```
