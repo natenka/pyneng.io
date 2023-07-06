@@ -272,8 +272,8 @@ Out[31]: {}
 користувача:
 
 ```python
-username = input('Введіть ім'я користувача: ")
-password = input('Введіть пароль: ")
+username = input("Введіть ім'я користувача: ")
+password = input("Введіть пароль: ")
 
 if len(password) < 8:
     print("Пароль надто короткий")
