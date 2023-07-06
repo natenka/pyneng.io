@@ -52,20 +52,20 @@ In [2]: while a > 0:
 наново, якщо він не відповідає вимогам.
 
 ```python
-username = input('Введіть ім'я користувача: ')
-password = input('Введіть пароль: ')
+username = input("Введіть ім'я користувача: ")
+password = input("Введіть пароль: ")
 
 password_correct = False
 
 while not password_correct:
     if len(password) < 8:
-        print('Пароль надто короткий\n')
-        password = input('Введіть пароль ще раз: ')
+        print("Пароль надто короткий\n")
+        password = input("Введіть пароль ще раз: ")
     elif username in password:
-        print('Пароль містить ім'я користувача\n')
-        password = input('Введіть пароль ще раз: ')
+        print("Пароль містить ім'я користувача\n")
+        password = input("Введіть пароль ще раз: ")
     else:
-        print(f'Пароль для користувача {username} встановлено')
+        print(f"Пароль для користувача {username} встановлено")
         password_correct = True
 ```
 
