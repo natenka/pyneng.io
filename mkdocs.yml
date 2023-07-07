@@ -253,6 +253,7 @@ nav:
       - course/topics/03-python-intro.md
       - course/topics/04-data-types.md
       - course/topics/05-basic-scripts.md
+      - course/topics/06-control-structures.md
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/calendar.md
