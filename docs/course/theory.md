@@ -16,6 +16,7 @@ icon: material/youtube-tv
 * [03: Початок роботи з Python](https://youtube.com/playlist?list=PLlwMBlO5_y3QUdzzD9s2dZzS40JIlrnmP)
 * [04 Типи даних у Python](https://youtube.com/playlist?list=PLlwMBlO5_y3RYZC8RkjDmDlxt_b37EoYc)
 * [05 Створення базових скриптів](https://youtube.com/playlist?list=PLlwMBlO5_y3TGo9Q0csp8UHsGHFGrC171)
+* [06 Контроль перебігу програми](https://youtube.com/playlist?list=PLlwMBlO5_y3TrOacFQVKzHoJ7JHUqN5o2)
 
 
 Окремі playlist на теми, які розглядаються в різних розділах
