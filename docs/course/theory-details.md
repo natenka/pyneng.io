@@ -126,6 +126,14 @@ Python:
 * [Передача аргументів скрипту (sys.argv)](https://youtu.be/96nhJE-1ixo)
 * [Запуск коду в Thonny і робота з input і sys.argv](https://youtu.be/XwQMvJApVBI)
 
+### [06 Контроль перебігу програми](https://youtube.com/playlist?list=PLlwMBlO5_y3TrOacFQVKzHoJ7JHUqN5o2)
+
+* [Про що розділ. Структура теми, де взяти приклади коду](https://youtu.be/caW9GpoVYJM)
+* [if/elif/else](https://youtu.be/6rdschm-MFg)
+* [Оператори and, or, not](https://youtu.be/dxywKNmX8Gc)
+* [Цикл for](https://youtu.be/vxNpS7dSY6g)
+* [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
+* [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
 
 ## Інші плейлисти
 

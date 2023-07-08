@@ -7,7 +7,12 @@
 ### До виконання завдань
 
 
-
+* [Про що розділ. Структура теми, де взяти приклади коду](https://youtu.be/caW9GpoVYJM)
+* [if/elif/else](https://youtu.be/6rdschm-MFg)
+* [Оператори and, or, not](https://youtu.be/dxywKNmX8Gc)
+* [Цикл for](https://youtu.be/vxNpS7dSY6g)
+* [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
+* [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
 
 ### Після виконання завдань
 
@@ -38,3 +43,20 @@
 |  6.6b   | print, input, while, if, for, try/except, рядки, списки |
 |  6.7    | print, if, for, словники, рядки, списки, форматування рядків |
 
+## Приклади
+
+[Приклади, що показувалися у відео, можна знайти у репозиторії](https://github.com/natenka/pynenguk-examples/tree/main/examples/06_control_structures)
+
+[Розібратися з прикладами допоможе Python Tutor](http://www.pythontutor.com/).
+
+## Відповідні розділи у книзі
+
+[Контроль перебігу програми](https://pyneng.io/book/06-control-structures/)
+
+
+## Додаткові ресурси
+
+* [pythontutor - візуалізація виконання коду](http://pythontutor.com/visualize.html#)
+* [LBYL vs EAFP: Preventing or Handling Errors in Python](https://realpython.com/python-lbyl-vs-eafp/)
+* [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+* [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
