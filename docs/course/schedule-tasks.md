@@ -50,7 +50,7 @@ icon: material/calendar
  <tr>
     <td rowspan="2" align="center">6</td>
     <td rowspan="2" align="center">01.07.23</td>
-    <td>Управління ходом програми.</td>
+    <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.</td>
     <td align="center">9 (06_control_structures)</td>
     <td>6.0, 6.1, 6.2, 6.3, 6.6</td>
  </tr>
