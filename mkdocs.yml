@@ -240,6 +240,16 @@ nav:
         - book/06-control-structures/for-while-else.md
         - book/06-control-structures/exceptions.md
         - book/06-control-structures/further-reading.md
+      - 7. Робота з файлами:
+        - book/07-files/index.md
+        - book/07-files/open.md
+        - book/07-files/read.md
+        - book/07-files/write.md
+        - book/07-files/close.md
+        - book/07-files/with.md
+        - book/07-files/working-with-files.md
+        - book/07-files/examples.md
+        - book/07-files/further-reading.md
   - Курс:
     - course/index.md
     - Лекції:
