@@ -1,19 +1,32 @@
 ---
-draft: true 
-date: 2023-07-01
+# draft: true 
+date: 2023-07-10
 categories:
   - python
 tags:
   - basics
 ---
 
-# Підказки для функцій та методів
+# Як зрозуміти підказки для функцій та методів
+
+!!! warning
+
+	Цей допис йде як доповнення до [відео про підказки для функцій та методів](https://www.youtube.com/watch?v=R-4cS-vMEWg).
+    Тут немає детальних пояснень, тільки вивід підказок.
 
 Розбираємося з тим, що показує у підказках ipython та редактори/IDE.
 
 Залежно від того, як було створено метод або функцію, ipython/editor/IDE може
 відображати різні типи підказок.  Крім того, підказки можуть відрізнятися між
 ipython і редактором.
+
+!!! note
+
+    Цей пост призначений для тих, хто ще не навчився створювати власні функції.
+    Після вивчення теми "09: Функції" більшість або всі описані тут варіанти будуть зрозумілі.
+
+
+Приклад створення функції та відображення підказки для неї:
 
 ```python
 def sum_numbers(num1, num2):
@@ -27,71 +40,182 @@ In [3]: sum_numbers(100, 42)
 Out[3]: 142
 
 In [4]: sum_numbers?
-Signature: sum_numbers(num1, num2)
-Docstring: Функція обчислює суму двох чисел
-File:      ~/repos/.../<ipython-input-2>
-Type:      function
+Signature: sum_numbers(num1, num2) # (1)
+Docstring: Функція обчислює суму двох чисел # (2)
+File:      ~/repos/.../<ipython-input-2> # (3)
+Type:      function # (4)
 ```
+
+1. Опис функції, як правило, дорівнює рядку, за допомогою якого була створена функція.
+2. Рядок документації функції. Опис роботи функції, як правило, створений людиною.
+3. Де була створена функція (в якому файлі).
+4. Тип об'єкту: function для функцій, method для методів, builtin_function_or_method для деяких вбудованих функцій
 
 <!-- more -->
 
-simple function
-```python
-In [16]: round?
-Signature: round(number, ndigits=None)
-Docstring:
-Round a number to a given precision in decimal digits.
+Приклад підказки для різних функцій, для порівняння рядків Signature/File/Type
+(docstring функцій скорочено до одного рядка для спрощення порівняння):
 
-The return value is an integer if ndigits is omitted or None.  Otherwise
-the return value has the same type as the number.  ndigits may be negative.
-Type:      builtin_function_or_method
-```
+=== "ipaddress.ip_address"
 
-simple methods
+     Функція із модуля стандартної бібліотеки:
+
+    ```python
+    In [2]: ip_address? # (1)
+    Signature: ip_address(address)
+    Docstring: Take an IP string/int and return an object of the correct type.
+    File:      /usr/local/lib/python3.11/ipaddress.py
+    Type:      function
+    ```
+
+    1. Імпорт `from ipaddress import ip_address`
+
+=== "len"
+
+    Вбудована функція:
+
+    ```python
+    In [3]: len?
+    Signature: len(obj, /)
+    Docstring: Return the number of items in a container.
+    Type:      builtin_function_or_method
+    ```
+
+=== "netutils.ip.cidr_to_netmask"
+
+    Функція із стороннього модуля netutils:
+
+    ```python
+    In [4]: cidr_to_netmask? # (1)
+    Signature: cidr_to_netmask(cidr: int) -> str
+    Docstring: Creates a decimal format of a CIDR value.
+    File:      ~/venv/pyneng311/lib/python3.11/site-packages/netutils/ip.py
+    Type:      function
+    ```
+
+    1. Інсталяція `pip install netutils`, імпорт функції `from netutils.ip import cidr_to_netmask`
+
+## Термінологія
+
+![terms](https://pyneng.io/assets/images/09_function_basics_signature.png)
+
+Типи аргументів функції:
+
+![args](https://pyneng.io/assets/images/09_function_args_signature.png)
+
+
+## Базові підказки для функцій та методів
+
+### Функція round
+
+У функції round є один обов'язковий параметр number, та один необов'язковий параметр ndigits.
+Параметр ndigits необов’язковий, оскільки він має значення за замовчуванням.
+
+=== "Підказка"
+
+	```python
+	In [16]: round?
+	Signature: round(number, ndigits=None)
+	Docstring:
+	Round a number to a given precision in decimal digits.
+
+	The return value is an integer if ndigits is omitted or None.  Otherwise
+	the return value has the same type as the number.  ndigits may be negative.
+	Type:      builtin_function_or_method
+	```
+
+=== "Приклад роботи"
+
+	```python
+	In [17]: 10/3
+	Out[17]: 3.3333333333333335
+
+	In [18]: round(10/3, ndigits=3)
+	Out[18]: 3.333
+
+	In [20]: round(3.7)
+	Out[20]: 4
+	```
+
+### Метод str.lower
+
+Найпростіший варіант опису - метод без параметрів:
+
 ```python
 In [6]: s.lower?
 Signature: s.lower()
 Docstring: Return a copy of the string converted to lowercase.
 Type:      builtin_function_or_method
-
-In [7]: s.split?
-Signature: s.split(sep=None, maxsplit=-1)
-Docstring:
-Return a list of the substrings in the string, using sep as the separator string.
-
-  sep
-    The separator used to split the string.
-
-    When set to None (the default value), will split on any whitespace
-    character (including \\n \\r \\t \\f and spaces) and will discard
-    empty strings from the result.
-  maxsplit
-    Maximum number of splits (starting from the left).
-    -1 (the default value) means no limit.
-
-Note, str.split() is mainly useful for data that has been intentionally
-delimited.  With natural text that includes punctuation, consider using
-the regular expression module.
-Type:      builtin_function_or_method
 ```
 
-## positional/keyword only
+
+### Метод str.split
+
+!!! abstract "[Детальніше про метод split в довіднику](/reference/string/methods/split/)"
+
+У методу split обидва параметри необов'язкові, оскільки вони мають значення за
+замовчуванням.
 
 
-functions
+=== "Підказка"
+
+	```python
+	In [7]: s.split?
+	Signature: s.split(sep=None, maxsplit=-1)
+	Docstring:
+	Return a list of the substrings in the string, using sep as the separator string.
+
+	  sep
+		The separator used to split the string.
+
+		When set to None (the default value), will split on any whitespace
+		character (including \\n \\r \\t \\f and spaces) and will discard
+		empty strings from the result.
+	  maxsplit
+		Maximum number of splits (starting from the left).
+		-1 (the default value) means no limit.
+
+	Note, str.split() is mainly useful for data that has been intentionally
+	delimited.  With natural text that includes punctuation, consider using
+	the regular expression module.
+	Type:      builtin_function_or_method
+	```
+
+=== "Приклад роботи"
+
+	```python
+	In [2]: line = "FastEthernet0/0       15.0.15.1    YES manual up         up"
+
+	In [3]: line.split()
+	Out[3]: ['FastEthernet0/0', '15.0.15.1', 'YES', 'manual', 'up', 'up']
+
+	In [4]: line.split(maxsplit=2)
+	Out[4]: ['FastEthernet0/0', '15.0.15.1', 'YES manual up         up']
+
+	In [5]: ip = "10.1.1.1"
+
+	In [6]: ip.split(".")
+	Out[6]: ['10', '1', '1', '1']
+
+	In [7]: ip.split(".", 2)
+	Out[7]: ['10', '1', '1.1']
+
+	In [9]: ip.split(sep=".", maxsplit=1)
+	Out[9]: ['10', '1.1.1']
+	```
+
+## Використання `/` та `*` - лише позиційні або іменовані аргументи
+
+### `/` - лише позиційні
+
+Аргументи, вказані перед `/`, можна передавати лише як позиційні під час виклику функції.
+
+Приклади функцій, у яких аргументи можна передавати лише як позиційні:
+
 ```python
-In [17]: len?
+In [1]: len?
 Signature: len(obj, /)
 Docstring: Return the number of items in a container.
-Type:      builtin_function_or_method
-
-In [18]: sorted?
-Signature: sorted(iterable, /, *, key=None, reverse=False)
-Docstring:
-Return a new list containing all items from the iterable in ascending order.
-
-A custom key function can be supplied to customize the sort order, and the
-reverse flag can be set to request the result in descending order.
 Type:      builtin_function_or_method
 
 In [4]: input?
@@ -107,9 +231,9 @@ On *nix systems, readline is used if available.
 Type:      builtin_function_or_method
 ```
 
-Methods
-```python
+#### Метод str.replace
 
+```python
 In [2]: s = "test"
 
 In [3]: s.replace?
@@ -126,7 +250,8 @@ replaced.
 Type:      builtin_function_or_method
 ```
 
-list
+#### Метод list.insert
+
 ```python
 In [4]: vlans = [1, 2, 3]
 
@@ -134,7 +259,28 @@ In [5]: vlans.insert?
 Signature: vlans.insert(index, object, /)
 Docstring: Insert object before index.
 Type:      builtin_function_or_method
+```
 
+
+#### Метод dict.get
+
+```python
+In [3]: d1 = {"key": "value"}
+
+In [5]: d1.get?
+Signature: d1.get(key, default=None, /)
+Docstring: Return the value for key if key is in the dictionary, else default.
+Type:      builtin_function_or_method
+```
+
+
+### `*` - лише іменовані
+
+Аргументи, вказані після `*`, можна передавати лише як іменовані (ключові) під час виклику функції.
+
+#### Метод list.sort
+
+```python
 In [6]: vlans.sort?
 Signature: vlans.sort(*, key=None, reverse=False)
 Docstring:
@@ -149,21 +295,22 @@ ascending or descending, according to their function values.
 The reverse flag can be set to sort in descending order.
 Type:      builtin_function_or_method
 ```
+### Використання `/` та `*` одночасно
 
-
-
-dict
 ```python
-In [3]: d1 = {"key": "value"}
+In [8]: sorted?
+Signature: sorted(iterable, /, *, key=None, reverse=False)
+Docstring:
+Return a new list containing all items from the iterable in ascending order.
 
-In [5]: d1.get?
-Signature: d1.get(key, default=None, /)
-Docstring: Return the value for key if key is in the dictionary, else default.
+A custom key function can be supplied to customize the sort order, and the
+reverse flag can be set to request the result in descending order.
 Type:      builtin_function_or_method
-
 ```
 
-## var length pos/keyword args
+## Використання `*args` - довільна кількість позиційних аргументів
+
+Функція print:
 
 ```python
 In [19]: print?
@@ -183,7 +330,7 @@ Type:      builtin_function_or_method
 ```
 
 
-## no signature, docstring only
+## Для деяких вбудованих методів, не відображається рядок signature в ipython
 
 ```python
 In [4]: s.find?
@@ -205,74 +352,44 @@ Return the number of non-overlapping occurrences of substring sub in
 string S[start:end].  Optional arguments start and end are
 interpreted as in slice notation.
 Type:      builtin_function_or_method
-
 ```
 
 
-bad docstring
+## Анотація типів
 
-```python
-In [5]: s1.difference?
-Docstring:
-Return the difference of two or more sets as a new set.
+Функція із стороннього модуля netutils (1):
+{ .annotate }
 
-(i.e. all elements that are in this set but not the others.)
-Type:      builtin_function_or_method
+1. Інсталяція `pip install netutils`.
 
-In [6]: s1.intersection?
-Docstring:
-Return the intersection of two sets as a new set.
+=== "netutils"
 
-(i.e. all elements that are in both sets.)
-Type:      builtin_function_or_method
+    ```python
+	In [2]: from netutils.ip import cidr_to_netmask
 
-```
+    In [4]: cidr_to_netmask? # (1)
+    Signature: cidr_to_netmask(cidr: int) -> str
+    Docstring: Creates a decimal format of a CIDR value.
+    File:      ~/venv/pyneng311/lib/python3.11/site-packages/netutils/ip.py
+    Type:      function
+    ```
 
-## Type annotations
+=== "Приклад роботи"
 
-### simple
+	```python
+	In [1]: from netutils.ip import cidr_to_netmask
 
-```python
-In [2]: from netutils.ip import cidr_to_netmask
+	In [2]: cidr_to_netmask(24)
+	Out[2]: '255.255.255.0'
 
-In [3]: cidr_to_netmask?
-Signature: cidr_to_netmask(cidr: int) -> str
-Docstring:
-Creates a decimal format of a CIDR value.
+	In [3]: cidr_to_netmask(22)
+	Out[3]: '255.255.252.0'
 
-**IPv4** only.  For IPv6, please use `cidr_to_netmaskv6`.
+	In [5]: cidr_to_netmask(32)
+	Out[5]: '255.255.255.255'
+	```
 
-Args:
-    cidr: A CIDR value.
-
-Returns:
-    Decimal format representation of CIDR value.
-
-Examples:
-    >>> from netutils.ip import cidr_to_netmask
-    >>> cidr_to_netmask(24)
-    '255.255.255.0'
-    >>> cidr_to_netmask(17)
-    '255.255.128.0'
-File:      ~/venv/pyneng311/lib/python3.11/site-packages/netutils/ip.py
-Type:      function
-```
-
-```python
-In [1]: from netutils.ip import cidr_to_netmask
-
-In [2]: cidr_to_netmask(24)
-Out[2]: '255.255.255.0'
-
-In [3]: cidr_to_netmask(22)
-Out[3]: '255.255.252.0'
-
-In [5]: cidr_to_netmask(32)
-Out[5]: '255.255.255.255'
-
-```
-
-### complex
+### rich.inspect
 
 ```python
 In [5]: inspect?
@@ -315,3 +432,4 @@ Args:
 File:      ~/venv/pyneng311/lib/python3.11/site-packages/rich/__init__.py
 Type:      function
 ```
+
