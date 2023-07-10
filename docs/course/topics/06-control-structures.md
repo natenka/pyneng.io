@@ -14,7 +14,7 @@
 * [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
 * [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
 
-Приклади:
+#### Приклади
 
 * [01. if/elif/else. Винятки при помилках у синтаксисі](https://youtu.be/Rmfc_8xhbMA)
 * [02. if/elif/else. Перевірка пароля](https://youtu.be/rZOYNA9C3uc)
