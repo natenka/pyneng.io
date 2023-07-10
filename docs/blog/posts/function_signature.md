@@ -9,9 +9,8 @@ tags:
 
 # Як зрозуміти підказки для функцій та методів
 
-!!! warning
+!!! tip "Цей допис йде як доповнення до [відео про підказки для функцій та методів](https://www.youtube.com/watch?v=R-4cS-vMEWg)"
 
-	Цей допис йде як доповнення до [відео про підказки для функцій та методів](https://www.youtube.com/watch?v=R-4cS-vMEWg).
     Тут немає детальних пояснень, тільки вивід підказок.
 
 Розбираємося з тим, що показує у підказках ipython та редактори/IDE.
@@ -19,11 +18,6 @@ tags:
 Залежно від того, як було створено метод або функцію, ipython/editor/IDE може
 відображати різні типи підказок.  Крім того, підказки можуть відрізнятися між
 ipython і редактором.
-
-!!! note
-
-    Цей пост призначений для тих, хто ще не навчився створювати власні функції.
-    Після вивчення теми "09: Функції" більшість або всі описані тут варіанти будуть зрозумілі.
 
 
 Приклад створення функції та відображення підказки для неї:
@@ -295,7 +289,12 @@ ascending or descending, according to their function values.
 The reverse flag can be set to sort in descending order.
 Type:      builtin_function_or_method
 ```
+
 ### Використання `/` та `*` одночасно
+
+`/` та `*` можна використовувати одночасно. В даному випадку, iterable можна
+передавати тільки як позиційний аргумент, а всі інші (key, reverse) тільки як
+іменовані:
 
 ```python
 In [8]: sorted?
@@ -329,6 +328,8 @@ flush
 Type:      builtin_function_or_method
 ```
 
+Для функції print всі позиційні аргументи зберуться у args, а всі інші
+аргументи можна передавати тільки як іменовані.
 
 ## Для деяких вбудованих методів, не відображається рядок signature в ipython
 
@@ -391,6 +392,7 @@ Type:      builtin_function_or_method
 
 ### rich.inspect
 
+Підказка для rich.inspect (docstring скорочено)
 ```python
 In [5]: inspect?
 Signature:
@@ -414,21 +416,8 @@ Inspect any Python object.
 * inspect(<OBJECT>) to see summarized info.
 * inspect(<OBJECT>, methods=True) to see methods.
 * inspect(<OBJECT>, help=True) to see full (non-abbreviated) help.
-* inspect(<OBJECT>, private=True) to see private attributes (single underscore).
-* inspect(<OBJECT>, dunder=True) to see attributes beginning with double underscore.
-* inspect(<OBJECT>, all=True) to see all attributes.
+...
 
-Args:
-    obj (Any): An object to inspect.
-    title (str, optional): Title to display over inspect result, or None use type. Defaults to None.
-    help (bool, optional): Show full help text rather than just first paragraph. Defaults to False.
-    methods (bool, optional): Enable inspection of callables. Defaults to False.
-    docs (bool, optional): Also render doc strings. Defaults to True.
-    private (bool, optional): Show private attributes (beginning with underscore). Defaults to False.
-    dunder (bool, optional): Show attributes starting with double underscore. Defaults to False.
-    sort (bool, optional): Sort attributes alphabetically. Defaults to True.
-    all (bool, optional): Show all attributes. Defaults to False.
-    value (bool, optional): Pretty print value. Defaults to True.
 File:      ~/venv/pyneng311/lib/python3.11/site-packages/rich/__init__.py
 Type:      function
 ```
