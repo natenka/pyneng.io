@@ -118,6 +118,7 @@ Python:
 * [Не використовуйте імена вбудованих функцій як імена змінних](https://youtu.be/w_EoRoj6hVs)
 * [Використання словника замість простих умов](https://youtu.be/3139d6jIpIY)
 * [Огляд типів даних, коротко для чого вони використовуються](https://youtu.be/5q9sQqGKvsY)
+* [Як зрозуміти підказки для функцій та методів](https://youtu.be/R-4cS-vMEWg)
 
 ### [05 Створення базових скриптів](https://youtube.com/playlist?list=PLlwMBlO5_y3TGo9Q0csp8UHsGHFGrC171)
 
@@ -134,6 +135,18 @@ Python:
 * [Цикл for](https://youtu.be/vxNpS7dSY6g)
 * [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
 * [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
+
+Приклади:
+
+* [01. if/elif/else. Винятки при помилках у синтаксисі](https://youtu.be/Rmfc_8xhbMA)
+* [02. if/elif/else. Перевірка пароля](https://youtu.be/rZOYNA9C3uc)
+* [03. if/elif/else. Перевірка пароля. Змінна-прапорець](https://youtu.be/ichRuhYSEZY)
+* [04. if/elif/else. Перевірка пароля. Збираємо помилки в один рядок](https://youtu.be/h-aCJx9GjZc)
+* [05. for. Конвертація списку рядків у список чисел](https://youtu.be/r845XScs4oU)
+
+Поради та підказки:
+
+* [Рекомендації щодо форматування блоків коду (PEP 8)](https://youtu.be/QTyNoEn0BEg)
 
 ## Інші плейлисти
 

@@ -14,8 +14,18 @@
 * [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
 * [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
 
+Приклади:
+
+* [01. if/elif/else. Винятки при помилках у синтаксисі](https://youtu.be/Rmfc_8xhbMA)
+* [02. if/elif/else. Перевірка пароля](https://youtu.be/rZOYNA9C3uc)
+* [03. if/elif/else. Перевірка пароля. Змінна-прапорець](https://youtu.be/ichRuhYSEZY)
+* [04. if/elif/else. Перевірка пароля. Збираємо помилки в один рядок](https://youtu.be/h-aCJx9GjZc)
+* [05. for. Конвертація списку рядків у список чисел](https://youtu.be/r845XScs4oU)
+
+
 ### Після виконання завдань
 
+* [Рекомендації щодо форматування блоків коду (PEP 8)](https://youtu.be/QTyNoEn0BEg)
 
 ## Завдання
 
