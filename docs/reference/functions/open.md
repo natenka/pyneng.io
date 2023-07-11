@@ -28,7 +28,7 @@ open(
 |--------|-----------|
 | `"r"` | відкритий для читання (за замовчуванням) |
 | `"w"` | відкрити для запису, спочатку видаливши вміст файлу |
-| `"x"` | відкрити для ексклюзивного створення, якщо файл уже існує |
+| `"x"` | відкрити для ексклюзивного створення, якщо файл уже існує, виникає виняток FileExistsError |
 | `"а"` | відкрити для запису, додаючи в кінець файлу, якщо він існує |
 | `"b"` | двійковий режим |
 | `"t"` | текстовий режим (за замовчуванням) |
@@ -85,6 +85,27 @@ Python розрізняє двійковий і текстовий ввід-ви
 ### Виняток
 
 Якщо ... виникає виняток ...
+
+[Ієрархія винятків](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+
+```
+OSError
+   ├── BlockingIOError
+   ├── ChildProcessError
+   ├── ConnectionError
+   │    ├── BrokenPipeError
+   │    ├── ConnectionAbortedError
+   │    ├── ConnectionRefusedError
+   │    └── ConnectionResetError
+   ├── FileExistsError
+   ├── FileNotFoundError
+   ├── InterruptedError
+   ├── IsADirectoryError
+   ├── NotADirectoryError
+   ├── PermissionError
+   ├── ProcessLookupError
+   └── TimeoutError
+```
 
 ## Приклади використання
 
