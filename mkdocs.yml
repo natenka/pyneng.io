@@ -327,6 +327,7 @@ nav:
       - reference/functions/input.md
       - reference/functions/isinstance.md
       - reference/functions/iter.md
+      - reference/functions/open.md
       - reference/functions/sorted.md
       - reference/functions/type.md
     - Протоколи:
