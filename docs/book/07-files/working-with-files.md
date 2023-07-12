@@ -77,7 +77,7 @@ print(result)
 Наприклад, з виводу команди sh ip interface треба отримати ім'я інтерфейсу та
 MTU (файл sh_ip_interface.txt):
 
-```
+``` hl_lines="1 5 8 12 15 19"
 Ethernet0/0 is up, line protocol is up
   Internet address is 192.168.100.1/24
   Broadcast address is 255.255.255.255
@@ -171,7 +171,7 @@ print(result)
 Наприклад, з виводу `sh ip interface` потрібно отримати два параметри
 IP-адресу та MTU:
 
-```
+``` hl_lines="1 2 5 8 9 12 15 16 19"
 Ethernet0/0 is up, line protocol is up
   Internet address is 192.168.100.1/24
   Broadcast address is 255.255.255.255
