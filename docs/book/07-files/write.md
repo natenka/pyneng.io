@@ -1,99 +1,66 @@
-# Запись файлов
+# Запис файлів
 
-При записи, очень важно определиться с режимом открытия файла, чтобы
-случайно его не удалить:
+При записі дуже важливо визначитися з режимом відкриття файлу, щоб випадково
+не видалити вміст файлу:
 
-*  ``w`` - открыть файл для записи. Если файл существует, то его
-содержимое удаляется
-*  ``a`` - открыть файл для дополнения записи. Данные добавляются в
-конец файла
-*  ``x`` - открыть файл для записи. Если файл существует, запись не выполняется
+* `w` - відкрити файл для запису. Якщо файл існує, то його вміст видаляється
+* `a` - відкрити файл для доповнення запису. Дані додаються в кінці файлу
+* `x` - відкрити файл для запису. Якщо файл існує, запис не виконується
 
-При этом оба режима создают файл, если он не существует.
+Всі режими створюють файл, якщо він не існує.
 
-Для записи в файл используются такие методы:
+Для запису в файл використовуються такі методи:
 
-*  ``write`` - записать в файл одну строку
-*  ``writelines`` - позволяет передавать в качестве аргумента список строк
+* write - записати один рядок у файл
+* writelines - дозволяє передавати список рядків як аргумент
 
-## ``write``
+## write
 
-Метод ``write`` ожидает строку, для записи.
+Метод write очікує рядок для запису.
 
-Для примера, возьмем список строк с конфигурацией:
+Наприклад, візьмемо список рядків:
 
 ```python
-
-In [1]: cfg_lines = ['!',
-   ...:  'service timestamps debug datetime msec localtime show-timezone year',
-   ...:  'service timestamps log datetime msec localtime show-timezone year',
-   ...:  'service password-encryption',
-   ...:  'service sequence-numbers',
-   ...:  '!',
-   ...:  'no ip domain lookup',
-   ...:  '!',
-   ...:  'ip ssh version 2',
-   ...:  '!']
+lines = ["line1\n", "line2\n", "line3\n"]
 ```
 
-Открытие файла r2.txt в режиме для записи:
+Відкриття файлу new_data.txt в режимі запису:
 
 ```python
+In [18]: f = open('new_data.txt', "w")
 
-In [2]: f = open('r2.txt', 'w')
 ```
 
-Преобразуем список команд в одну большую строку с помощью ``join``:
+Перетворюємо список команд в один рядок за допомогою [join](/reference/string/methods/join/):
 
 ```python
+In [21]: lines_as_string = ''.join(lines)
 
-In [3]: cfg_lines_as_string = '\n'.join(cfg_lines)
-
-In [4]: cfg_lines_as_string
-Out[4]: '!\nservice timestamps debug datetime msec localtime show-timezone year\nservice timestamps log datetime msec localtime show-timezone year\nservice password-encryption\nservice sequence-numbers\n!\nno ip domain lookup\n!\nip ssh version 2\n!'
+In [22]: lines_as_string
+Out[22]: 'line1\nline2\nline3\n'
 ```
 
-Запись строки в файл:
+Запис рядка у файл:
 
 ```python
-
-In [5]: f.write(cfg_lines_as_string)
+In [23]: f.write(lines_as_string)
+Out[23]: 18
 ```
 
-Аналогично можно добавить строку вручную:
-
+Після завершення роботи з файлом його необхідно закрити:
 ```python
+In [25]: f.close()
 
-In [6]: f.write('\nhostname r2')
+In [26]: cat new_data.txt # (1)
+line1
+line2
+line3
 ```
 
-После завершения работы с файлом, его необходимо закрыть:
+1. Оскільки ipython підтримує команду cat, можна переглянути вміст файлу `cat new_data.txt`
 
-```python
 
-In [7]: f.close()
-```
-
-Так как ipython поддерживает команду cat, можно легко посмотреть
-содержимое файла:
-
-```python
-
-In [8]: cat r2.txt
-!
-service timestamps debug datetime msec localtime show-timezone year
-service timestamps log datetime msec localtime show-timezone year
-service password-encryption
-service sequence-numbers
-!
-no ip domain lookup
-!
-ip ssh version 2
-!
-hostname r2
-```
-
-## ``writelines``
+## writelines
 
 Метод ``writelines`` ожидает список строк, как аргумент.
 
