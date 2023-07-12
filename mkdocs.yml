@@ -170,6 +170,7 @@ nav:
   - " ":
     - index.md
     - faq.md
+    - keyboard_shortcuts.md
   - Книга:
     - book/index.md
     - Підготовка:
