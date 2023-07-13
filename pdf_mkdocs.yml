@@ -14,5 +14,6 @@ plugins:
       exclude_pages:
         - blog/
         - reference/
+        - course/
       cover_subtitle: Книга, курс та завдання з основ Python
       # render_js: true
