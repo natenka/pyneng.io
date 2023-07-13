@@ -17,3 +17,4 @@ plugins:
         - course/
       cover_subtitle: Книга, курс та завдання з основ Python
       # render_js: true
+      # headless_chrome_path: chromium
