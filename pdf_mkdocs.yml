@@ -1,0 +1,18 @@
+# Plugins
+plugins:
+  - blog
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+#- with-pdf:
+  - extra-sass
+  - with-pdf:
+      ordered_chapter_level: 0
+      output_path: site/pdf/document.pdf
+      author: Nataliya Samoylenko
+      toc_level: 3
+      exclude_pages:
+        - blog/
+        - reference/
+      cover_subtitle: Книга, курс та завдання з основ Python
+      # render_js: true
