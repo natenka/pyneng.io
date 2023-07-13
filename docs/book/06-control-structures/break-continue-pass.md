@@ -81,12 +81,15 @@ while True:
 Приклад із циклом for:
 
 ```python
-In [4]: for num in range(5):
-   ...:     if num == 3:
-   ...:         continue
-   ...:     else:
-   ...:         print(num)
-   ...:         
+for num in range(5):
+    if num == 3:
+        continue
+    else:
+        print(num)
+```
+
+Результат
+```
 0
 1
 2
@@ -96,17 +99,20 @@ In [4]: for num in range(5):
 Приклад із циклом while:
 
 ```python
-In [5]: i = 0
+i = 0
 
-In [6]: while i < 6:
-   ....:     i += 1
-   ....:     if i == 3:
-   ....:         print("Пропускаємо 3")
-   ....:         continue
-   ....:         print("Це ніхто не побачить")
-   ....:     else:
-   ....:         print("Поточне значення: ", i)
-   ....:         
+while i < 6:
+    i += 1
+    if i == 3:
+        print("Пропускаємо 3")
+        continue
+        print("Це ніхто не побачить")
+    else:
+        print("Поточне значення: ", i)
+```
+
+Вивід
+```
 Поточне значення:  1
 Поточне значення:  2
 Пропускаємо 3
@@ -168,12 +174,15 @@ $ python check_password_with_while_continue.py
 Приклад використання pass:
 
 ```python
-In [6]: for num in range(5):
-   ....:     if num < 3:
-   ....:         pass
-   ....:     else:
-   ....:         print(num)
-   ....:         
+for num in range(5):
+    if num < 3:
+        pass
+    else:
+        print(num)
+```
+
+Результат
+```
 3
 4
 ```

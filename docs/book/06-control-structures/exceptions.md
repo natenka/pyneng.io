@@ -39,7 +39,7 @@ In [3]: try:
    ...:     2/0
    ...: except ZeroDivisionError:
    ...:     print("You can't divide by zero")
-   ...:     
+   ...:
 You can't divide by zero
 ```
 
@@ -65,7 +65,7 @@ In [4]: try:
    ...:     print('Cool!')
    ...: except ZeroDivisionError:
    ...:     print("You can't divide by zero")
-   ...:     
+   ...:
 Let's divide some numbers
 You can't divide by zero
 ```
@@ -76,10 +76,11 @@ You can't divide by zero
 Наприклад, скрипт divide.py ділить два числа введених користувачем:
 
 ```python
+num1 = input("Введіть перше число: ")
+num2 = input("Введіть друге число: ")
+
 try:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
-    print("Результат: ", int(a)/int(b))
+    print("Результат: ", int(num1) / int(num2))
 except ValueError:
     print("Вводьте лише числа")
 except ZeroDivisionError:
@@ -113,10 +114,11 @@ $ python divide.py
 ZeroDivisionError, можна зробити так:
 
 ```python
+num1 = input("Введіть перше число: ")
+num2 = input("Введіть друге число: ")
+
 try:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
-    print("Результат: ", int(a)/int(b))
+    print("Результат: ", int(num1)/int(num2))
 except (ValueError, ZeroDivisionError):
     print("Щось пішло не так...")
 ```
@@ -149,10 +151,10 @@ $ python divide_ver2.py
 користувач, можна записати їх у блоці else:
 
 ```python
+num1 = input("Введіть перше число: ")
+num2 = input("Введіть друге число: ")
 try:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
-    result = int(a)/int(b)
+    result = int(num1)/int(num2)
 except (ValueError, ZeroDivisionError):
     print("Щось пішло не так...")
 else:
@@ -184,10 +186,10 @@ $ python divide_ver3.py
 Приклад із блоком finally:
 
 ```python
+num1 = input("Введіть перше число: ")
+num2 = input("Введіть друге число: ")
 try:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
-    result = int(a)/int(b)
+    result = int(num1)/int(num2)
 except (ValueError, ZeroDivisionError):
     print("Щось пішло не так...")
 else:
@@ -226,10 +228,10 @@ The End
 
 ```python
 while True:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
+    num1 = input("Введіть перше число: ")
+    num2 = input("Введіть друге число: ")
     try:
-        result = int(a)/int(b)
+        result = int(num1)/int(num2)
     except ValueError:
         print("Підтримуються лише числа")
     except ZeroDivisionError:
@@ -243,13 +245,13 @@ while True:
 
 ```python
 while True:
-    a = input("Введіть перше число: ")
-    b = input("Введіть друге число: ")
+    num1 = input("Введіть перше число: ")
+    num2 = input("Введіть друге число: ")
     if a.isdigit() and b.isdigit():
-        if int(b) == 0:
+        if int(num2) == 0:
             print("На нуль ділити не можна")
         else:
-            print(int(a)/int(b))
+            print(int(num1)/int(num2))
             break
     else:
         print("Підтримуються лише числа")
