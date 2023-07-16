@@ -227,13 +227,13 @@ nav:
         - book/07-files/working-with-files.md
         - book/07-files/further-reading.md
       - 8. Корисні можливості та інструменти:
-        - book/08-useful-basics/debug.md
-        - book/08-useful-basics/f-string.md
-        - book/08-useful-basics/further-reading.md
         - book/08-useful-basics/index.md
-        - book/08-useful-basics/pdbr.md
+        - book/08-useful-basics/f-string.md
         - book/08-useful-basics/variable-unpacking.md
         - book/08-useful-basics/x-comprehensions.md
+        - book/08-useful-basics/debug.md
+        - book/08-useful-basics/pdbr.md
+        - book/08-useful-basics/further-reading.md
   - Курс:
     - course/index.md
     - Лекції:
