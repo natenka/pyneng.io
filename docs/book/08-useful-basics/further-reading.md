@@ -14,20 +14,17 @@
 
 Stack Overflow:
 
--  [Ответ со множеством вариантов
-   распаковки](https://stackoverflow.com/questions/6967632/unpacking-extended-unpacking-and-nested-extended-unpacking)
+-  [Unpacking, extended unpacking and nested extended unpacking](https://stackoverflow.com/questions/6967632/unpacking-extended-unpacking-and-nested-extended-unpacking)
 
 
 pdb:
 
--  [The Python Debugger
-   (pdb)](https://pynet.twb-tech.com/blog/python/pdb.html)
+-  [The Python Debugger (pdb)](https://pynet.twb-tech.com/blog/python/pdb.html)
 -  [Python 3 Module of the Week. pdb — Interactive Debugger](https://pymotw.com/3/pdb/)
 -  [Python Debugging With Pdb](https://realpython.com/python-debugging-pdb/)
--  [Nathan Yergler: In Depth PDB - PyCon
-   2014](https://www.youtube.com/watch?v=lnlZGhnULn4)
+-  [Nathan Yergler: In Depth PDB - PyCon 2014](https://www.youtube.com/watch?v=lnlZGhnULn4)
 
-Отладчики на основе pdb:
+Налагоджувачі на основі pdb:
 
 -  [Web-PDB](https://github.com/romanvm/python-web-pdb)
 -  [PuDB](https://github.com/inducer/pudb)
