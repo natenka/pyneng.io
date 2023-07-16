@@ -232,7 +232,6 @@ nav:
         - book/08-useful-basics/variable-unpacking.md
         - book/08-useful-basics/x-comprehensions.md
         - book/08-useful-basics/debug.md
-        - book/08-useful-basics/pdbr.md
         - book/08-useful-basics/further-reading.md
   - Курс:
     - course/index.md
