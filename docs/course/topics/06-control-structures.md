@@ -13,6 +13,10 @@
 * [Цикл for](https://youtu.be/vxNpS7dSY6g)
 * [Розпакування змінних у циклі for](https://youtu.be/XNPkd2GOUn4)
 * [Використання функції range у циклі for](https://youtu.be/-ZC28yW7PJY)
+* [Цикл while](https://youtu.be/ll7Lpc_V1_8)
+* [Використання break, continue, pass](https://youtu.be/GNelzqM6bi8)
+* [Робота з винятками try/except/else/finally](https://youtu.be/3BsgHuOHh6k)
+* [Приклад роботи з винятками try/except/else/finally](https://youtu.be/_KCtLxtZU-I)
 
 #### Приклади
 
@@ -21,6 +25,11 @@
 * [03. if/elif/else. Перевірка пароля. Змінна-прапорець](https://youtu.be/ichRuhYSEZY)
 * [04. if/elif/else. Перевірка пароля. Збираємо помилки в один рядок](https://youtu.be/h-aCJx9GjZc)
 * [05. for. Конвертація списку рядків у список чисел](https://youtu.be/r845XScs4oU)
+* [06. for if. Конвертація списку рядків у список чисел із фільтрацією даних](https://youtu.be/13IRhykc_Mk)
+* [07. Цикл for всередині for. Генерація конфігурації для інтерфейсів](https://youtu.be/Q2BxlofXxEM)
+* [08. Цикл for всередині for та if. Генерація конфігурації для інтерфейсів](https://youtu.be/uf1xvdL-QMQ)
+* [09. Використання try/except для відбору чисел зі списку](https://youtu.be/_AQbBPTLhYg)
+* [10. Цикл while. Запит введення користувача, доки не буде введено число](https://youtu.be/mswxQShKZ_I)
 
 
 ### Після виконання завдань
