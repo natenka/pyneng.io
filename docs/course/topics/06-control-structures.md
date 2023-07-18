@@ -30,7 +30,9 @@
 * [08. Цикл for всередині for та if. Генерація конфігурації для інтерфейсів](https://youtu.be/uf1xvdL-QMQ)
 * [09. Використання try/except для відбору чисел зі списку](https://youtu.be/_AQbBPTLhYg)
 * [10. Цикл while. Запит введення користувача, доки не буде введено число](https://youtu.be/mswxQShKZ_I)
-
+* [11. Цикл while з обмеженням на кількість повторень](https://youtu.be/RI_REJSULaU)
+* [12. Цикл while з else](https://youtu.be/ci4xO05oaC8)
+* [13. Цикл for з else та break](https://youtu.be/20smmfVkTB8)
 
 ### Після виконання завдань
 
