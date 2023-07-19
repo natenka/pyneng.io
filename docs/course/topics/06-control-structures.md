@@ -34,6 +34,19 @@
 * [12. Цикл while з else](https://youtu.be/ci4xO05oaC8)
 * [13. Цикл for з else та break](https://youtu.be/20smmfVkTB8)
 
+### Корисні відео з інших тем
+
+Також тут корисно почати розбиратися з налагодженням коду. Сайт pythontutor і
+debugger у Thonny можуть сильно допомогти в розумінні циклів.
+
+[Debug (налагодження коду)](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Sh8dt1zRlTqvyOswb2wo33):
+
+* [01. Про що розділ](https://youtu.be/E41CDv3hSAQ)
+* [02. Сайт pythontutor](https://youtu.be/RzcXobQqXuc)
+* [03. Використання print, pprint, print(f"{value=}")](https://youtu.be/Sr4Y6C4FklA)
+* [04. Модуль rich (rich.print, rich.inspect, rich.traceback)](https://youtu.be/YTpoUPJkLFA)
+
+
 ### Після виконання завдань
 
 * [Рекомендації щодо форматування блоків коду (PEP 8)](https://youtu.be/QTyNoEn0BEg)

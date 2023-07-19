@@ -13,6 +13,10 @@
 
 Основи:
 
+* [01. Про що розділ](https://youtu.be/E41CDv3hSAQ)
+* [02. Сайт pythontutor](https://youtu.be/RzcXobQqXuc)
+* [03. Використання print, pprint, print(f"{value=}")](https://youtu.be/Sr4Y6C4FklA)
+* [04. Модуль rich (rich.print, rich.inspect, rich.traceback)](https://youtu.be/YTpoUPJkLFA)
 
 ## Відповідні розділи у книзі
 
