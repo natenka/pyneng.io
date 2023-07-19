@@ -247,6 +247,7 @@ nav:
       - course/topics/04-data-types.md
       - course/topics/05-basic-scripts.md
       - course/topics/06-control-structures.md
+      - course/topics/debug.md
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/calendar.md
