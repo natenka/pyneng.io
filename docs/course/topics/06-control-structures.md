@@ -47,6 +47,7 @@ debugger у Thonny можуть сильно допомогти в розумі�
 * [04. Модуль rich (rich.print, rich.inspect, rich.traceback)](https://youtu.be/YTpoUPJkLFA)
 * [05. Debug з Thonny. Два режими налагодження: nicer та faster](https://youtu.be/TaMBD8yU7mU)
 * [06. Debug з Thonny. Приклад використання налагоджувача nicer](https://youtu.be/ufv0DdfRLQU)
+* [07. Debug з Thonny. Приклад використання налагоджувача faster. Використання breakpoint](https://youtu.be/81bMAo4BFek)
 
 
 
