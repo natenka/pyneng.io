@@ -55,7 +55,7 @@ icon: material/calendar
     <td>6.0, 6.1, 6.2, 6.3, 6.6</td>
  </tr>
  <tr>
-    <td>Налагодження коду.</td>
+    <td><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>

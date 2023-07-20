@@ -44,7 +44,7 @@ icon: material/calendar-text
  <tr>
     <td align="center">6</td>
     <td align="center">01.07.23</td>
-    <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br>Налагодження коду.</td>
+    <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
  </tr>
  <tr>
     <td align="center">7</td>
