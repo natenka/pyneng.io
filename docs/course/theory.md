@@ -22,4 +22,5 @@ icon: material/youtube-tv
 Окремі playlist на теми, які розглядаються в різних розділах
 
 * [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
+* [Debug (налагодження коду)](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Sh8dt1zRlTqvyOswb2wo33).
 

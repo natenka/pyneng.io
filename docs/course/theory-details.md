@@ -167,7 +167,8 @@ Python:
 
 * [Редактор Thonny. Основи](https://youtu.be/AM9cw6a7mzE)
 * [Запуск коду в Thonny і робота з input і sys.argv](https://youtu.be/XwQMvJApVBI)
-
+* [Debug з Thonny. Два режими налагодження: nicer та faster](https://youtu.be/TaMBD8yU7mU)
+* [Debug з Thonny. Приклад використання налагоджувача nicer](https://youtu.be/ufv0DdfRLQU)
 
 
 ### [Debug (налагодження коду)](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Sh8dt1zRlTqvyOswb2wo33).
@@ -178,4 +179,7 @@ Python:
 * [02. Сайт pythontutor](https://youtu.be/RzcXobQqXuc)
 * [03. Використання print, pprint, print(f"{value=}")](https://youtu.be/Sr4Y6C4FklA)
 * [04. Модуль rich (rich.print, rich.inspect, rich.traceback)](https://youtu.be/YTpoUPJkLFA)
+* [05. Debug з Thonny. Два режими налагодження: nicer та faster](https://youtu.be/TaMBD8yU7mU)
+* [06. Debug з Thonny. Приклад використання налагоджувача nicer](https://youtu.be/ufv0DdfRLQU)
+
 
