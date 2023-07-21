@@ -161,6 +161,10 @@ Python:
 
 * [Рекомендації щодо форматування блоків коду (PEP 8)](https://youtu.be/QTyNoEn0BEg)
 
+### [07 Робота з файлами](https://youtube.com/playlist?list=PLlwMBlO5_y3QNk7wBhLztQU3V6hA-Cyqw)
+
+* [Основи роботи з файлами](https://youtu.be/r5RavsRLgZE)
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
