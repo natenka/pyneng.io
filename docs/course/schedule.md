@@ -49,7 +49,7 @@ icon: material/calendar-text
  <tr>
     <td align="center">7</td>
     <td align="center">08.07.23</td>
-    <td>Робота із файлами.</td>
+    <td><a href="https://pyneng.io/course/topics/07-files/">Робота із файлами</a>.</td>
  </tr>
  <tr>
     <td align="center">8</td>
