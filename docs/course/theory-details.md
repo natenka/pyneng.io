@@ -165,6 +165,10 @@ Python:
 
 * [Основи роботи з файлами](https://youtu.be/r5RavsRLgZE)
 
+Приклади:
+
+* [01. Фільтрація рядків](https://youtu.be/fXoA4QQWUtI)
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
