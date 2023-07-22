@@ -11,8 +11,9 @@
 #### Приклади
 
 * [01. Фільтрація рядків](https://youtu.be/fXoA4QQWUtI)
-* [02. Список IP-адрес із sh ip int br](https://youtu.be/D7yJ78i_D6U)
-* [03. Список списків із sh ip int br](https://youtu.be/zKi4erf2nww)
+* [02. Список IP-адрес із виводу sh ip int br](https://youtu.be/D7yJ78i_D6U)
+* [03. Список списків із виводу sh ip int br](https://youtu.be/zKi4erf2nww)
+* [04. Словник із виводу sh ip int br](https://youtu.be/HtMdNWcFAd4)
 
 ### Корисні відео з інших тем
 
