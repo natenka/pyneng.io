@@ -171,6 +171,8 @@ Python:
 * [02. Список IP-адрес із виводу sh ip int br](https://youtu.be/D7yJ78i_D6U)
 * [03. Список списків із виводу sh ip int br](https://youtu.be/zKi4erf2nww)
 * [04. Словник із виводу sh ip int br](https://youtu.be/HtMdNWcFAd4)
+* [05. Фільтрація рядків із одного файлу і запис в інший файл](https://youtu.be/WzLwVQCjyfY)
+* [06. Фільтрація рядків з файлу, сортування, відображення даних у стовпцях](https://youtu.be/G4BwPCyTOoI)
 
 ## Інші плейлисти
 
