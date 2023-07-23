@@ -141,13 +141,13 @@ Out[27]: []
 У виразі розпакування може бути лише одна змінна із зірочкою.
 
 ```python
-In [28]: vlans = (10, 11, 13, 30)
+In [4]: vlans = (10, 11, 13, 30)
 
-In [29]: first, *rest, *others = vlans
-  File "<ipython-input-37-dedf7a08933a>", line 1
+In [5]: first, *rest, *others = vlans
+  Cell In[5], line 1
     first, *rest, *others = vlans
-                                 ^
-SyntaxError: two starred expressions in assignment
+    ^
+SyntaxError: multiple starred expressions in assignment
 ```
 
 Змінна із зірочкою може бути не тільки в кінці виразу:
