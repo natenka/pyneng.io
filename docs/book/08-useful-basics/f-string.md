@@ -21,7 +21,7 @@ In [3]: f"IP: {ip}, mask: {mask}"
 Out[3]: 'IP: 10.1.1.1, mask: 24'
 ```
 
-Аналогічний результат format можна отримати так: "IP: {ip}, mask: {mask}".format(ip=ip, mask=mask).
+Аналогічний результат format можна отримати так:
 
 ```python
 "IP: {ip}, mask: {mask}".format(ip=ip, mask=mask)
