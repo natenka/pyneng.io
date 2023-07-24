@@ -233,6 +233,9 @@ nav:
         - book/08-useful-basics/x-comprehensions.md
         - book/08-useful-basics/debug.md
         - book/08-useful-basics/further-reading.md
+    - Функції та модулі:
+      - 9. Функції:
+        - book/09-functions/index.md
   - Курс:
     - course/index.md
     - Лекції:
