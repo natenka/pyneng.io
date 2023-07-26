@@ -234,8 +234,14 @@ nav:
         - book/08-useful-basics/debug.md
         - book/08-useful-basics/further-reading.md
     - Функції та модулі:
-      - 9. Функції:
+      - 9. Функції. Основи:
         - book/09-functions/index.md
+        - book/09-functions/create-func.md
+        - book/09-functions/namespace.md
+    #- 10. Корисні вбудовані функції:
+    #- 11. Модулі:
+    #- 12. Корисні модулі:
+    #- 13. Функції. Продовження. Зірочка в аргументах та параметрах, аннотація
   - Курс:
     - course/index.md
     - Лекції:
