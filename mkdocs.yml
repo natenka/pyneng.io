@@ -238,6 +238,7 @@ nav:
         - book/09-functions/index.md
         - book/09-functions/create-func.md
         - book/09-functions/namespace.md
+        - book/09-functions/func-params-args.md
     #- 10. Корисні вбудовані функції:
     #- 11. Модулі:
     #- 12. Корисні модулі:
