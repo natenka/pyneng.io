@@ -18,8 +18,8 @@
 
 ```python
 def configure_intf(intf_name, ip, mask):
-	print('interface', intf_name)
-	print('ip address', ip, mask)
+	print("interface", intf_name)
+	print("ip address", ip, mask)
 ```
 
 
@@ -50,11 +50,11 @@ IP-адресою. Функція має три параметри: intf_name, i
 
 
 ```python
-In [2]: configure_intf('F0/0', '10.1.1.1', '255.255.255.0')
+In [2]: configure_intf("F0/0", "10.1.1.1", "255.255.255.0")
 interface F0/0
 ip address 10.1.1.1 255.255.255.0
 
-In [3]: configure_intf('Fa0/1', '94.150.197.1', '255.255.255.248')
+In [3]: configure_intf("Fa0/1", "94.150.197.1", "255.255.255.248")
 interface Fa0/1
 ip address 94.150.197.1 255.255.255.248
 ```
@@ -85,7 +85,7 @@ Out[7]: [0, 2, 22, 40]
 виявиться значення None:
 
 ```python
-In [8]: result = configure_intf('Fa0/0', '10.1.1.1', '255.255.255.0')
+In [8]: result = configure_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
 interface Fa0/0
 ip address 10.1.1.1 255.255.255.0
 
@@ -106,18 +106,18 @@ Python. За замовчуванням функція завжди поверт
 
 ```python
 def configure_intf(intf_name, ip, mask):
-    config = f'interface {intf_name}\nip address {ip} {mask}'
+    config = f"interface {intf_name}\nip address {ip} {mask}"
     return config
 
 
-In [11]: result = configure_intf('Fa0/0', '10.1.1.1', '255.255.255.0')
+In [11]: result = configure_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
 
 In [12]: print(result)
 interface Fa0/0
 ip address 10.1.1.1 255.255.255.0
 
 In [13]: result
-Out[13]: 'interface Fa0/0\nip address 10.1.1.1 255.255.255.0'
+Out[13]: "interface Fa0/0\nip address 10.1.1.1 255.255.255.0"
 ```
 
 Тепер у зміні result знаходиться рядок із командами для налаштування інтерфейсу.
@@ -132,13 +132,13 @@ Out[13]: 'interface Fa0/0\nip address 10.1.1.1 255.255.255.0'
 
 ```python
 def configure_intf(intf_name, ip, mask):
-    config = f'interface {intf_name}\nip address {ip} {mask}'
+    config = f"interface {intf_name}\nip address {ip} {mask}"
     return config
-    print('Конфігурація готова')
+    print("Конфігурація готова")
 
 
-In [15]: configure_intf('Fa0/0', '10.1.1.1', '255.255.255.0')
-Out[15]: 'interface Fa0/0\nip address 10.1.1.1 255.255.255.0'
+In [15]: configure_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
+Out[15]: "interface Fa0/0\nip address 10.1.1.1 255.255.255.0"
 ```
 
 Функція може повертати кілька значень. У цьому випадку вони пишуться через кому
@@ -146,26 +146,26 @@ Out[15]: 'interface Fa0/0\nip address 10.1.1.1 255.255.255.0'
 
 ```python
 def configure_intf(intf_name, ip, mask):
-    config_intf = f'interface {intf_name}\n'
-    config_ip = f'ip address {ip} {mask}'
+    config_intf = f"interface {intf_name}\n"
+    config_ip = f"ip address {ip} {mask}"
     return config_intf, config_ip
 
 
-In [17]: result = configure_intf('Fa0/0', '10.1.1.1', '255.255.255.0')
+In [17]: result = configure_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
 
 In [18]: result
-Out[18]: ('interface Fa0/0\n', 'ip address 10.1.1.1 255.255.255.0')
+Out[18]: ("interface Fa0/0\n", "ip address 10.1.1.1 255.255.255.0")
 
 In [19]: type(result)
 Out[19]: tuple
 
-In [20]: intf, ip_addr = configure_intf('Fa0/0', '10.1.1.1', '255.255.255.0')
+In [20]: intf, ip_addr = configure_intf("Fa0/0", "10.1.1.1", "255.255.255.0")
 
 In [21]: intf
-Out[21]: 'interface Fa0/0\n'
+Out[21]: "interface Fa0/0\n"
 
 In [22]: ip_addr
-Out[22]: 'ip address 10.1.1.1 255.255.255.0'
+Out[22]: "ip address 10.1.1.1 255.255.255.0"
 ```
 
 
@@ -176,11 +176,11 @@ Out[22]: 'ip address 10.1.1.1 255.255.255.0'
 
 ```python
 def configure_intf(intf_name, ip, mask):
-    '''
+    """
     Функція генерує конфігурацію інтерфейсу
-    '''
-    config_intf = f'interface {intf_name}\n'
-    config_ip = f'ip address {ip} {mask}'
+    """
+    config_intf = f"interface {intf_name}\n"
+    config_ip = f"ip address {ip} {mask}"
     return config_intf, config_ip
 
 

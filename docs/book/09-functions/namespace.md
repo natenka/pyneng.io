@@ -47,7 +47,7 @@
 
 ```python
 def configure_intf(intf_name, ip, mask):
-    intf_config = f'interface {intf_name}\nip address {ip} {mask}'
+    intf_config = f"interface {intf_name}\nip address {ip} {mask}"
     return intf_config
 
 
@@ -57,7 +57,7 @@ NameError                                 Traceback (most recent call last)
 <ipython-input-2-5983e972fb1c> in <module>
 ----> 1 intf_config
 
-NameError: name 'intf_config' is not defined
+NameError: name "intf_config' is not defined
 ```
 
 Зауважте, що змінна intf_config недоступна за межами функції. Для того щоб
@@ -65,8 +65,8 @@ NameError: name 'intf_config' is not defined
 змінну:
 
 ```python
-In [3]: result = configure_intf('F0/0', '10.1.1.1', '255.255.255.0')
+In [3]: result = configure_intf("F0/0", "10.1.1.1", "255.255.255.0")
 
 In [4]: result
-Out[4]: 'interface F0/0\nip address 10.1.1.1 255.255.255.0'
+Out[4]: "interface F0/0\nip address 10.1.1.1 255.255.255.0"
 ```
