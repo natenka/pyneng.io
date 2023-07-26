@@ -238,7 +238,12 @@ nav:
         - book/09-functions/index.md
         - book/09-functions/create-func.md
         - book/09-functions/namespace.md
-        - book/09-functions/func-params-args.md
+        - Параметри та аргументи:
+          - book/09-functions/params-args.md
+          - book/09-functions/params-types.md
+          - book/09-functions/args-types.md
+        - book/09-functions/common-gotchas.md
+        - book/09-functions/further-reading.md
     #- 10. Корисні вбудовані функції:
     #- 11. Модулі:
     #- 12. Корисні модулі:
