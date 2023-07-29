@@ -230,8 +230,8 @@ nav:
         - book/08-useful-basics/index.md
         - book/08-useful-basics/f-string.md
         - book/08-useful-basics/variable-unpacking.md
-        - book/08-useful-basics/x-comprehensions.md
-        - book/08-useful-basics/debug.md
+        #- book/08-useful-basics/x-comprehensions.md
+        #- book/08-useful-basics/debug.md
         - book/08-useful-basics/further-reading.md
     - Функції та модулі:
       - 9. Функції. Основи:
@@ -242,18 +242,18 @@ nav:
           - book/09-functions/params-args.md
           - book/09-functions/params-types.md
           - book/09-functions/args-types.md
-        - book/09-functions/common-gotchas.md
+        #- book/09-functions/common-gotchas.md
         - book/09-functions/further-reading.md
       - 10. Корисні вбудовані функції:
         - book/10-useful-functions/print.md
         - book/10-useful-functions/range.md
         - book/10-useful-functions/sorted.md
-        - book/10-useful-functions/enumerate.md
-        - book/10-useful-functions/zip.md
-        - book/10-useful-functions/all-any.md
-        - book/10-useful-functions/lambda.md
-        - book/10-useful-functions/map.md
-        - book/10-useful-functions/filter.md
+        #- book/10-useful-functions/enumerate.md
+        #- book/10-useful-functions/zip.md
+        #- book/10-useful-functions/all-any.md
+        #- book/10-useful-functions/lambda.md
+        #- book/10-useful-functions/map.md
+        #- book/10-useful-functions/filter.md
     #- 11. Модулі:
     #- 12. Корисні модулі:
     #- 13. Функції. Продовження. Зірочка в аргументах та параметрах, аннотація
