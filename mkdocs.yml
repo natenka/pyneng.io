@@ -244,7 +244,16 @@ nav:
           - book/09-functions/args-types.md
         - book/09-functions/common-gotchas.md
         - book/09-functions/further-reading.md
-    #- 10. Корисні вбудовані функції:
+      - 10. Корисні вбудовані функції:
+        - book/10-useful-functions/print.md
+        - book/10-useful-functions/range.md
+        - book/10-useful-functions/sorted.md
+        - book/10-useful-functions/enumerate.md
+        - book/10-useful-functions/zip.md
+        - book/10-useful-functions/all-any.md
+        - book/10-useful-functions/lambda.md
+        - book/10-useful-functions/map.md
+        - book/10-useful-functions/filter.md
     #- 11. Модулі:
     #- 12. Корисні модулі:
     #- 13. Функції. Продовження. Зірочка в аргументах та параметрах, аннотація
