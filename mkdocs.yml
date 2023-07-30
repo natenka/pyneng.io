@@ -278,6 +278,7 @@ nav:
       - course/calendar.md
       - course/slack.md
       - course/links.md
+      - course/todo.md
   - Завдання:
     - tasks/index.md
     - tasks/pyneng.md
