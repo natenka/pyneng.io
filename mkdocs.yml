@@ -145,7 +145,6 @@ markdown_extensions:
 nav:
   - " ":
     - index.md
-    - course/slack.md
     - keyboard_shortcuts.md
   - Книга:
     - book/index.md
@@ -276,7 +275,6 @@ nav:
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/calendar.md
-      - course/slack.md
       - course/links.md
       - course/todo.md
   - Завдання:
@@ -348,3 +346,5 @@ nav:
       - reference/glossary/index.md
   - Блог:
     - blog/index.md
+  - Поставити запитання:
+    - slack/index.md
