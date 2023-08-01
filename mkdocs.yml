@@ -145,7 +145,7 @@ markdown_extensions:
 nav:
   - " ":
     - index.md
-    - faq.md
+    - course/slack.md
     - keyboard_shortcuts.md
   - Книга:
     - book/index.md
