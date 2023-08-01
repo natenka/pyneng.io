@@ -173,6 +173,10 @@ Python:
 * [04. Словник із виводу sh ip int br](https://youtu.be/HtMdNWcFAd4)
 * [05. Фільтрація рядків із одного файлу і запис в інший файл](https://youtu.be/WzLwVQCjyfY)
 * [06. Фільтрація рядків з файлу, сортування, відображення даних у стовпцях](https://youtu.be/ftn7TANN2LQ)
+* [07. Словник interface: ip з конфігураційного файлу](https://youtu.be/o8dptMd4t7E)
+* [08. Відбір секцій інтерфейсів із файлу, запис в інший файл](https://youtu.be/BEQSTEIJqsg)
+* [09. Словник interface: список команд з конфігураційного файлу. Змінна-прапорець](https://youtu.be/o16Rj9F28fI)
+* [10. Словник interface: список команд з конфігураційного файлу](https://youtu.be/_1Kjp1AOlgs)
 
 ## Інші плейлисти
 
