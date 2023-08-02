@@ -27,6 +27,13 @@ icon: material/check-all
 * 13 Функція map
 * 13 Функція filter
 
+Add:
+
+* return None or value
+* raise vs return
+* return PEP8
+
+
 ## Лекції
 
 ### 05

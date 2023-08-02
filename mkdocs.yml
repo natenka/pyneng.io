@@ -272,6 +272,8 @@ nav:
       - course/topics/06-control-structures.md
       - course/topics/debug.md
       - course/topics/07-files.md
+      - course/topics/08-useful-basics.md
+      - course/topics/09-functions.md
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/calendar.md
