@@ -12,6 +12,8 @@
 * [02 Створення функції. Термінологія](https://youtu.be/kzEJOPz8dRg)
 * [03 Базовий приклад створення функції](https://youtu.be/z7g75ndijV0)
 * [04 Return](https://youtu.be/bFhKy9Tf2iY)
+* [05 Приклад функції для фільтрації рядків із файлу](https://youtu.be/HH2rYK_sK6c)
+* [06 Docstring](https://youtu.be/Urld68FzS5k)
 
 #### Приклади
 

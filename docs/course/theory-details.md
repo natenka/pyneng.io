@@ -178,6 +178,21 @@ Python:
 * [09. Словник interface: список команд з конфігураційного файлу. Змінна-прапорець](https://youtu.be/o16Rj9F28fI)
 * [10. Словник interface: список команд з конфігураційного файлу](https://youtu.be/_1Kjp1AOlgs)
 
+
+### [08 Корисні можливості та інструменти](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Th5GRWS9FquDJQBiwKURV9)
+
+### [09 Функції. Основи](https://youtube.com/playlist?list=PLlwMBlO5_y3RWoXcmUh_h3LqJ8V5tPL3v)
+
+Основи:
+
+* [01 Про розділ. Функції. Основи](https://youtu.be/vPxO3a6cbn0)
+* [02 Створення функції. Термінологія](https://youtu.be/kzEJOPz8dRg)
+* [03 Базовий приклад створення функції](https://youtu.be/z7g75ndijV0)
+* [04 Return](https://youtu.be/bFhKy9Tf2iY)
+* [05 Приклад функції для фільтрації рядків із файлу](https://youtu.be/HH2rYK_sK6c)
+* [06 Docstring](https://youtu.be/Urld68FzS5k)
+
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
