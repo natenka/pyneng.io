@@ -14,6 +14,7 @@
 * [04 Return](https://youtu.be/bFhKy9Tf2iY)
 * [05 Приклад функції для фільтрації рядків із файлу](https://youtu.be/HH2rYK_sK6c)
 * [06 Docstring](https://youtu.be/Urld68FzS5k)
+* [07 Простори імен. Області видимості змінних](https://youtu.be/Ce-aQVEAbPI)
 
 #### Приклади
 
