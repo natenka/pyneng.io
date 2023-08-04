@@ -18,6 +18,10 @@
 
 #### Приклади
 
+* [01. Функція grep_cfg](https://youtu.be/FZ_jjIGCJXo)
+* [02. Функція grep_cfg. Обробка списку підрядків](https://youtu.be/BRHzVF4s_F8)
+* [03. Функція grep_cfg. Додаємо додаткову функцію](https://youtu.be/NKPbSsFh4zI)
+
 
 ### Корисні відео з інших тем
 

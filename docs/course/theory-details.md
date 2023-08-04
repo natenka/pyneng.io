@@ -193,6 +193,11 @@ Python:
 * [06 Docstring](https://youtu.be/Urld68FzS5k)
 * [07 Простори імен. Області видимості змінних](https://youtu.be/Ce-aQVEAbPI)
 
+Приклади:
+
+* [01. Функція grep_cfg](https://youtu.be/FZ_jjIGCJXo)
+* [02. Функція grep_cfg. Обробка списку підрядків](https://youtu.be/BRHzVF4s_F8)
+* [03. Функція grep_cfg. Додаємо додаткову функцію](https://youtu.be/NKPbSsFh4zI)
 
 ## Інші плейлисти
 
