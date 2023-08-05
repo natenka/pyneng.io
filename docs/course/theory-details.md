@@ -198,6 +198,10 @@ Python:
 * [01. Функція grep_cfg](https://youtu.be/FZ_jjIGCJXo)
 * [02. Функція grep_cfg. Обробка списку підрядків](https://youtu.be/BRHzVF4s_F8)
 * [03. Функція grep_cfg. Додаємо додаткову функцію](https://youtu.be/NKPbSsFh4zI)
+* [04. Функція password_check](https://youtu.be/uuzluS9YunQ)
+* [05. Функція password_check. Додаємо контроль чи робити певну перевірку](https://youtu.be/iHe5sCiy9Oo)
+* [06. Функція get_intf_ip_dict_from_cfg. Словник interface: ip з конфігураційного файлу](https://youtu.be/bwYmp6fx138)
+
 
 ## Інші плейлисти
 
