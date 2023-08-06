@@ -24,6 +24,8 @@
 * [04. Функція password_check](https://youtu.be/uuzluS9YunQ)
 * [05. Функція password_check. Додаємо контроль чи робити певну перевірку](https://youtu.be/iHe5sCiy9Oo)
 * [06. Функція get_intf_ip_dict_from_cfg. Словник interface: ip з конфігураційного файлу](https://youtu.be/bwYmp6fx138)
+* [07. Функція get_host_intf_ip_dict. Збираємо інформацію з декількох конфіг файлів](https://youtu.be/YMM80Da5wxU)
+
 
 ### Корисні відео з інших тем
 
