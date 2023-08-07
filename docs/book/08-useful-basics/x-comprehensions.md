@@ -1,46 +1,45 @@
-# List, dict, set comprehensions
+# Спискові, словникові, множинні вирази
 
-Python поддерживает специальные выражения, которые позволяют компактно
-создавать списки, словари и множества.
+Python підтримує спеціальні вирази, які дозволяють компактно створювати списки,
+словники та множини.
 
-На английском эти выражения называются, соответственно:
+Англійською ці вирази називаються, відповідно:
 
--  List comprehensions
--  Dict comprehensions
--  Set comprehensions
+-  List comprehensions (спискові вирази)
+-  Dict comprehensions (словникові вирази)
+-  Set comprehensions (множинні вирази)
 
-К сожалению, официальный перевод на русский звучит как [абстракция списков или списковое включение](https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5),
-что не особо помогает понять суть объекта.
+Ці вирази не тільки дозволяють компактніше створювати відповідні об'єкти, але й
+створюють їх швидше. І хоча спочатку вони вимагають певної звички використання
+та розуміння, вони часто використовуються.
 
-В книге использовался перевод "генератор списка", что, к сожалению, тоже
-не самый удачный вариант, так как в Python есть отдельное понятие
-генератор и генераторные выражения, но он лучше отображает суть
-выражения.
+## Синтаксис
 
-Эти выражения не только позволяют более компактно создавать
-соответствующие объекты, но и создают их быстрее. И хотя поначалу они
-требуют определенной привычки использования и понимания, они очень часто
-используются.
+Синтаксис спискового виразу (синтаксис словникових та множинних виразів
+відрізняється тільки дужками):
 
-## List comprehensions (генераторы списков)
+```python
+[expression for item1 in iterable1 if condition1
+            for item2 in iterable2 if condition2
+            ...
+            for itemN in iterableN if conditionN]
+```
 
-Генератор списка (list comprehensions или list comp) - это выражение вида:
+В найпростішому варіанті (один цикл без умови)
+
+```python
+[expression for item1 in iterable1 if condition1]
+```
+
+## Спискові вирази (list comprehensions)
+
+Приклад спискового виразу:
 
 ```python
 vlans = [int(vl) for vl in items]
 ```
 
-Список items:
-
-```python
-items = ["10", "20", "30", "1", "11", "100"]
-```
-
-В общем случае, list comprehension это выражение, которое преобразует
-итерируемый объект в список. То есть, последовательность элементов
-преобразуется и добавляется в новый список.
-
-List comp выше аналогичен такой цикл:
+Списковий вираз дозволяє записати код:
 
 ```python
 items = ["10", "20", "30", "1", "11", "100"]
@@ -48,28 +47,30 @@ items = ["10", "20", "30", "1", "11", "100"]
 vlans = []
 for vl in items:
     vlans.append(int(vl))
-
-print(vlans)
-# [10, 20, 30, 1, 11, 100]
 ```
 
-Соответствие между обычным циклом и генератором списка:
+Таким списковим виразом:
 
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp.png
-:align: center
-:class: only-light
+```python
+items = ["10", "20", "30", "1", "11", "100"]
+vlans = [int(vl) for vl in items]
+```
 
-.. only:: html
+Результат буде однаковим, список vlans:
 
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_dark.png
-   :align: center
-   :class: only-dark
+```python
+[10, 20, 30, 1, 11, 100]
+```
 
-В list comprehensions можно использовать выражение if. Таким образом
-можно добавлять в список только некоторые объекты.
+Відповідність між звичайним циклом та списковим виразом:
 
-Например, такой цикл отбирает те элементы, которые являются числами,
-конвертирует их и добавляет в итоговый список only_digits:
+![list_comp](https://pyneng.io/assets/images/08_list_comp.png)
+
+У спискових виразах можна використовувати умови if. Таким чином можна додавати
+до списку лише деякі елементи з ітерованого об'єкту.
+
+Наприклад, такий цикл відбирає ті елементи, які є числами, конвертує їх та
+додає до списку only_digits:
 
 ```python
 items = ['10', '20', 'a', '30', 'b', '40']
@@ -79,43 +80,33 @@ only_digits = []
 for item in items:
     if item.isdigit():
         only_digits.append(int(item))
-
-In [9]: print(only_digits)
-[10, 20, 30, 40]
 ```
 
-Аналогичный вариант в виде list comprehensions:
+Аналогічний варіант як списковий вираз:
 
 ```python
 items = ['10', '20', 'a', '30', 'b', '40']
 only_digits = [int(item) for item in items if item.isdigit()]
+```
 
-In [12]: print(only_digits)
+Результат буде однаковим, список only_digits:
+```python
 [10, 20, 30, 40]
 ```
 
-Соответствие между циклом с условием и генератором списка с условием:
+Відповідність між циклом з умовою та списковим виразом з умовою:
 
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_if.png
-:align: center
-:class: only-light
-
-.. only:: html
-
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_if_dark.png
-   :align: center
-   :class: only-dark
-
-Конечно, далеко не все циклы можно переписать как генератор списка, но
-когда это можно сделать, и при этом выражение не усложняется, лучше
-использовать генераторы списка.
+![list_comp_if](https://pyneng.io/assets/images/08_list_comp_if.png)
 
 
-В Python генераторы списка могут также заменить функции filter и map
-и считаются более понятными вариантами решения.
+!!! note
 
-С помощью генератора списка также удобно получать элементы из вложенных
-словарей:
+    Звичайно, не всі цикли можна переписати як спискові вирази, але коли це можна
+    зробити, і вираз не стає складнішим, краще використовувати спискові вирази.
+
+
+За допомогою генератора списку також зручно отримувати елементи із вкладених
+словників:
 
 ```python
 london_co = {
@@ -152,7 +143,7 @@ In [15]: [london_co[device]['ip'] for device in london_co]
 Out[15]: ['10.255.0.1', '10.255.0.2', '10.255.0.101']
 ```
 
-Полный синтаксис генератора списка выглядит так:
+Повний синтаксис спискового виразу виглядає так:
 
 ```python
 [expression for item1 in iterable1 if condition1
@@ -161,17 +152,16 @@ Out[15]: ['10.255.0.1', '10.255.0.2', '10.255.0.101']
             for itemN in iterableN if conditionN ]
 ```
 
-Это значит, можно использовать несколько for в выражении.
+Це означає, що можна використовувати кілька for у списковому виразі.
 
-Например, в списке vlans находятся несколько вложенных списков с
-VLAN'ами:
+Наприклад, у списку vlans є кілька вкладених списків з VLAN'ами:
 
 ```python
 vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
 ```
 
-Из этого списка надо сформировать один плоский список с номерами VLAN.
-Первый вариант — с помощью циклов for:
+З цього списку потрібно сформувати один плоский список із номерами VLAN. Перший
+варіант із циклами for:
 
 ```python
 result = []
@@ -179,53 +169,24 @@ result = []
 for vlan_list in vlans:
     for vlan in vlan_list:
         result.append(vlan)
-
-
-In [19]: print(result)
-[10, 21, 35, 101, 115, 150, 111, 40, 50]
 ```
 
-Аналогичный вариант с генератором списков:
+Аналогічний варіант із списковим виразом:
 
 ```python
-vlans = [[10, 21, 35], [101, 115, 150], [111, 40, 50]]
 result = [vlan for vlan_list in vlans for vlan in vlan_list]
+```
 
-In [22]: print(result)
+Результат:
+
+```python
 [10, 21, 35, 101, 115, 150, 111, 40, 50]
 ```
 
-Соответствие между двумя вложенными циклами и генератором списка с двумя циклами:
+Відповідність між двома вкладеними циклами та списковим виразом з двома циклами:
 
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_for_for.png
-:align: center
-:class: only-light
+![list_comp_for_for](https://pyneng.io/assets/images/08_list_comp_for_for.png)
 
-.. only:: html
-
-.. image:: https://raw.githubusercontent.com/natenka/pyneng-book/master/images/08_list_comp_for_for_dark.png
-   :align: center
-   :class: only-dark
-
-Можно одновременно проходиться по двум последовательностям, используя
-zip:
-
-```python
-vlans = [100, 110, 150, 200]
-names = ['mngmt', 'voice', 'video', 'dmz']
-
-result = ['vlan {}\n name {}'.format(vlan, name) for vlan, name in zip(vlans, names)]
-
-In [26]: print('\n'.join(result))
-vlan 100
- name mngmt
-vlan 110
- name voice
-vlan 150
- name video
-vlan 200
- name dmz
-```
 
 ## Dict comprehensions (генераторы словарей)
 
