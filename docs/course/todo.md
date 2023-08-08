@@ -8,7 +8,6 @@ icon: material/check-all
 
 ### 08
 
-* 08 List, dict, set comprehensions
 * 08 Налагодження коду
 
 ### 09
