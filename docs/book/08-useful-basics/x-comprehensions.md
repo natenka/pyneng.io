@@ -28,7 +28,13 @@ Python підтримує спеціальні вирази, які дозвол
 В найпростішому варіанті (один цикл без умови)
 
 ```python
-[expression for item1 in iterable1 if condition1]
+[expression for item in iterable]
+```
+
+Цикл з умовою:
+
+```python
+[expression for item in iterable if condition]
 ```
 
 ## Спискові вирази (list comprehensions)
@@ -99,11 +105,6 @@ only_digits = [int(item) for item in items if item.isdigit()]
 ![list_comp_if](https://pyneng.io/assets/images/08_list_comp_if.png)
 
 
-!!! note
-
-    Звичайно, не всі цикли можна переписати як спискові вирази, але коли це можна
-    зробити, і вираз не стає складнішим, краще використовувати спискові вирази.
-
 
 За допомогою генератора списку також зручно отримувати елементи із вкладених
 словників:
@@ -143,17 +144,7 @@ In [15]: [london_co[device]['ip'] for device in london_co]
 Out[15]: ['10.255.0.1', '10.255.0.2', '10.255.0.101']
 ```
 
-Повний синтаксис спискового виразу виглядає так:
-
-```python
-[expression for item1 in iterable1 if condition1
-            for item2 in iterable2 if condition2
-            ...
-            for itemN in iterableN if conditionN ]
-```
-
-Це означає, що можна використовувати кілька for у списковому виразі.
-
+У списковому виразі можна використовувати кілька for.
 Наприклад, у списку vlans є кілька вкладених списків з VLAN'ами:
 
 ```python
@@ -188,112 +179,93 @@ result = [vlan for vlan_list in vlans for vlan in vlan_list]
 ![list_comp_for_for](https://pyneng.io/assets/images/08_list_comp_for_for.png)
 
 
-## Dict comprehensions (генераторы словарей)
+## Словникові вирази (dict comprehensions)
 
-Генераторы словарей аналогичны генераторам списков, но они используются
-для создания словарей.
 
-Например, такое выражение:
+Словникові вирази подібні до спискових виразів, але вони використовуються
+для створення словників.
+
+Наприклад, такий код:
 
 ```python
 d = {}
 
-for num in range(1, 11):
+for num in range(1, 6):
     d[num] = num**2
-
-In [29]: print(d)
-{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
 ```
 
-Можно заменить генератором словаря:
+Можна замінити словниковим виразом:
 
 ```python
-d = {num: num**2 for num in range(1, 11)}
-
-In [31]: print(d)
-{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+d = {num: num**2 for num in range(1, 6)}
 ```
 
-Еще один пример, в котором надо преобразовать существующий словарь и
-перевести все ключи в нижний регистр. Для начала, вариант решения без
-генератора словаря:
+Результат:
 
 ```python
-r1 = {'ios': '15.4',
-      'ip': '10.255.0.1',
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
+
+Ще один приклад, у якому треба перетворити існуючий словник та перевести всі
+ключі в нижній регістр. Варіант без словникового виразу:
+
+```python
+r1 = {'IOS': '15.4',
+      'IP': '10.255.0.1',
       'hostname': 'london_r1',
       'location': '21 New Globe Walk',
       'model': '4451',
-      'vendor': 'Cisco'}
+      'Vendor': 'Cisco'}
 
 lower_r1 = {}
 
 for key, value in r1.items():
     lower_r1[key.lower()] = value
-
-In [35]: lower_r1
-Out[35]:
-{'hostname': 'london_r1',
- 'ios': '15.4',
- 'ip': '10.255.0.1',
- 'location': '21 New Globe Walk',
- 'model': '4451',
- 'vendor': 'Cisco'}
 ```
 
-Аналогичный вариант с помощью генератора словаря:
+Аналогічний варіант зі словниковим виразом:
 
 ```python
-r1 = {
-    'ios': '15.4',
-    'ip': '10.255.0.1',
-    'hostname': 'london_r1',
-    'location': '21 New Globe Walk',
-    'model': '4451',
-    'vendor': 'Cisco',
-}
+r1 = {'IOS': '15.4',
+      'IP': '10.255.0.1',
+      'hostname': 'london_r1',
+      'location': '21 New Globe Walk',
+      'model': '4451',
+      'Vendor': 'Cisco'}
 
 lower_r1 = {key.lower(): value for key, value in r1.items()}
+```
 
-In [38]: lower_r1
-Out[38]:
-{'hostname': 'london_r1',
- 'ios': '15.4',
+Результат:
+```python
+{'ios': '15.4',
  'ip': '10.255.0.1',
+ 'hostname': 'london_r1',
  'location': '21 New Globe Walk',
  'model': '4451',
  'vendor': 'Cisco'}
 ```
 
-Как и list comprehensions, dict comprehensions можно делать вложенными.
-Попробуем аналогичным образом преобразовать ключи во вложенных словарях:
+Як і списовий вираз, словникові вирази можна робити вкладеними. Спробуємо
+аналогічним чином перетворити ключі у вкладених словниках:
 
 ```python
 london_co = {
-    'r1' : {
-    'hostname': 'london_r1',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '4451',
-    'ios': '15.4',
-    'ip': '10.255.0.1'
+    "r1": {
+        "hostname": "london_r1",
+        "IOS": "15.4",
+        "IP": "10.255.0.1",
     },
-    'r2' : {
-    'hostname': 'london_r2',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '4451',
-    'ios': '15.4',
-    'ip': '10.255.0.2'
+    "r2": {
+        "hostname": "london_r2",
+        "IOS": "15.4",
+        "IP": "10.255.0.2",
     },
-    'sw1' : {
-    'hostname': 'london_sw1',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '3850',
-    'ios': '3.6.XE',
-    'ip': '10.255.0.101'
-    }
+    "sw1": {
+        "hostname": "london_sw1",
+        "IOS": "3.6.XE",
+        "IP": "10.255.0.101",
+    },
 }
 
 lower_london_co = {}
@@ -302,73 +274,50 @@ for device, params in london_co.items():
     lower_london_co[device] = {}
     for key, value in params.items():
         lower_london_co[device][key.lower()] = value
-
-In [42]: lower_london_co
-Out[42]:
-{'r1': {'hostname': 'london_r1',
-  'ios': '15.4',
-  'ip': '10.255.0.1',
-  'location': '21 New Globe Walk',
-  'model': '4451',
-  'vendor': 'Cisco'},
- 'r2': {'hostname': 'london_r2',
-  'ios': '15.4',
-  'ip': '10.255.0.2',
-  'location': '21 New Globe Walk',
-  'model': '4451',
-  'vendor': 'Cisco'},
- 'sw1': {'hostname': 'london_sw1',
-  'ios': '3.6.XE',
-  'ip': '10.255.0.101',
-  'location': '21 New Globe Walk',
-  'model': '3850',
-  'vendor': 'Cisco'}}
 ```
 
-Аналогичное преобразование с dict comprehensions:
+Аналогічний варіант зі словниковим виразом:
 
 ```python
 result = {device: {key.lower(): value for key, value in params.items()}
           for device, params in london_co.items()}
-
-In [44]: result
-Out[44]:
-{'r1': {'hostname': 'london_r1',
-  'ios': '15.4',
-  'ip': '10.255.0.1',
-  'location': '21 New Globe Walk',
-  'model': '4451',
-  'vendor': 'Cisco'},
- 'r2': {'hostname': 'london_r2',
-  'ios': '15.4',
-  'ip': '10.255.0.2',
-  'location': '21 New Globe Walk',
-  'model': '4451',
-  'vendor': 'Cisco'},
- 'sw1': {'hostname': 'london_sw1',
-  'ios': '3.6.XE',
-  'ip': '10.255.0.101',
-  'location': '21 New Globe Walk',
-  'model': '3850',
-  'vendor': 'Cisco'}}
 ```
 
-## Set comprehensions (генераторы множеств)
+Результат:
 
-Генераторы множеств в целом аналогичны генераторам списков.
+```python
+{
+    "r1": {
+        "hostname": "london_r1",
+        "ios": "15.4",
+        "ip": "10.255.0.1",
+    },
+    "r2": {
+        "hostname": "london_r2",
+        "ios": "15.4",
+        "ip": "10.255.0.2",
+    },
+    "sw1": {
+        "hostname": "london_sw1",
+        "ios": "3.6.XE",
+        "ip": "10.255.0.101",
+    },
+}
+```
 
-Например, надо получить множество с уникальными номерами VLAN'ов:
+## Множинні вирази (set comprehensions)
+
+Множинні вирази загалом аналогічні списковим виразам.
+
+Наприклад, отримати множину з унікальними числами можна так:
 
 ```python
 vlans = [10, '30', 30, 10, '56']
 
 unique_vlans = {int(vlan) for vlan in vlans}
-
-In [47]: unique_vlans
-Out[47]: {10, 30, 56}
 ```
 
-Аналогичное решение, без использования set comprehensions:
+Варіант без використання множинного виразу:
 
 ```python
 vlans = [10, '30', 30, 10, '56']
@@ -377,7 +326,9 @@ unique_vlans = set()
 
 for vlan in vlans:
     unique_vlans.add(int(vlan))
+```
 
-In [51]: unique_vlans
-Out[51]: {10, 30, 56}
+Результат список unique_vlans:
+```python
+{10, 30, 56}
 ```

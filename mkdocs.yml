@@ -229,7 +229,7 @@ nav:
         - book/08-useful-basics/index.md
         - book/08-useful-basics/f-string.md
         - book/08-useful-basics/variable-unpacking.md
-        #- book/08-useful-basics/x-comprehensions.md
+        - book/08-useful-basics/x-comprehensions.md
         #- book/08-useful-basics/debug.md
         - book/08-useful-basics/further-reading.md
     - Функції та модулі:
