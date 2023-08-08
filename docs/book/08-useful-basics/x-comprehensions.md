@@ -39,12 +39,6 @@ Python підтримує спеціальні вирази, які дозвол
 
 ## Спискові вирази (list comprehensions)
 
-Приклад спискового виразу:
-
-```python
-vlans = [int(vl) for vl in items]
-```
-
 Списковий вираз дозволяє записати код:
 
 ```python
@@ -105,36 +99,25 @@ only_digits = [int(item) for item in items if item.isdigit()]
 ![list_comp_if](https://pyneng.io/assets/images/08_list_comp_if.png)
 
 
-
-За допомогою генератора списку також зручно отримувати елементи із вкладених
-словників:
+Приклад використання спискового виразу для отримання значень із вкладених словників:
 
 ```python
 london_co = {
-    'r1' : {
-    'hostname': 'london_r1',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '4451',
-    'ios': '15.4',
-    'ip': '10.255.0.1'
+    "r1": {
+        "hostname": "london_r1",
+        "ios": "15.4",
+        "ip": "10.255.0.1",
     },
-    'r2' : {
-    'hostname': 'london_r2',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '4451',
-    'ios': '15.4',
-    'ip': '10.255.0.2'
+    "r2": {
+        "hostname": "london_r2",
+        "ios": "15.4",
+        "ip": "10.255.0.2",
     },
-    'sw1' : {
-    'hostname': 'london_sw1',
-    'location': '21 New Globe Walk',
-    'vendor': 'Cisco',
-    'model': '3850',
-    'ios': '3.6.XE',
-    'ip': '10.255.0.101'
-    }
+    "sw1": {
+        "hostname": "london_sw1",
+        "ios": "3.6.XE",
+        "ip": "10.255.0.101",
+    },
 }
 
 In [14]: [london_co[device]['ios'] for device in london_co]
