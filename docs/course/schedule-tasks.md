@@ -69,14 +69,14 @@ icon: material/calendar
  <tr>
     <td align="center">8</td>
     <td align="center">15.07.23</td>
-    <td>Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</td>
+    <td><a href="https://pyneng.io/course/topics/08-useful-basics/">Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</a></td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>
  <tr>
     <td align="center">9</td>
     <td align="center">22.07.23</td>
-    <td>Функції.</td>
+    <td><a href="https://pyneng.io/course/topics/09-functions/">Функції.</a></td>
     <td align="center">10 (09_functions)</td>
     <td>9.0, 9.1, 9.2, 9.3, 9.3a, 9.6</td>
  </tr>

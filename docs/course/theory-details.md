@@ -181,6 +181,19 @@ Python:
 
 ### [08 Корисні можливості та інструменти](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Th5GRWS9FquDJQBiwKURV9)
 
+Розпакування змінних:
+
+* [Розпакування змінних](https://youtu.be/UBXkGOILMe0)
+
+Спискові, словникові, множинні вирази:
+
+* [01. Спискові, словникові, множинні вирази. Синтаксис](https://youtu.be/ER8ZTR05x74)
+* [02. Приклади спискового виразу](https://youtu.be/hkdauVlnOrY)
+* [03. Приклад множинного виразу](https://youtu.be/FJDlWggi9iw)
+* [04. Приклад словникового виразу](https://youtu.be/v4RH7JMTAQU)
+* [05. Змінні всередині спискових виразів не переписують змінні зовні](https://youtu.be/qRF0eSYuUpk)
+* [06. Тернарний вираз і if/else в спискових виразах](https://youtu.be/jeCmzNyyTIY)
+
 ### [09 Функції. Основи](https://youtube.com/playlist?list=PLlwMBlO5_y3RWoXcmUh_h3LqJ8V5tPL3v)
 
 Основи:
