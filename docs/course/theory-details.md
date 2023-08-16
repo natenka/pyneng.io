@@ -217,6 +217,11 @@ Python:
 * [07. Функція get_host_intf_ip_dict. Збираємо інформацію з декількох конфіг файлів](https://youtu.be/YMM80Da5wxU)
 
 
+### [10 Корисні вбудовані функції](https://youtube.com/playlist?list=PLlwMBlO5_y3SCmuDX0mMSUnR_n6LPOill)
+
+* [print](https://youtu.be/R2g6qws_kMk)
+
+
 ## Інші плейлисти
 
 ### [Редактор Thonny](https://youtube.com/playlist?list=PLlwMBlO5_y3SukdUGZ3b-fTjXV93HH2nV)
