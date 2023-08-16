@@ -220,6 +220,7 @@ Python:
 ### [10 Корисні вбудовані функції](https://youtube.com/playlist?list=PLlwMBlO5_y3SCmuDX0mMSUnR_n6LPOill)
 
 * [print](https://youtu.be/R2g6qws_kMk)
+* [range](https://youtu.be/3e4B-Qi6kJ4)
 
 
 ## Інші плейлисти
