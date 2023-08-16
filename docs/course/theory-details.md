@@ -221,6 +221,7 @@ Python:
 
 * [print](https://youtu.be/R2g6qws_kMk)
 * [range](https://youtu.be/3e4B-Qi6kJ4)
+* [sorted](https://youtu.be/AP6eYIAjx8Y)
 
 
 ## Інші плейлисти
