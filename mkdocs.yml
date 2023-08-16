@@ -244,6 +244,7 @@ nav:
         #- book/09-functions/common-gotchas.md
         - book/09-functions/further-reading.md
       - 10. Корисні вбудовані функції:
+        - book/10-useful-functions/index.md
         - book/10-useful-functions/print.md
         - book/10-useful-functions/range.md
         - book/10-useful-functions/sorted.md
