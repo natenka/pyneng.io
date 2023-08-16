@@ -14,5 +14,5 @@
 
 ## Відповідні розділи у книзі
 
-[Корисні можливості та інструменти](https://pyneng.io/book/10-useful-functions/)
+[Корисні вбудовані функції](https://pyneng.io/book/10-useful-functions/)
 
