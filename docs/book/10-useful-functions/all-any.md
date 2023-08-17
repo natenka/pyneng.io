@@ -2,8 +2,7 @@
 
 ## Функція all
 
-Функция ``all`` возвращает True, если все элементы истинные (или объект
-пустой).
+Функція all повертає True, якщо всі елементи істинні (або об'єкт порожній).
 
 ```python
 In [1]: all([False, True, True])
@@ -16,8 +15,7 @@ In [3]: all([])
 Out[3]: True
 ```
 
-Например, с помощью ``all`` можно проверить, все ли октеты в IP-адресе
-являются числами:
+Наприклад, за допомогою all можна перевірити, чи всі октети в IP-адресі є числами:
 
 ```python
 In [4]: ip = '10.0.1.1'
@@ -31,7 +29,7 @@ Out[6]: False
 
 ## Функція any
 
-Функция ``any`` возвращает True, если хотя бы один элемент истинный.
+Функція any повертає True, якщо хоча б один елемент істинний.
 
 ```python
 In [7]: any([False, True, True])
@@ -47,15 +45,12 @@ In [10]: any(i.isdigit() for i in '10.1.1.a'.split('.'))
 Out[10]: True
 ```
 
-Например, с помощью any, можно заменить функцию ignore_command:
+## Приклад використання any
+
+Наприклад, за допомогою any можна замінити функцію ignore_command:
 
 ```python
 def ignore_command(command):
-    '''
-    Функция проверяет содержится ли в команде слово из списка ignore.
-    * command - строка. Команда, которую надо проверить
-    * Возвращает True, если в команде содержится слово из списка ignore, False - если нет
-    '''
     ignore = ['duplex', 'alias', 'Current configuration']
 
     for word in ignore:
@@ -64,15 +59,10 @@ def ignore_command(command):
     return False
 ```
 
-На такой вариант:
+На такий варіант:
 
 ```python
 def ignore_command(command):
-    '''
-    Функция проверяет содержится ли в команде слово из списка ignore.
-    command - строка. Команда, которую надо проверить
-    Возвращает True, если в команде содержится слово из списка ignore, False - если нет
-    '''
     ignore = ['duplex', 'alias', 'Current configuration']
 
     return any([word in command for word in ignore])
