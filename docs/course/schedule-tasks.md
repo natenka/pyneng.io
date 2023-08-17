@@ -83,7 +83,7 @@ icon: material/calendar
  <tr>
     <td align="center">10</td>
     <td align="center">29.07.23</td>
-    <td>Корисні функції у стандартній бібліотеці</td>
+    <td><a href="https://pyneng.io/course/topics/10-useful-functions/">Корисні функції у стандартній бібліотеці</a></td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>

@@ -23,6 +23,10 @@
 * [05. Змінні всередині спискових виразів не переписують змінні зовні](https://youtu.be/qRF0eSYuUpk)
 * [06. Тернарний вираз і if/else в спискових виразах](https://youtu.be/jeCmzNyyTIY)
 
+## Завдання
+
+На цю тему завдань немає.
+
 ## Приклади
 
 [Приклади, що показувалися у відео, можна знайти у репозиторії](https://github.com/natenka/pynenguk-examples/tree/main/examples/08_useful_basics)

@@ -223,6 +223,11 @@ Python:
 * [range](https://youtu.be/3e4B-Qi6kJ4)
 * [sorted](https://youtu.be/AP6eYIAjx8Y)
 
+Приклади використання sorted:
+
+* [Сортування рядків без урахування регістру](https://youtu.be/tTJcuIQydh0)
+* [Сортування списку кортежів за другим елементом](https://youtu.be/8peu_y-wQMk)
+* [Сортування списку IP-адрес за двійковим значенням](https://youtu.be/doi4-rQVilA)
 
 ## Інші плейлисти
 
