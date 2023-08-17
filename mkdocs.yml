@@ -241,7 +241,7 @@ nav:
           - book/09-functions/params-args.md
           - book/09-functions/params-types.md
           - book/09-functions/args-types.md
-        #- book/09-functions/common-gotchas.md
+        - book/09-functions/common-gotchas.md
         - book/09-functions/further-reading.md
       - 10. Корисні вбудовані функції:
         - book/10-useful-functions/index.md
@@ -257,6 +257,9 @@ nav:
         #- book/10-useful-functions/lambda.md
         #- book/10-useful-functions/map.md
         #- book/10-useful-functions/filter.md
+    - Додаткова інформація:
+      - book/appendix/index.md
+      - Ітератор, ітерований об'єкт: book/appendix/iterator-iterable.md
   - Курс:
     - course/index.md
     - Лекції:
