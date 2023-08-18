@@ -106,7 +106,7 @@ icon: material/calendar
     <td align="center">02.09.23</td>
     <td>Функції. Продовження</td>
     <td align="center">-</td>
-    <td>-</td>
+    <td align="center">-</td>
  </tr>
  <tr>
     <td align="center">14</td>
