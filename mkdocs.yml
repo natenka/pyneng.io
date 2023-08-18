@@ -146,6 +146,7 @@ nav:
   - " ":
     - index.md
     - keyboard_shortcuts.md
+    - todo.md
   - Книга:
     - book/index.md
     - Підготовка:
@@ -282,7 +283,6 @@ nav:
     - Корисні посилання:
       - course/schedule-tasks.md
       - course/links.md
-      - course/todo.md
   - Завдання:
     - tasks/index.md
     - tasks/pyneng.md
