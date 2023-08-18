@@ -18,7 +18,9 @@ icon: material/youtube-tv
 * [05 Створення базових скриптів](https://youtube.com/playlist?list=PLlwMBlO5_y3TGo9Q0csp8UHsGHFGrC171)
 * [06 Контроль перебігу програми](https://youtube.com/playlist?list=PLlwMBlO5_y3TrOacFQVKzHoJ7JHUqN5o2)
 * [07 Робота з файлами](https://youtube.com/playlist?list=PLlwMBlO5_y3QNk7wBhLztQU3V6hA-Cyqw)
-
+* [08 Корисні можливості та інструменти](https://www.youtube.com/playlist?list=PLlwMBlO5_y3Th5GRWS9FquDJQBiwKURV9)
+* [09 Функції. Основи](https://youtube.com/playlist?list=PLlwMBlO5_y3RWoXcmUh_h3LqJ8V5tPL3v)
+* [10 Корисні вбудовані функції](https://youtube.com/playlist?list=PLlwMBlO5_y3SCmuDX0mMSUnR_n6LPOill)
 
 Окремі playlist на теми, які розглядаються в різних розділах
 
