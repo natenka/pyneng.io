@@ -84,61 +84,66 @@ icon: material/calendar-text
  <tr>
     <td align="center">14</td>
     <td align="center">09.09.23</td>
-    <td>Синтаксис регулярних виразів. Модуль re.</td>
+    <td>Синтаксис регулярних виразів.</td>
  </tr>
  <tr>
     <td align="center">15</td>
     <td align="center">16.09.23</td>
-    <td>Unicode</td>
+    <td>Модуль re.</td>
  </tr>
  <tr>
     <td align="center">16</td>
     <td align="center">23.09.23</td>
-    <td>Обробка даних у форматах YAML, JSON, CSV</td>
+    <td>Unicode</td>
  </tr>
  <tr>
     <td align="center">17</td>
     <td align="center">30.09.23</td>
-    <td>Підключення до мережевих пристроїв Telnet і SSH</td>
+    <td>Обробка даних у форматах YAML, JSON, CSV</td>
  </tr>
  <tr>
     <td align="center">18</td>
     <td align="center">07.10.23</td>
-    <td>Одночасне підключення до кількох пристроїв</td>
+    <td>Підключення до мережевих пристроїв Telnet і SSH</td>
  </tr>
  <tr>
     <td align="center">19</td>
     <td align="center">14.10.23</td>
-    <td>Шаблони конфігурацій із Jinja2.</td>
+    <td>Одночасне підключення до кількох пристроїв</td>
  </tr>
  <tr>
     <td align="center">20</td>
     <td align="center">21.10.23</td>
-    <td>Шаблони TextFSM для розбору виводу команд</td>
+    <td>Шаблони конфігурацій із Jinja2.</td>
  </tr>
  <tr>
     <td align="center">21</td>
     <td align="center">28.10.23</td>
-    <td>Основи ООП.</td>
- </tr> 
+    <td>Шаблони TextFSM для розбору виводу команд</td>
+ </tr>
  <tr>
     <td align="center">22</td>
     <td align="center">04.11.23</td>
-    <td>ООП. Спеціальні методи.</td>
+    <td>Основи ООП.</td>
  </tr> 
  <tr>
     <td align="center">23</td>
     <td align="center">11.11.23</td>
-    <td>ООП. Успадкування.</td>
+    <td>ООП. Спеціальні методи.</td>
  </tr> 
  <tr>
     <td align="center">24</td>
-    <td align="center">28.11.23</td>
-    <td>Основи роботи з базами даних (SQLite3)</td>
+    <td align="center">18.11.23</td>
+    <td>ООП. Успадкування.</td>
  </tr> 
  <tr>
     <td align="center">25</td>
-    <td align="center">04.12.23</td>
+    <td align="center">25.11.23</td>
+    <td>Основи роботи з базами даних (SQLite3)</td>
+ </tr> 
+ <tr>
+    <td align="center">26</td>
+    <td align="center">02.12.23</td>
     <td>Що вчити після курсу.</td>
  </tr>  
 </table>

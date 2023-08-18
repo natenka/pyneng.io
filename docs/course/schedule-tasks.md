@@ -89,103 +89,112 @@ icon: material/calendar
  </tr>
  <tr>
     <td align="center">11</td>
-    <td align="center">05.08.23</td>
+    <td align="center">19.08.23</td>
     <td>Модулі</td>
     <td align="center">6 (11_modules)</td>
     <td>11.0, 11.1, 11.2, 11.3, 11.4</td>
  </tr>
  <tr>
     <td align="center">12</td>
-    <td align="center">12.08.23</td>
+    <td align="center">26.08.23</td>
     <td>Корисні модулі</td>
     <td align="center">3 (12_useful_modules)</td>
     <td>12.1, 12.2</td>
  </tr>
  <tr>
-    <td rowspan="2" align="center">13</td>
-    <td rowspan="2" align="center">19.08.23</td>
+    <td align="center">13</td>
+    <td align="center">02.09.23</td>
+    <td>Функції. Продовження</td>
+    <td align="center">-</td>
+    <td>-</td>
+ </tr>
+ <tr>
+    <td align="center">14</td>
+    <td align="center">09.09.23</td>
     <td>Синтаксис регулярних виразів.</td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>
  <tr>
+    <td align="center">15</td>
+    <td align="center">16.09.23</td>
     <td>Модуль re.</td>
     <td align="center">7 (15_module_re)</td>
     <td>15.0, 15.1, 15.2, 15.3, 15.4</td>
  </tr>
  <tr>
-    <td align="center">14</td>
-    <td align="center">26.08.23</td>
+    <td align="center">16</td>
+    <td align="center">23.09.23</td>
     <td>Unicode</td>
     <td align="center">-</td>
     <td align="center">-</td>
  </tr>
  <tr>
-    <td align="center">15</td>
-    <td align="center">02.09.23</td>
+    <td align="center">17</td>
+    <td align="center">30.09.23</td>
     <td>Обробка даних у форматах YAML, JSON, CSV</td>
     <td align="center">6 (17_serialization)</td>
     <td>17.1, 17.2, 17.3</td>
  </tr>
  <tr>
-    <td align="center">16</td>
-    <td align="center">09.09.23</td>
+    <td align="center">18</td>
+    <td align="center">07.10.23</td>
     <td>Підключення до мережевих пристроїв Telnet і SSH</td>
     <td align="center">8 (18_ssh_telnet)</td>
     <td>18.1, 18.1a, 18.2, 18.2a, 18.2b, 18.2c</td>
  </tr>
  <tr>
-    <td align="center">17</td>
-    <td align="center">16.09.23</td>
+    <td align="center">19</td>
+    <td align="center">14.10.23</td>
     <td>Одночасне підключення до кількох пристроїв</td>
     <td align="center">5 (19_concurrent_connections)</td>
     <td>19.1, 19.2, 19.3</td>
  </tr>
  <tr>
-    <td align="center">18</td>
-    <td align="center">23.09.23</td>
+    <td align="center">20</td>
+    <td align="center">21.10.23</td>
     <td>Шаблони конфігурацій із Jinja2.</td>
     <td align="center">6 (20_jinja2)</td>
     <td>20.1, 20.2, 20.3</td>
  </tr>
  <tr>
-    <td align="center">19</td>
-    <td align="center">30.09.23</td>
+    <td align="center">21</td>
+    <td align="center">28.10.23</td>
     <td>Шаблони TextFSM для розбору виводу команд</td>
     <td align="center">6 (21_textfsm)</td>
     <td>21.1, 21.1a, 21.2, 21.3, 21.4</td>
  </tr>
  <tr>
-    <td align="center">20</td>
-    <td align="center">07.10.23</td>
+    <td align="center">22</td>
+    <td align="center">04.11.23</td>
     <td>Основи ООП.</td>
     <td align="center">9 (22_oop_basics)</td>
     <td>22.0, 22.1, 22.1a, 22.1b, 22.2, 22.2a</td>
  </tr> 
  <tr>
-    <td align="center">21</td>
-    <td align="center">14.10.23</td>
+    <td align="center">23</td>
+    <td align="center">11.11.23</td>
     <td>ООП. Спеціальні методи.</td>
     <td align="center">5 (23_oop_spec_methods)</td>
     <td>23.0, 23.1, 23.1a, 23.2</td>
  </tr> 
  <tr>
-    <td align="center">22</td>
-    <td align="center">21.10.23</td>
+    <td align="center">24</td>
+    <td align="center">18.11.23</td>
     <td>ООП. Успадкування.</td>
     <td align="center">7 (24_oop_inheritance)</td>
     <td>24.0, 24.1, 24.2, 24.2a</td>
  </tr> 
  <tr>
-    <td align="center">23</td>
-    <td align="center">28.10.23</td>
+    <td align="center">25</td>
+    <td align="center">25.11.23</td>
     <td>Основи роботи з базами даних (SQLite3)</td>
     <td align="center">9 (25_db)</td>
     <td align="center">-</td>
  </tr> 
  <tr>
-    <td align="center">24</td>
-    <td align="center">04.11.23</td>
+    <td align="center">26</td>
+    <td align="center">02.12.23</td>
     <td>Що вчити після курсу.</td>
     <td align="center">-</td>
     <td align="center">-</td>
