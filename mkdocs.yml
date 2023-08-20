@@ -252,7 +252,14 @@ nav:
         - book/10-useful-functions/zip.md
         - book/10-useful-functions/enumerate.md
         - book/10-useful-functions/all-any.md
-    #- 11. Модулі:
+      - 11. Модулі:
+        - book/11-modules/index.md
+        - book/11-modules/import.md
+        - book/11-modules/create.md
+        - book/11-modules/if-name-main.md
+        - book/11-modules/module-search.md
+        - book/11-modules/code-structure.md
+        - book/11-modules/further-reading.md
     #- 12. Корисні модулі:
     #- 13. Функції. Продовження. Зірочка в аргументах та параметрах, аннотація
         #- book/10-useful-functions/lambda.md
@@ -260,7 +267,7 @@ nav:
         #- book/10-useful-functions/filter.md
     - Додаткова інформація:
       - book/appendix/index.md
-      - Ітератор, ітерований об'єкт: book/appendix/iterator-iterable.md
+      #- Ітератор, ітерований об'єкт: book/appendix/iterator-iterable.md
   - Курс:
     - course/index.md
     - Лекції:
