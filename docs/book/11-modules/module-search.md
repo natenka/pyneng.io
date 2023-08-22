@@ -18,14 +18,11 @@ In [1]: import sys
 In [2]: sys.path
 Out[2]:
 ['',
- '/usr/local/bin',
- '/usr/local/lib/python36.zip',
- '/usr/local/lib/python3.6',
- '/usr/local/lib/python3.6/lib-dynload',
- '/home/vagrant/.local/lib/python3.6/site-packages',
- '/usr/local/lib/python3.6/site-packages',
- '/usr/local/lib/python3.6/site-packages/IPython/extensions',
- '/home/vagrant/.ipython']
+ '/usr/lib/python39.zip',
+ '/usr/lib/python3.9',
+ '/usr/lib/python3.9/lib-dynload',
+ '/usr/local/lib/python3.9/dist-packages',
+ '/usr/lib/python3/dist-packages']
 ```
 
 Аналогичный вывод, но внутри виртуального окружения:
@@ -35,15 +32,12 @@ In [1]: import sys
 
 In [2]: sys.path
 Out[2]:
-['/home/vagrant/venv/pyneng-py3-8-0/bin',
- '/home/vagrant/venv/pyneng-py3-8-0/lib/python38.zip',
- '/home/vagrant/venv/pyneng-py3-8-0/lib/python3.8',
- '/home/vagrant/venv/pyneng-py3-8-0/lib/python3.8/lib-dynload',
- '/usr/local/lib/python3.8',
+['/home/vagrant/venv/pyneng311/bin',
+ '/usr/local/lib/python311.zip',
+ '/usr/local/lib/python3.11',
+ '/usr/local/lib/python3.11/lib-dynload',
  '',
- '/home/vagrant/venv/pyneng-py3-8-0/lib/python3.8/site-packages',
- '/home/vagrant/venv/pyneng-py3-8-0/lib/python3.8/site-packages/IPython/extensions',
- '/home/vagrant/.ipython']
+ '/home/vagrant/venv/pyneng311/lib/python3.11/site-packages']
 ```
 
 
