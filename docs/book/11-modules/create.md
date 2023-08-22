@@ -42,7 +42,6 @@ for num in numbers:
 $ python examples_02_import_sum_numbers.py
 Start
 res1=300
-res2=30
 Stop
 101
 102
