@@ -225,6 +225,10 @@ Python:
 * [print](https://youtu.be/R2g6qws_kMk)
 * [range](https://youtu.be/3e4B-Qi6kJ4)
 * [sorted](https://youtu.be/AP6eYIAjx8Y)
+* [zip, zip_longest](https://youtu.be/XKGkQTGihEs?si=E4biwSm-grg-SDCj)
+* [enumerate](https://youtu.be/dbY_gOGuBvo?si=rBln758tq2iF0boe)
+* [all, any](https://youtu.be/6QrgcqTh9E4?si=FnzvnKCcj6Ed7Llk)
+
 
 Приклади використання sorted:
 
