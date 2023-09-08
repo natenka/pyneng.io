@@ -216,6 +216,9 @@ Python:
 * [06. Функція get_intf_ip_dict_from_cfg. Словник interface: ip з конфігураційного файлу](https://youtu.be/bwYmp6fx138)
 * [07. Функція get_host_intf_ip_dict. Збираємо інформацію з декількох конфіг файлів](https://youtu.be/YMM80Da5wxU)
 
+Корисні нюанси:
+
+* [Розпакування аргументів функцій/методів](https://youtu.be/tf0SiFLit7o?si=kBfP0DFCcEstQwrE)
 
 ### [10 Корисні вбудовані функції](https://youtube.com/playlist?list=PLlwMBlO5_y3SCmuDX0mMSUnR_n6LPOill)
 
