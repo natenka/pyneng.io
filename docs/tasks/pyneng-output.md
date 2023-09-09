@@ -1,8 +1,4 @@
----
-title: "Вывод pyneng"
-permalink: /docs/pyneng-output/
-excerpt: "Вывод pyneng"
----
+# Вивід pyneng
 
 ## Warning
 
