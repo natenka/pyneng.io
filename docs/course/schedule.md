@@ -18,52 +18,52 @@ icon: material/calendar-text
  </tr>
  <tr>
     <td align="center">1</td>
-    <td align="center">06.05.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу</a></td>
  </tr>
  <tr>
     <td align="center">2</td>
-    <td align="center">13.05.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
  </tr>
  <tr>
     <td align="center">3</td>
-    <td align="center">20.05.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
  </tr>
  <tr>
     <td align="center">4</td>
-    <td align="center">17.06.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/03-python-intro/">Початок роботи з Python</a><br><a href="https://pyneng.io/course/topics/04-data-types/">Типи даних в Python.</a></td>
  </tr>
  <tr>
     <td align="center">5</td>
-    <td align="center">24.06.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/05-basic-scripts/">Створення базових скриптів.</a></td>
  </tr>
  <tr>
     <td align="center">6</td>
-    <td align="center">01.07.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
  </tr>
  <tr>
     <td align="center">7</td>
-    <td align="center">08.07.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/07-files/">Робота із файлами</a>.</td>
  </tr>
  <tr>
     <td align="center">8</td>
-    <td align="center">15.07.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/08-useful-basics/">Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</a></td>
  </tr>
  <tr>
     <td align="center">9</td>
-    <td align="center">22.07.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/09-functions/">Функції.</a></td>
  </tr>
  <tr>
     <td align="center">10</td>
-    <td align="center">29.07.23</td>
+    <td align="center">-</td>
     <td><a href="https://pyneng.io/course/topics/10-useful-functions/">Корисні функції у стандартній бібліотеці</a></td>
  </tr>
  <tr>
