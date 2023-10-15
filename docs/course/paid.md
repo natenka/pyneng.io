@@ -37,7 +37,7 @@
 3. Перегляд варіанта розв'язання
 4. Перевірка завдання викладачем із зворотним зв'язком, де потрібно
 
-!!! note "З моменту оплати курсу у вас є рік на виконання завдань, для першої групи 1.5 року"
+!!! note "З моменту оплати курсу у вас є рік на виконання завдань. Для першої групи 1.5 року"
 
 ## Онлайн підтримка (зворотний зв'язок, запитання під час курсу)
 
@@ -54,7 +54,6 @@
 З моменту оплати курсу у вас є рік на виконання завдань та запитання. Ви можете
 ставити будь-які запитання щодо Python, допоможу з чим зможу.
 
-!!! note "Для першої групи 1.5 року"
 
 ## Вартість курсу
 
@@ -108,130 +107,95 @@ pynenguk @ gmail.com, я відправлю реквізити.
  <tr>
     <td align="center">1</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу</a></td>
+    <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу.</a><br><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
  </tr>
  <tr>
     <td align="center">2</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
+    <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
  </tr>
  <tr>
     <td align="center">3</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
+    <td><a href="https://pyneng.io/course/topics/03-python-intro/">Початок роботи з Python</a><br><a href="https://pyneng.io/course/topics/04-data-types/">Типи даних в Python.</a><br><a href="https://pyneng.io/course/topics/05-basic-scripts/">Створення базових скриптів.</a></td>
  </tr>
  <tr>
     <td align="center">4</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/03-python-intro/">Початок роботи з Python</a><br><a href="https://pyneng.io/course/topics/04-data-types/">Типи даних в Python.</a></td>
+    <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
  </tr>
  <tr>
     <td align="center">5</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/05-basic-scripts/">Створення базових скриптів.</a></td>
+    <td><a href="https://pyneng.io/course/topics/07-files/">Робота із файлами</a>.</td>
  </tr>
  <tr>
     <td align="center">6</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
+    <td><a href="https://pyneng.io/course/topics/08-useful-basics/">Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</a></td>
  </tr>
  <tr>
     <td align="center">7</td>
     <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/07-files/">Робота із файлами</a>.</td>
+    <td><a href="https://pyneng.io/course/topics/09-functions/">Функції.</a><br><a href="https://pyneng.io/course/topics/10-useful-functions/">Корисні функції у стандартній бібліотеці</a></td>
  </tr>
  <tr>
     <td align="center">8</td>
-    <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/08-useful-basics/">Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</a></td>
+    <td align="center">16.09.23</td>
+    <td>Модулі. Корисні модулі</td>
  </tr>
  <tr>
     <td align="center">9</td>
-    <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/09-functions/">Функції.</a></td>
- </tr>
- <tr>
-    <td align="center">10</td>
-    <td align="center">-</td>
-    <td><a href="https://pyneng.io/course/topics/10-useful-functions/">Корисні функції у стандартній бібліотеці</a></td>
- </tr>
- <tr>
-    <td align="center">11</td>
-    <td align="center">16.09.23</td>
-    <td>Модулі</td>
- </tr>
- <tr>
-    <td align="center">12</td>
-    <td align="center">23.09.23</td>
-    <td>Корисні модулі</td>
- </tr>
- <tr>
-    <td align="center">13</td>
     <td align="center">30.09.23</td>
     <td>Функції. Продовження</td>
  </tr>
  <tr>
-    <td align="center">14</td>
+    <td align="center">10</td>
     <td align="center">07.10.23</td>
-    <td>Синтаксис регулярних виразів.</td>
+    <td>Синтаксис регулярних виразів.<br>Модуль re.</td>
  </tr>
  <tr>
-    <td align="center">15</td>
-    <td align="center">14.10.23</td>
-    <td>Модуль re.</td>
- </tr>
- <tr>
-    <td align="center">16</td>
+    <td align="center">11</td>
     <td align="center">21.10.23</td>
     <td>Unicode</td>
  </tr>
  <tr>
-    <td align="center">17</td>
+    <td align="center">12</td>
     <td align="center">28.10.23</td>
     <td>Обробка даних у форматах YAML, JSON, CSV</td>
  </tr>
  <tr>
-    <td align="center">18</td>
+    <td align="center">13</td>
     <td align="center">04.11.23</td>
     <td>Підключення до мережевих пристроїв Telnet і SSH</td>
  </tr>
  <tr>
-    <td align="center">19</td>
+    <td align="center">14</td>
     <td align="center">11.11.23</td>
     <td>Одночасне підключення до кількох пристроїв</td>
  </tr>
  <tr>
-    <td align="center">20</td>
+    <td align="center">15</td>
     <td align="center">18.11.23</td>
-    <td>Шаблони конфігурацій із Jinja2.</td>
+    <td>Шаблони конфігурацій із Jinja2. Шаблони TextFSM для розбору виводу команд</td>
  </tr>
  <tr>
-    <td align="center">21</td>
-    <td align="center">25.11.23</td>
-    <td>Шаблони TextFSM для розбору виводу команд</td>
- </tr>
- <tr>
-    <td align="center">22</td>
+    <td align="center">16</td>
     <td align="center">02.12.23</td>
-    <td>Основи ООП.</td>
+    <td>Основи ООП. Спеціальні методи.</td>
  </tr> 
  <tr>
-    <td align="center">23</td>
-    <td align="center">09.12.23</td>
-    <td>ООП. Спеціальні методи.</td>
- </tr> 
- <tr>
-    <td align="center">24</td>
+    <td align="center">17</td>
     <td align="center">16.12.23</td>
     <td>ООП. Успадкування.</td>
  </tr> 
  <tr>
-    <td align="center">25</td>
+    <td align="center">18</td>
     <td align="center">23.12.23</td>
     <td>Основи роботи з базами даних (SQLite3)</td>
  </tr> 
  <tr>
-    <td align="center">26</td>
+    <td align="center">19</td>
     <td align="center">30.12.23</td>
     <td>Що вчити після курсу.</td>
  </tr>  
