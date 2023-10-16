@@ -106,32 +106,32 @@ pynenguk @ gmail.com, я відправлю реквізити.
  </tr>
  <tr>
     <td align="center">1</td>
-    <td align="center">03.11.2023</td>
+    <td align="center">03.11.23</td>
     <td><a href="https://pyneng.io/course/topics/00-preparation/">Підготовка до курсу.</a><br><a href="https://pyneng.io/course/topics/01-course-env/">Підготовка робочого середовища</a></td>
  </tr>
  <tr>
     <td align="center">2</td>
-    <td align="center">10.11.2023.</td>
+    <td align="center">10.11.23</td>
     <td><a href="https://pyneng.io/course/topics/02-git-github-tasks/">Робота з завданнями. Git/GitHub</a></td>
  </tr>
  <tr>
     <td align="center">3</td>
-    <td align="center">17.11.2023</td>
+    <td align="center">17.11.23</td>
     <td><a href="https://pyneng.io/course/topics/03-python-intro/">Початок роботи з Python</a><br><a href="https://pyneng.io/course/topics/04-data-types/">Типи даних в Python.</a><br><a href="https://pyneng.io/course/topics/05-basic-scripts/">Створення базових скриптів.</a></td>
  </tr>
  <tr>
     <td align="center">4</td>
-    <td align="center">24.11.2023</td>
+    <td align="center">24.11.23</td>
     <td><a href="https://pyneng.io/course/topics/06-control-structures/">Управління ходом програми</a>.<br><a href="https://pyneng.io/course/topics/debug/">Налагодження коду</a>.</td>
  </tr>
  <tr>
     <td align="center">5</td>
-    <td align="center">01.12.2023</td>
+    <td align="center">01.12.23</td>
     <td><a href="https://pyneng.io/course/topics/07-files/">Робота із файлами</a>.<br><a href="https://pyneng.io/course/topics/08-useful-basics/">Корисні можливості та інструменти (розпакування змінних, list/dict/set comprehensions)</a></td>
  </tr>
  <tr>
     <td align="center">6</td>
-    <td align="center">08.12.2023</td>
+    <td align="center">08.12.23</td>
     <td><a href="https://pyneng.io/course/topics/09-functions/">Функції.</a><br><a href="https://pyneng.io/course/topics/10-useful-functions/">Корисні функції у стандартній бібліотеці</a></td>
  </tr>
  <tr>
