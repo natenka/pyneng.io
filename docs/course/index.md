@@ -12,3 +12,7 @@
 * [slack](https://pyneng.io/course/slack/)
 * [telegram](https://t.me/pynenguk)
 * [youtube](https://www.youtube.com/@pynenguk/community)
+
+## Платний курс
+
+Також ви можете записатися на платний курс. [Подробиці](pynenguk)

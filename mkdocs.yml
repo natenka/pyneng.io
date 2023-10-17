@@ -273,6 +273,7 @@ nav:
   - Курс:
     - course/index.md
     - Лекції:
+      - course/pynenguk.md
       - course/schedule.md
       - course/theory.md
       - course/theory-details.md
