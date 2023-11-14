@@ -85,8 +85,6 @@ plugins:
 # Customization
 extra:
   social:
-    - icon: simple/buymeacoffee
-      link: https://www.buymeacoffee.com/pynenguk
     - icon: fontawesome/brands/slack
       link: https://pyneng.io/course/slack/
     - icon: fontawesome/brands/youtube
@@ -364,5 +362,5 @@ nav:
     - blog/index.md
   - Поставити запитання:
     - slack/index.md
-  - Підтримати автора:
-    - support/index.md
+  - Придбати курси, перевірку завдань, консультацію:
+    - https://learning.pyneng.io/
