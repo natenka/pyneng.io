@@ -9,7 +9,7 @@ plugins:
   - with-pdf:
       ordered_chapter_level: 0
       output_path: site/pdf/document.pdf
-      author: Nataliya Samoylenko
+      author: Nataliia Samoilenko
       toc_level: 3
       exclude_pages:
         - blog/
