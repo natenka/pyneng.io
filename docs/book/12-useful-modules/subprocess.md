@@ -25,6 +25,35 @@
 ## Функція ``subprocess.run``
 
 Функція ``subprocess.run`` – основний спосіб роботи з модулем subprocess.
+
+Синтаксис функції run:
+
+```python
+In [5]: subprocess.run?
+Signature:
+subprocess.run(
+    *popenargs,
+    input=None,
+    capture_output=False,
+    timeout=None,
+    check=False,
+    **kwargs,
+)
+```
+
+Функція `subprocess.run` виконує команду описану аргументами popenargs, чекає,
+поки команда завершиться і повертає екземпляр класу CompletedProcess.
+
+У сигнатурі функції subprocess.run зазначена тільки частина параметрів для
+налаштування роботи функції. Всі інші параметри заховані в `**kwargs` - тут
+можна вказувати будь-які параметри [Popen](https://docs.python.org/3/library/subprocess.html#subprocess.Popen).
+
+В документації в описі функції зазначено більше параметрів, але для повного переліку все ж треба звернутися до опису Popen:
+
+```python
+subprocess.run(args, *, stdin=None, input=None, stdout=None, stderr=None, capture_output=False, shell=False, cwd=None, timeout=None, check=False, encoding=None, errors=None, text=None, env=None, universal_newlines=None, **other_popen_kwargs)
+```
+
 Найпростіший варіант використання функції – запуск її таким чином:
 
 ```python
@@ -36,9 +65,10 @@ module_search.md             useful_functions
 naming_conventions           useful_modules
 ```
 
-В переменной result теперь содержится специальный объект
-CompletedProcess. Из этого объекта можно получить информацию о
-выполнении процесса, например, о коде возврата:
+У змінній результат тепер міститься спеціальний об'єкт CompletedProcess. З
+цього об'єкта можна отримати інформацію про виконання процесу, наприклад, про
+[код повернення](https://en.wikipedia.org/wiki/Exit_status) (це код, який
+вказує статус завершення роботи, в найпростішому випадку, вдалий чи ні):
 
 ```python
 In [3]: result
@@ -48,63 +78,80 @@ In [4]: result.returncode
 Out[4]: 0
 ```
 
-Код 0 означает, что программа выполнилась успешно.
+Код 0 означає, що програма виконалася успішно.
 
-Если необходимо вызвать команду с аргументами, её
-нужно передавать таким образом (как список):
+!!! warning
+
+	Всі команди які передаються subprocess виконуються на Debian. Якщо ви
+    використовуєте іншу ОС, потрібно змінити команди на відповідні для ОС.
+
+Якщо потрібно викликати команду з аргументами, її потрібно передавати таким
+чином (як список або будь-який інший ітерований об'єкт):
 
 ```python
-
-In [5]: result = subprocess.run(['ls', '-ls'])
-total 28
-4 -rw-r--r-- 1 vagrant vagrant   56 Jun  7 19:35 ipython_as_mngmt_console.md
-4 -rw-r--r-- 1 vagrant vagrant 1638 Jun  7 19:35 module_search.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun  7 19:35 naming_conventions
-4 -rw-r--r-- 1 vagrant vagrant  277 Jun  7 19:35 README.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 16 05:11 useful_functions
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 17 16:28 useful_modules
-4 -rw-r--r-- 1 vagrant vagrant   49 Jun  7 19:35 version_control.md
+In [15]: subprocess.run(['ls', '-l'])
+total 32
+-rw-r--r-- 1 vagrant vagrant   66 Jun 26  2023 basics_01_subprocess_ping.py
+-rw-r--r-- 1 vagrant vagrant  359 Jun 26  2023 basics_02_subprocess_ping_func.py
+-rw-r--r-- 1 vagrant vagrant  693 Jun 26  2023 basics_03_subprocess_popen_ping_func.py
+-rw-r--r-- 1 vagrant vagrant  758 Jun 26  2023 basics_04_subprocess_popen_ping_func_zip.py
+-rw-r--r-- 1 vagrant vagrant  688 Jun 26  2023 basics_05_subprocess_popen_ping_func_zip.py
+-rw-r--r-- 1 vagrant vagrant  384 Jun 26  2023 basics_06_rich_progress_ping_func.py
+-rw-r--r-- 1 vagrant vagrant  487 Jun 26  2023 basics_07_rich_colors_ping_func.py
+drwxr-xr-x 2 vagrant vagrant 4096 Jun 26  2023 ipaddress
+Out[15]: CompletedProcess(args=['ls', '-l'], returncode=0)
 ```
 
-При попытке выполнить команду с использованием wildcard-выражений,
-например, использовать ``*``, возникнет ошибка:
+При спробі виконати команду з використанням wildcard-виразів, наприклад, якщо
+використати `*`, виникне помилка:
 
 ```python
-
-In [6]: result = subprocess.run(['ls', '-ls', '*md'])
-ls: cannot access *md: No such file or directory
+In [20]: subprocess.run(['ls', '-ls', '*rich*py'])
+ls: cannot access '*rich*py': No such file or directory
+Out[20]: CompletedProcess(args=['ls', '-ls', '*rich*py'], returncode=2)
 ```
 
-Чтобы вызывать команды, в которых используются wildcard-выражения, нужно
-добавлять аргумент shell и вызывать команду таким образом:
+Для того щоб викликати команди, в яких використовуються wildcard-вирази,
+потрібно додавати аргумент shell і викликати команду таким чином (всю команду
+пишемо в середині одного рядка):
 
 ```python
-
-In [7]: result = subprocess.run('ls -ls *md', shell=True)
-4 -rw-r--r-- 1 vagrant vagrant   56 Jun  7 19:35 ipython_as_mngmt_console.md
-4 -rw-r--r-- 1 vagrant vagrant 1638 Jun  7 19:35 module_search.md
-4 -rw-r--r-- 1 vagrant vagrant  277 Jun  7 19:35 README.md
-4 -rw-r--r-- 1 vagrant vagrant   49 Jun  7 19:35 version_control.md
+In [22]: subprocess.run('ls -ls *rich*py', shell=True)
+4 -rw-r--r-- 1 vagrant vagrant 384 Jun 26  2023 basics_06_rich_progress_ping_func.py
+4 -rw-r--r-- 1 vagrant vagrant 487 Jun 26  2023 basics_07_rich_colors_ping_func.py
+Out[22]: CompletedProcess(args='ls -ls *rich*py', returncode=0)
 ```
 
-Ещё одна особенность функции ``run`` - она ожидает завершения выполнения
-команды. Если попробовать, например, запустить команду ping, то этот
-аспект будет заметен:
+Ще одна особливість функції run - вона очікує на завершення виконання команди.
+Якщо спробувати, наприклад, запустити команду ping, цей аспект буде більш помітний:
 
 ```python
-
-In [8]: result = subprocess.run(['ping', '-c', '3', '-n', '8.8.8.8'])
+In [26]: subprocess.run(['ping', '-c', '3', '-n', '8.8.8.8'])
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=43 time=55.1 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=43 time=54.7 ms
-64 bytes from 8.8.8.8: icmp_seq=3 ttl=43 time=54.4 ms
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=23.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=24.6 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=29.8 ms
 
 --- 8.8.8.8 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2004ms
-rtt min/avg/max/mdev = 54.498/54.798/55.116/0.252 ms
+3 packets transmitted, 3 received, 0% packet loss, time 2012ms
+rtt min/avg/max/mdev = 23.467/25.974/29.836/2.770 ms
+Out[26]: CompletedProcess(args=['ping', '-c', '3', '-n', '8.8.8.8'], returncode=0)
 ```
 
-Получение результата выполнения команды
+## Отримання результату виконання команди
+
+За замовчуванням функція run повертає результат виконання команди стандартний потік виведення. Якщо потрібно отримати результат виконання команди, треба додати аргумент stdout і вказати значення subprocess.PIPE:
+
+Тепер можна отримати результат виконання команди таким чином:
+
+
+Зверніть увагу на літеру b перед рядком. Вона означає, що модуль повернув висновок у вигляді байтового рядка. Для переведення її в unicode є два варіанти:
+
+виконати decode отриманого рядка
+
+вказати аргумент encoding
+
+Варіант із decode:
 
 
 По умолчанию функция run возвращает результат выполнения команды на
