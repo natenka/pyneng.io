@@ -262,7 +262,7 @@ nav:
         - book/11-modules/further-reading.md
       - 12. Корисні модулі:
         - book/12-useful-modules/index.md
-          #- book/12-useful-modules/subprocess.md
+        - book/12-useful-modules/subprocess.md
     #- 13. Функції. Продовження. Зірочка в аргументах та параметрах, аннотація
         #- book/10-useful-functions/lambda.md
         #- book/10-useful-functions/map.md
