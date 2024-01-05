@@ -140,78 +140,64 @@ Out[26]: CompletedProcess(args=['ping', '-c', '3', '-n', '8.8.8.8'], returncode=
 
 ## Отримання результату виконання команди
 
-За замовчуванням функція run повертає результат виконання команди стандартний потік виведення. Якщо потрібно отримати результат виконання команди, треба додати аргумент stdout і вказати значення subprocess.PIPE:
+За замовчуванням функція run виводить результат виконання команди на стандартний
+потік виведення.
+
+```python
+In [5]: subprocess.run('ls')
+basics_01_subprocess_ping.py                 basics_05_subprocess_popen_ping_func_zip.py
+basics_02_subprocess_ping_func.py            basics_06_rich_progress_ping_func.py
+basics_03_subprocess_popen_ping_func.py      basics_07_rich_colors_ping_func.py
+basics_04_subprocess_popen_ping_func_zip.py  ipaddress
+Out[5]: CompletedProcess(args='ls', returncode=0)
+
+
+In [7]: result = subprocess.run('ls')
+basics_01_subprocess_ping.py                 basics_05_subprocess_popen_ping_func_zip.py
+basics_02_subprocess_ping_func.py            basics_06_rich_progress_ping_func.py
+basics_03_subprocess_popen_ping_func.py      basics_07_rich_colors_ping_func.py
+basics_04_subprocess_popen_ping_func_zip.py  ipaddress
+```
+
+Якщо результат виконання команди треба зберегти для подальшої обробки, можна
+використовувати параметр `capture_output`:
+
+```python
+In [8]: result = subprocess.run('ls', capture_output=True)
+```
 
 Тепер можна отримати результат виконання команди таким чином:
 
+```python
+In [9]: result.stdout
+Out[9]: b'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
+```
 
-Зверніть увагу на літеру b перед рядком. Вона означає, що модуль повернув висновок у вигляді байтового рядка. Для переведення її в unicode є два варіанти:
+Зверніть увагу на літеру `b` перед рядком. Вона означає, що модуль повернув
+вивід у вигляді байтового рядка. Для переведення байтового рядка у звичайний
+рядок є два варіанти:
 
-виконати decode отриманого рядка
-
-вказати аргумент encoding
+* використовувати метод decode для отриманого байтового рядка
+* вказати аргумент encoding
 
 Варіант із decode:
 
 
-По умолчанию функция run возвращает результат выполнения команды на
-стандартный поток вывода.
-Если нужно получить результат выполнения команды, надо добавить аргумент
-stdout и указать ему значение subprocess.PIPE:
-
 ```python
-
-In [9]: result = subprocess.run(['ls', '-ls'], stdout=subprocess.PIPE)
+In [11]: result.stdout.decode("utf-8")
+Out[11]: 'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-Теперь можно получить результат выполнения команды таким образом:
+Варіант із encoding:
 
 ```python
+In [12]: result = subprocess.run('ls', capture_output=True, encoding="utf-8")
 
-In [10]: print(result.stdout)
-b'total 28\n4 -rw-r--r-- 1 vagrant vagrant   56 Jun  7 19:35 ipython_as_mngmt_console.md\n4 -rw-r--r-- 1 vagrant vagrant 1638 Jun  7 19:35 module_search.md\n4 drwxr-xr-x 2 vagrant vagrant 4096 Jun  7 19:35 naming_conventions\n4 -rw-r--r-- 1 vagrant vagrant  277 Jun  7 19:35 README.md\n4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 16 05:11 useful_functions\n4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 17 16:30 useful_modules\n4 -rw-r--r-- 1 vagrant vagrant   49 Jun  7 19:35 version_control.md\n'
+In [13]: result.stdout
+Out[13]: 'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-Обратите внимание на букву b перед строкой. Она означает, что модуль
-вернул вывод в виде байтовой строки.
-Для перевода её в unicode есть два варианта:
-
--  выполнить decode полученной строки
--  указать аргумент encoding
-
-Вариант с decode:
-
-```python
-
-In [11]: print(result.stdout.decode('utf-8'))
-total 28
-4 -rw-r--r-- 1 vagrant vagrant   56 Jun  7 19:35 ipython_as_mngmt_console.md
-4 -rw-r--r-- 1 vagrant vagrant 1638 Jun  7 19:35 module_search.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun  7 19:35 naming_conventions
-4 -rw-r--r-- 1 vagrant vagrant  277 Jun  7 19:35 README.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 16 05:11 useful_functions
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 17 16:30 useful_modules
-4 -rw-r--r-- 1 vagrant vagrant   49 Jun  7 19:35 version_control.md
-```
-
-Вариант с encoding:
-
-```python
-
-In [12]: result = subprocess.run(['ls', '-ls'], stdout=subprocess.PIPE, encoding='utf-8')
-
-In [13]: print(result.stdout)
-total 28
-4 -rw-r--r-- 1 vagrant vagrant   56 Jun  7 19:35 ipython_as_mngmt_console.md
-4 -rw-r--r-- 1 vagrant vagrant 1638 Jun  7 19:35 module_search.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun  7 19:35 naming_conventions
-4 -rw-r--r-- 1 vagrant vagrant  277 Jun  7 19:35 README.md
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 16 05:11 useful_functions
-4 drwxr-xr-x 2 vagrant vagrant 4096 Jun 17 16:31 useful_modules
-4 -rw-r--r-- 1 vagrant vagrant   49 Jun  7 19:35 version_control.md
-```
-
-Отключение вывода
+## Отключение вывода
 
 
 Иногда достаточно получения кода возврата и нужно отключить вывод
