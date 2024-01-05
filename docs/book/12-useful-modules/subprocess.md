@@ -91,11 +91,11 @@ Out[4]: 0
 ```python
 In [15]: subprocess.run(['ls', '-l'])
 total 32
--rw-r--r-- 1 vagrant vagrant   66 Jun 26  2023 basics_01_subprocess_ping.py
--rw-r--r-- 1 vagrant vagrant  359 Jun 26  2023 basics_02_subprocess_ping_func.py
--rw-r--r-- 1 vagrant vagrant  693 Jun 26  2023 basics_03_subprocess_popen_ping_func.py
--rw-r--r-- 1 vagrant vagrant  758 Jun 26  2023 basics_04_subprocess_popen_ping_func_zip.py
--rw-r--r-- 1 vagrant vagrant  688 Jun 26  2023 basics_05_subprocess_popen_ping_func_zip.py
+-rw-r--r-- 1 vagrant vagrant   66 Jun 26  2023 basics_01_ping.py
+-rw-r--r-- 1 vagrant vagrant  359 Jun 26  2023 basics_02_ping_func.py
+-rw-r--r-- 1 vagrant vagrant  693 Jun 26  2023 basics_03_popen_ping_func.py
+-rw-r--r-- 1 vagrant vagrant  758 Jun 26  2023 basics_04_popen_ping_func_zip.py
+-rw-r--r-- 1 vagrant vagrant  688 Jun 26  2023 basics_05_popen_ping_func_zip.py
 -rw-r--r-- 1 vagrant vagrant  384 Jun 26  2023 basics_06_rich_progress_ping_func.py
 -rw-r--r-- 1 vagrant vagrant  487 Jun 26  2023 basics_07_rich_colors_ping_func.py
 drwxr-xr-x 2 vagrant vagrant 4096 Jun 26  2023 ipaddress
@@ -145,18 +145,18 @@ Out[26]: CompletedProcess(args=['ping', '-c', '3', '-n', '8.8.8.8'], returncode=
 
 ```python
 In [5]: subprocess.run('ls')
-basics_01_subprocess_ping.py                 basics_05_subprocess_popen_ping_func_zip.py
-basics_02_subprocess_ping_func.py            basics_06_rich_progress_ping_func.py
-basics_03_subprocess_popen_ping_func.py      basics_07_rich_colors_ping_func.py
-basics_04_subprocess_popen_ping_func_zip.py  ipaddress
+basics_01_ping.py                 basics_05_popen_ping_func_zip.py
+basics_02_ping_func.py            basics_06_rich_progress_ping_func.py
+basics_03_popen_ping_func.py      basics_07_rich_colors_ping_func.py
+basics_04_popen_ping_func_zip.py  ipaddress
 Out[5]: CompletedProcess(args='ls', returncode=0)
 
 
 In [7]: result = subprocess.run('ls')
-basics_01_subprocess_ping.py                 basics_05_subprocess_popen_ping_func_zip.py
-basics_02_subprocess_ping_func.py            basics_06_rich_progress_ping_func.py
-basics_03_subprocess_popen_ping_func.py      basics_07_rich_colors_ping_func.py
-basics_04_subprocess_popen_ping_func_zip.py  ipaddress
+basics_01_ping.py                 basics_05_popen_ping_func_zip.py
+basics_02_ping_func.py            basics_06_rich_progress_ping_func.py
+basics_03_popen_ping_func.py      basics_07_rich_colors_ping_func.py
+basics_04_popen_ping_func_zip.py  ipaddress
 ```
 
 Якщо результат виконання команди треба зберегти для подальшої обробки, можна
@@ -170,22 +170,21 @@ In [8]: result = subprocess.run('ls', capture_output=True)
 
 ```python
 In [9]: result.stdout
-Out[9]: b'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
+Out[9]: b'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.py\nbasics_04_popen_ping_func_zip.py\nbasics_05_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-Зверніть увагу на літеру `b` перед рядком. Вона означає, що модуль повернув
+Зверніть увагу на літеру `b` перед рядком. Вона означає, що в атрибуті stdout 
 вивід у вигляді байтового рядка. Для переведення байтового рядка у звичайний
 рядок є два варіанти:
 
-* використовувати метод decode для отриманого байтового рядка
+* використовувати метод decode
 * вказати аргумент encoding
 
 Варіант із decode:
 
-
 ```python
 In [11]: result.stdout.decode("utf-8")
-Out[11]: 'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
+Out[11]: 'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.py\nbasics_04_popen_ping_func_zip.py\nbasics_05_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
 Варіант із encoding:
@@ -194,30 +193,21 @@ Out[11]: 'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasic
 In [12]: result = subprocess.run('ls', capture_output=True, encoding="utf-8")
 
 In [13]: result.stdout
-Out[13]: 'basics_01_subprocess_ping.py\nbasics_02_subprocess_ping_func.py\nbasics_03_subprocess_popen_ping_func.py\nbasics_04_subprocess_popen_ping_func_zip.py\nbasics_05_subprocess_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
+Out[13]: 'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.py\nbasics_04_popen_ping_func_zip.py\nbasics_05_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-## Отключение вывода
-
-
-Иногда достаточно получения кода возврата и нужно отключить вывод
-результата выполнения на стандартный поток вывода, и при этом сам
-результат не нужен.
-Это можно сделать, передав функции run аргумент stdout со значением
-subprocess.DEVNULL:
+Також перехоплення стандартних потоків виведення та помилок можна робити за
+допомогою параметрів stdout/stderr (параметри capture_output та stdout/stderr
+не можна використовувати одночасно):
 
 ```python
+In [14]: result = subprocess.run('ls', encoding="utf-8", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-In [14]: result = subprocess.run(['ls', '-ls'], stdout=subprocess.DEVNULL)
-
-In [15]: print(result.stdout)
-None
-
-In [16]: print(result.returncode)
-0
+In [15]: result.stdout
+Out[15]: 'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.py\nbasics_04_popen_ping_func_zip.py\nbasics_05_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-Работа со стандартным потоком ошибок
+## Работа со стандартным потоком ошибок
 
 
 Если команда была выполнена с ошибкой или не отработала корректно, вывод
