@@ -180,6 +180,10 @@ Out[9]: b'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.p
 * використовувати метод decode
 * вказати аргумент encoding
 
+!!! warning
+
+	Ні в якому разі не перетворюйте байтовий рядок у звичайний конвертацією через `str`!
+
 Варіант із decode:
 
 ```python
@@ -201,48 +205,86 @@ Out[13]: 'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.p
 не можна використовувати одночасно):
 
 ```python
-In [14]: result = subprocess.run('ls', encoding="utf-8", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+In [14]: result = subprocess.run('ls', stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding="utf-8")
 
 In [15]: result.stdout
 Out[15]: 'basics_01_ping.py\nbasics_02_ping_func.py\nbasics_03_popen_ping_func.py\nbasics_04_popen_ping_func_zip.py\nbasics_05_popen_ping_func_zip.py\nbasics_06_rich_progress_ping_func.py\nbasics_07_rich_colors_ping_func.py\nipaddress\n'
 ```
 
-## Работа со стандартным потоком ошибок
+## Робота зі стандартним потоком помилок
 
+Якщо команда була виконана з помилкою або не відпрацювала коректно, вивід
+команди потрапить на стандартний потік помилок.
 
-Если команда была выполнена с ошибкой или не отработала корректно, вывод
-команды попадет на стандартный поток ошибок.
-
-Получить этот вывод можно так же, как и стандартный поток вывода:
+Отримати цей вивід можна, якщо перехопити його через `capture_output` або
+`stderr`, а в результаті звернутись до атрибуту stderr:
 
 ```python
+In [16]: result = subprocess.run(['ping', '-c', '3', '-n', 'a'], stderr=subprocess.PIPE, encoding='utf-8')
 
-In [17]: result = subprocess.run(['ping', '-c', '3', '-n', 'a'], stderr=subprocess.PIPE, encoding='utf-8')
+In [17]: result = subprocess.run(['ping', '-c', '3', '-n', 'a'], capture_output=True, encoding='utf-8')
+
+In [18]: result
+Out[18]: CompletedProcess(args=['ping', '-c', '3', '-n', 'a'], returncode=2, stdout='', stderr='ping: a: Name or service not known\n')
 ```
 
-Теперь в result.stdout пустая строка, а в result.stderr находится
-стандартный поток вывода:
+В обох випадках у result.stdout буде порожній рядок, а в result.stderr стандартний потік виводу:
 
 ```python
+In [19]: result.stderr
+Out[19]: 'ping: a: Name or service not known\n'
 
-In [18]: print(result.stdout)
-None
+In [21]: result.stdout
+Out[21]: ''
 
-In [19]: print(result.stderr)
-ping: unknown host a
-
-
-In [20]: print(result.returncode)
-2
+In [22]: result.returncode
+Out[22]: 2
 ```
 
-Примеры использования модуля
+Якщо потрібно перехопити та об'єднати обидва потоки (stdout та stderr) в один,
+можна використовувати `stdout=subprocess.PIPE` і `stderr=subprocess.STDOUT`.
 
-
-Пример использования модуля subprocess (файл subprocess_run_basic.py):
+Приклад об'єднання потоків для команди з неуспішним статусом виконання
+(зверніть увагу на returncode):
 
 ```python
+In [24]: result = subprocess.run(
+    ...:     ['ping', '-c', '3', '-n', 'a'], encoding='utf-8',
+    ...:     stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    ...: )
 
+In [25]: result
+Out[25]: CompletedProcess(args=['ping', '-c', '3', '-n', 'a'], returncode=2, stdout='ping: a: Name or service not known\n')
+
+In [26]: result.stdout
+Out[26]: 'ping: a: Name or service not known\n'
+
+In [27]: result.stderr
+```
+
+Приклад об'єднання потоків для команди з успішним статусом виконання:
+
+```python
+In [28]: result = subprocess.run(
+    ...:     ['ping', '-c', '3', '-n', '8.8.8.8'], encoding='utf-8',
+    ...:     stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    ...: )
+
+In [29]: result
+Out[29]: CompletedProcess(args=['ping', '-c', '3', '-n', '8.8.8.8'], returncode=0, stdout='PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=24.3 ms\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=24.8 ms\n64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=25.9 ms\n\n--- 8.8.8.8 ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, time 2006ms\nrtt min/avg/max/mdev = 24.288/24.991/25.851/0.647 ms\n')
+
+In [30]: result.stdout
+Out[30]: 'PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=24.3 ms\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=24.8 ms\n64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=25.9 ms\n\n--- 8.8.8.8 ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, time 2006ms\nrtt min/avg/max/mdev = 24.288/24.991/25.851/0.647 ms\n'
+
+In [31]: result.returncode
+Out[31]: 0
+```
+
+## Приклади використання модуля
+
+Приклад використання модуля subprocess
+
+```python
 import subprocess
 
 reply = subprocess.run(['ping', '-c', '3', '-n', '8.8.8.8'])
@@ -253,10 +295,9 @@ else:
     print('Unreachable')
 ```
 
-Результат выполнения будет таким:
+Результат виконання буде таким:
 
 ```
-
 $ python subprocess_run_basic.py
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=43 time=54.0 ms
@@ -269,45 +310,38 @@ rtt min/avg/max/mdev = 53.962/54.145/54.461/0.293 ms
 Alive
 ```
 
-То есть, результат выполнения команды выводится на стандартный поток
-вывода.
+Тут результат виконання команди виводиться на стандартний потік виведення.
 
-Функція ping_ip проверяет доступность IP-адреса и возвращает True и
-stdout, если адрес доступен, или False и stderr, если адрес недоступен
-(файл subprocess_ping_function.py):
+Функція ping_ip перевіряє доступність IP-адреси та повертає True та stdout,
+якщо адреса доступна, або False та stderr, якщо адреса недоступна:
 
 ```python
 
 import subprocess
 
 
-def ping_ip(ip_address):
+def ping_ip(host):
     """
-    Ping IP address and return tuple:
-    On success:
-        * True
-        * command output (stdout)
-    On failure:
-        * False
-        * error output (stderr)
+    Ping IP address and return:
+    On success - True
+    On failure - False
     """
-    reply = subprocess.run(['ping', '-c', '3', '-n', ip_address],
-                           stdout=subprocess.PIPE,
-                           stderr=subprocess.PIPE,
+    reply = subprocess.run(['ping', '-c', '3', '-n', host],
+                           capture_output=True,
                            encoding='utf-8')
     if reply.returncode == 0:
-        return True, reply.stdout
+        return True
     else:
-        return False, reply.stderr
+        return False
 
 print(ping_ip('8.8.8.8'))
 print(ping_ip('a'))
 ```
 
-Результат выполнения будет таким:
+Результат виконання буде таким:
 
 ```
 $ python subprocess_ping_function.py
-(True, 'PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.\n64 bytes from 8.8.8.8: icmp_seq=1 ttl=43 time=63.8 ms\n64 bytes from 8.8.8.8: icmp_seq=2 ttl=43 time=55.6 ms\n64 bytes from 8.8.8.8: icmp_seq=3 ttl=43 time=55.9 ms\n\n--- 8.8.8.8 ping statistics ---\n3 packets transmitted, 3 received, 0% packet loss, time 2003ms\nrtt min/avg/max/mdev = 55.643/58.492/63.852/3.802 ms\n')
-(False, 'ping: unknown host a\n')
+True
+False
 ```
