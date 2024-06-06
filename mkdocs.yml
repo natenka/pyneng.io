@@ -85,14 +85,10 @@ plugins:
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/slack
-      link: https://pyneng.io/course/slack/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@pynenguk
     - icon: fontawesome/brands/github
       link: https://github.com/natenka
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/pynenguk
   analytics:
     provider: google
     property: G-3WX9XBK91Y
