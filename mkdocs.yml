@@ -139,10 +139,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - " ":
-    - index.md
-    - keyboard_shortcuts.md
-    - todo.md
+  - " ": index.md
+    #- keyboard_shortcuts.md
+    #- todo.md
   - Книга:
     - book/index.md
     - Підготовка:
