@@ -85,6 +85,8 @@ plugins:
 # Customization
 extra:
   social:
+    - icon: material/cards-heart
+      link: https://base.monobank.ua/4DFyY5dZ6D5WEd
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@pynenguk
     - icon: fontawesome/brands/github
